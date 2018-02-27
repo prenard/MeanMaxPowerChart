@@ -9,291 +9,588 @@
 <entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartBackground.mc" lineNum="21" pc="268435517" symbol="draw"/>
 <entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartBackground.mc" lineNum="22" pc="268435521" symbol="draw"/>
 <entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartBackground.mc" lineNum="23" pc="268435553" symbol="draw"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="43" pc="268435566" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="45" pc="268435570" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="47" pc="268435588" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="48" pc="268435631" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="50" pc="268435663" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="51" pc="268435704" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="53" pc="268435745" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="54" pc="268435764" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="55" pc="268435784" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="56" pc="268435803" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="58" pc="268435823" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="62" pc="268435851" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="64" pc="268435876" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="65" pc="268435889" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="66" pc="268435902" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="68" pc="268435922" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="69" pc="268435935" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="70" pc="268435948" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="71" pc="268435961" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="73" pc="268435981" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="74" pc="268435994" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="77" pc="268436017" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="78" pc="268436033" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="81" pc="268436049" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="85" pc="268436079" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="86" pc="268436095" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="87" pc="268436111" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="88" pc="268436127" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="90" pc="268436160" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="94" pc="268436205" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="96" pc="268436235" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="97" pc="268436248" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="98" pc="268436264" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="99" pc="268436280" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="100" pc="268436296" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="101" pc="268436312" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="102" pc="268436440" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="109" pc="268436498" symbol="onLayout"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="112" pc="268436502" symbol="onLayout"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="113" pc="268436537" symbol="onLayout"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="115" pc="268436572" symbol="onLayout"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="117" pc="268436615" symbol="onLayout"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="124" pc="268436619" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="127" pc="268436623" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="129" pc="268436636" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="133" pc="268436655" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="137" pc="268436668" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="139" pc="268436698" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="140" pc="268436723" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="143" pc="268436745" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="148" pc="268436777" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="151" pc="268436807" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="155" pc="268436824" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="162" pc="268436912" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="164" pc="268436943" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="167" pc="268436983" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="168" pc="268437005" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="170" pc="268437052" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="171" pc="268437065" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="172" pc="268437120" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="174" pc="268437146" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="177" pc="268437171" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="182" pc="268437288" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="184" pc="268437334" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="187" pc="268437383" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="188" pc="268437399" symbol="compute"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="243" pc="268437435" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="246" pc="268437439" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="248" pc="268437482" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="250" pc="268437496" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="252" pc="268437523" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="256" pc="268437540" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="261" pc="268437554" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="263" pc="268437574" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="264" pc="268437626" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="266" pc="268437637" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="268" pc="268437647" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="270" pc="268437694" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="271" pc="268437730" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="272" pc="268437747" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="273" pc="268437791" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="275" pc="268437835" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="277" pc="268437862" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="279" pc="268437908" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="280" pc="268437944" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="281" pc="268437961" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="282" pc="268437999" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="286" pc="268438075" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="288" pc="268438105" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="290" pc="268438115" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="292" pc="268438135" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="293" pc="268438148" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="295" pc="268438166" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="297" pc="268438183" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="300" pc="268438209" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="301" pc="268438269" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="303" pc="268438282" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="304" pc="268438318" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="305" pc="268438335" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="308" pc="268438398" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="310" pc="268438434" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="312" pc="268438483" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="313" pc="268438532" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="315" pc="268438587" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="316" pc="268438623" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="317" pc="268438640" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="319" pc="268438684" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="320" pc="268438733" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="322" pc="268438788" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="323" pc="268438824" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="324" pc="268438841" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="329" pc="268438901" symbol="onUpdate"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="332" pc="268438959" symbol="textR"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="334" pc="268438963" symbol="textR"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="336" pc="268438970" symbol="textR"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="337" pc="268438996" symbol="textR"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="18" pc="268439049" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="20" pc="268439053" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="21" pc="268439071" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="23" pc="268439088" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="25" pc="268439159" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="27" pc="268439202" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="28" pc="268439232" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="29" pc="268439262" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="30" pc="268439292" symbol="initialize"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="35" pc="268439323" symbol="onStart"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="40" pc="268439328" symbol="onStop"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="45" pc="268439333" symbol="getInitialView"/>
-<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="47" pc="268439337" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="20" pc="268439375" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="24" pc="268439387" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="25" pc="268439411" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="26" pc="268439574" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="27" pc="268439599" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="28" pc="268439651" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="29" pc="268439697" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="30" pc="268439860" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="31" pc="268439885" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="32" pc="268439937" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="35" pc="268439983" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="44" pc="268440021" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="48" pc="268440033" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="49" pc="268440057" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="50" pc="268440190" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="53" pc="268440323" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="62" pc="268440361" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="66" pc="268440373" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="67" pc="268440397" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="68" pc="268440530" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="71" pc="268440663" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="80" pc="268440701" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="84" pc="268440713" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="85" pc="268440737" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="86" pc="268440870" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="89" pc="268441003" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="98" pc="268441041" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="102" pc="268441053" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="103" pc="268441077" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="104" pc="268441210" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="107" pc="268441343" symbol="BottomRightLayout"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="111" pc="268435566" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="113" pc="268435570" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="115" pc="268435588" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="118" pc="268435611" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="120" pc="268435649" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="121" pc="268435665" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="123" pc="268435697" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="125" pc="268435741" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="126" pc="268435788" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="128" pc="268435835" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="129" pc="268435845" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="131" pc="268435855" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="132" pc="268435868" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="136" pc="268435881" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="139" pc="268435905" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="141" pc="268435915" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="142" pc="268435937" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="146" pc="268435972" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="152" pc="268435985" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="153" pc="268436004" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="154" pc="268436024" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="155" pc="268436043" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="157" pc="268436063" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="161" pc="268436097" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="163" pc="268436128" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="164" pc="268436141" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="165" pc="268436154" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="167" pc="268436174" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="168" pc="268436187" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="169" pc="268436200" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="171" pc="268436220" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="172" pc="268436233" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="173" pc="268436246" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="175" pc="268436266" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="176" pc="268436279" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="177" pc="268436292" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="179" pc="268436312" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="180" pc="268436325" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="181" pc="268436338" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="183" pc="268436358" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="184" pc="268436371" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="185" pc="268436384" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="187" pc="268436404" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="188" pc="268436417" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="189" pc="268436430" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="191" pc="268436450" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="192" pc="268436463" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="193" pc="268436476" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="195" pc="268436496" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="196" pc="268436509" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="197" pc="268436522" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="200" pc="268436542" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="201" pc="268436555" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="202" pc="268436568" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="203" pc="268436581" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="205" pc="268436601" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="206" pc="268436614" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="209" pc="268436637" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="210" pc="268436653" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="213" pc="268436669" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="217" pc="268436699" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="218" pc="268436715" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="219" pc="268436731" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="220" pc="268436747" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="222" pc="268436780" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="226" pc="268436825" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="228" pc="268436861" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="229" pc="268436880" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="230" pc="268436902" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="231" pc="268436924" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="232" pc="268436946" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="233" pc="268436968" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="234" pc="268437120" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="241" pc="268437184" symbol="onLayout"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="244" pc="268437188" symbol="onLayout"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="245" pc="268437223" symbol="onLayout"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="247" pc="268437258" symbol="onLayout"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="249" pc="268437301" symbol="onLayout"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="256" pc="268437305" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="259" pc="268437309" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="261" pc="268437322" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="264" pc="268437341" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="266" pc="268437354" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="269" pc="268437373" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="271" pc="268437386" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="276" pc="268437405" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="278" pc="268437418" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="281" pc="268437448" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="283" pc="268437461" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="286" pc="268437491" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="287" pc="268437504" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="289" pc="268437517" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="294" pc="268437542" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="295" pc="268437594" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="296" pc="268437610" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="297" pc="268437626" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="300" pc="268437636" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="302" pc="268437643" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="304" pc="268437669" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="306" pc="268437680" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="310" pc="268437690" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="315" pc="268437703" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="317" pc="268437714" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="321" pc="268437724" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="323" pc="268437731" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="327" pc="268437753" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="329" pc="268437825" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="330" pc="268437835" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="335" pc="268437845" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="339" pc="268437858" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="341" pc="268437888" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="342" pc="268437913" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="345" pc="268437935" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="350" pc="268437967" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="353" pc="268438003" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="357" pc="268438026" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="364" pc="268438126" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="366" pc="268438163" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="369" pc="268438209" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="370" pc="268438237" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="372" pc="268438302" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="373" pc="268438321" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="374" pc="268438400" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="376" pc="268438438" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="377" pc="268438472" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="379" pc="268438510" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="380" pc="268438544" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="381" pc="268438582" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="390" pc="268438642" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="392" pc="268438688" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="395" pc="268438737" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="396" pc="268438753" symbol="compute"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="451" pc="268438789" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="454" pc="268438793" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="456" pc="268438836" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="458" pc="268438850" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="460" pc="268438877" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="464" pc="268438894" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="469" pc="268438908" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="471" pc="268438939" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="472" pc="268438958" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="473" pc="268438965" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="475" pc="268438972" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="477" pc="268438982" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="480" pc="268439031" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="481" pc="268439050" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="484" pc="268439060" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="487" pc="268439109" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="488" pc="268439128" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="491" pc="268439138" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="495" pc="268439187" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="497" pc="268439228" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="501" pc="268439238" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="502" pc="268439245" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="503" pc="268439252" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="506" pc="268439271" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="509" pc="268439307" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="512" pc="268439356" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="513" pc="268439375" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="516" pc="268439397" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="517" pc="268439407" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="521" pc="268439417" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="523" pc="268439437" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="524" pc="268439495" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="526" pc="268439506" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="530" pc="268439516" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="531" pc="268439552" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="532" pc="268439569" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="533" pc="268439613" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="535" pc="268439657" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="538" pc="268439699" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="541" pc="268439760" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="542" pc="268439815" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="544" pc="268439876" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="545" pc="268439908" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="547" pc="268440146" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="548" pc="268440178" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="549" pc="268440195" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="552" pc="268440254" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="555" pc="268440315" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="556" pc="268440370" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="559" pc="268440431" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="560" pc="268440463" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="562" pc="268440701" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="563" pc="268440733" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="564" pc="268440750" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="567" pc="268440809" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="570" pc="268440870" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="571" pc="268440925" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="573" pc="268440986" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="575" pc="268441077" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="576" pc="268441100" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="577" pc="268441138" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="579" pc="268441176" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="580" pc="268441231" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="582" pc="268441292" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="583" pc="268441324" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="585" pc="268441415" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="589" pc="268441644" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="591" pc="268441682" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="595" pc="268441856" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="602" pc="268442039" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="605" pc="268442100" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="606" pc="268442155" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="608" pc="268442216" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="609" pc="268442248" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="610" pc="268442265" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="618" pc="268442337" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="620" pc="268442364" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="622" pc="268442410" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="623" pc="268442442" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="624" pc="268442459" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="625" pc="268442497" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="630" pc="268442573" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="632" pc="268442609" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="634" pc="268442619" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="636" pc="268442645" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="637" pc="268442664" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="639" pc="268442682" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="641" pc="268442699" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="644" pc="268442725" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="645" pc="268442791" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="647" pc="268442804" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="648" pc="268442836" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="649" pc="268442853" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="653" pc="268442928" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="654" pc="268442976" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="656" pc="268443033" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="657" pc="268443081" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="659" pc="268443138" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="660" pc="268443186" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="663" pc="268443243" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="664" pc="268443300" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="665" pc="268443357" symbol="onUpdate"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="668" pc="268443415" symbol="textR"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="670" pc="268443419" symbol="textR"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="672" pc="268443426" symbol="textR"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="673" pc="268443452" symbol="textR"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="678" pc="268443490" symbol="textL"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="680" pc="268443494" symbol="textL"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="682" pc="268443501" symbol="textL"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="683" pc="268443527" symbol="textL"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="688" pc="268443565" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="691" pc="268443569" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="692" pc="268443579" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="694" pc="268443579" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="695" pc="268443598" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="696" pc="268443611" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="697" pc="268443630" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="699" pc="268443643" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="700" pc="268443707" symbol="TimeFormat"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="703" pc="268443711" symbol="Initialize_Loop_Value"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="705" pc="268443715" symbol="Initialize_Loop_Value"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="707" pc="268443730" symbol="Initialize_Loop_Value"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="708" pc="268443749" symbol="Initialize_Loop_Value"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartView.mc" lineNum="710" pc="268443781" symbol="Initialize_Loop_Value"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="34" pc="268443785" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="36" pc="268443789" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="37" pc="268443807" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="39" pc="268443824" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="41" pc="268443895" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="43" pc="268443938" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="44" pc="268443968" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="45" pc="268443998" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="46" pc="268444028" symbol="initialize"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="51" pc="268444059" symbol="onStart"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="56" pc="268444064" symbol="onStop"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="58" pc="268444068" symbol="onStop"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="62" pc="268444093" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="66" pc="268444097" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="67" pc="268444105" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="69" pc="268444113" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="71" pc="268444137" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="72" pc="268444143" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="76" pc="268444166" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="77" pc="268444190" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="79" pc="268444214" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="80" pc="268444238" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="82" pc="268444262" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="83" pc="268444286" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="85" pc="268444310" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="86" pc="268444334" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="88" pc="268444358" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="90" pc="268444366" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="91" pc="268444395" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="92" pc="268444419" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="93" pc="268444429" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="95" pc="268444439" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="97" pc="268444450" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="98" pc="268444471" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="100" pc="268444501" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="102" pc="268444530" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="103" pc="268444560" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="106" pc="268444594" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="108" pc="268444621" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="109" pc="268444642" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="113" pc="268444675" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="114" pc="268444696" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="116" pc="268444726" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="120" pc="268444755" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="122" pc="268444785" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="126" pc="268444820" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="128" pc="268444850" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="130" pc="268444880" symbol="getInitialView"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="133" pc="268444920" symbol="readPropertyKeyInt"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="135" pc="268444924" symbol="readPropertyKeyInt"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="136" pc="268444939" symbol="readPropertyKeyInt"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="138" pc="268444964" symbol="readPropertyKeyInt"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="140" pc="268444971" symbol="readPropertyKeyInt"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="144" pc="268444987" symbol="readPropertyKeyInt"/>
+<entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="147" pc="268444994" symbol="readPropertyKeyInt"/>
+<entry filename="Rez" lineNum="31" pc="268444998" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="35" pc="268445010" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="36" pc="268445034" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="37" pc="268445197" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="38" pc="268445222" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="39" pc="268445274" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="40" pc="268445320" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="41" pc="268445483" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="42" pc="268445508" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="43" pc="268445560" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="46" pc="268445606" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="55" pc="268445644" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="59" pc="268445656" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="60" pc="268445680" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="61" pc="268445813" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="64" pc="268445946" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="73" pc="268445984" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="77" pc="268445996" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="78" pc="268446020" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="79" pc="268446153" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="82" pc="268446286" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="91" pc="268446324" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="95" pc="268446336" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="96" pc="268446360" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="97" pc="268446493" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="100" pc="268446626" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="109" pc="268446664" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="113" pc="268446676" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="114" pc="268446700" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="115" pc="268446833" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="118" pc="268446966" symbol="BottomRightLayout"/>
 </pcToLineNum>
 <symbolTable>
+<entry field="true" id="80" symbol="RollingValue_y"/>
+<entry field="true" id="79" symbol="RollingValue_x"/>
 <entry id="8388644" module="true" symbol="System"/>
-<entry field="true" id="25" symbol="TimeValuesX"/>
+<entry field="true" id="106" symbol="TimeValuesX"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="59" symbol="CAD_Label_font"/>
 <entry id="8389349" symbol="justification"/>
-<entry field="true" id="32" symbol="PowerValuesHistoryIndex"/>
-<entry field="true" id="44" symbol="Y_bar_y_top"/>
-<entry field="true" id="37" symbol="HR_Value_y"/>
-<entry field="true" id="36" symbol="HR_Value_x"/>
+<entry field="true" id="45" symbol="PowerValuesHistoryIndex"/>
+<entry field="true" id="58" symbol="CAD_Label_y"/>
+<entry field="true" id="57" symbol="CAD_Label_x"/>
+<entry field="true" id="39" symbol="RidePowerValuesAreaColor"/>
+<entry field="true" id="19" symbol="Field_Distance_Duration_Title"/>
+<entry field="true" id="38" symbol="RidePowerValuesLineColor"/>
+<entry field="true" id="95" symbol="Y_bar_y_top"/>
+<entry field="true" id="70" symbol="HR_Value_y"/>
+<entry field="true" id="69" symbol="HR_Value_x"/>
+<entry field="true" id="50" symbol="PWR_Label_y"/>
+<entry field="true" id="49" symbol="PWR_Label_x"/>
+<entry field="true" id="48" symbol="PWR_Label"/>
+<entry id="8390424" module="true" symbol="Storage"/>
 <entry id="15" method="true" symbol="TopLeftLayout"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="55" symbol="PWR_Value_font"/>
+<entry field="true" id="86" symbol="RollingValue_Label"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="24" symbol="Field_Time_Duration_Title"/>
 <entry field="true" id="8389138" symbol="label"/>
+<entry field="true" id="26" symbol="Reset_RecordValues_Title"/>
 <entry id="17" method="true" symbol="BottomLeftLayout"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
-<entry field="true" id="20" symbol="Device_Type"/>
+<entry field="true" id="67" symbol="HR_Label_font"/>
+<entry field="true" id="113" symbol="Device_Type"/>
+<entry field="true" id="54" symbol="PWR_Value_y"/>
+<entry field="true" id="53" symbol="PWR_Value_x"/>
 <entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="110" symbol="PreviousRecordPowerValues"/>
+<entry field="true" id="23" symbol="Field_Timer_Duration_Title"/>
 <entry id="9" object="true" symbol="MeanMaxPowerChartView"/>
 <entry id="14" method="true" symbol="MainLayout"/>
+<entry field="true" id="81" symbol="RollingValue_font"/>
+<entry field="true" id="20" symbol="DF_Title_Title"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="63" symbol="CAD_Value_font"/>
+<entry id="101" method="true" symbol="Initialize_Loop_Value"/>
+<entry field="true" id="66" symbol="HR_Label_y"/>
+<entry field="true" id="65" symbol="HR_Label_x"/>
+<entry field="true" id="89" symbol="RollingValue_Label_font"/>
+<entry field="true" id="78" symbol="RollingValue"/>
 <entry field="true" id="8389130" symbol="mColor"/>
+<entry field="true" id="77" symbol="Time_Value"/>
 <entry id="8389131" method="true" symbol="setColor"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="19" symbol="AppName"/>
-<entry field="true" id="35" symbol="HR_Value"/>
-<entry field="true" id="42" symbol="X_bar_font"/>
-<entry field="true" id="30" symbol="PowerValuesHistory"/>
+<entry field="true" id="29" symbol="Field_TimeOfDay_Label_Title"/>
+<entry field="true" id="28" symbol="AppName"/>
+<entry field="true" id="22" symbol="Field_Time_Label_Title"/>
+<entry field="true" id="68" symbol="HR_Value"/>
+<entry field="true" id="27" symbol="Field_Distance_Label_Title"/>
+<entry id="114" method="true" symbol="readPropertyKeyInt"/>
+<entry field="true" id="93" symbol="X_bar_font"/>
+<entry field="true" id="43" symbol="PowerValuesHistory"/>
+<entry field="true" id="42" symbol="DeltaRecordPowerValuesAreaColor"/>
+<entry field="true" id="84" symbol="RollingValue_Unit_y"/>
+<entry field="true" id="83" symbol="RollingValue_Unit_x"/>
+<entry field="true" id="88" symbol="RollingValue_Label_y"/>
+<entry field="true" id="87" symbol="RollingValue_Label_x"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
-<entry field="true" id="46" symbol="Y_bar_font"/>
+<entry field="true" id="31" symbol="app"/>
+<entry field="true" id="97" symbol="Y_bar_font"/>
 <entry id="8388641" module="true" symbol="Math"/>
+<entry field="true" id="56" symbol="CAD_Label"/>
 <entry field="true" id="13" symbol="LauncherIcon"/>
-<entry field="true" id="22" symbol="TimeValuesAvgPeriod"/>
+<entry field="true" id="103" symbol="TimeValuesAvgPeriod"/>
+<entry field="true" id="76" symbol="Timer_Value"/>
+<entry field="true" id="109" symbol="RecordPowerValues"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry field="true" id="41" symbol="X_bar_y"/>
-<entry field="true" id="39" symbol="X_bar_x_left"/>
+<entry field="true" id="82" symbol="RollingValue_Unit"/>
+<entry field="true" id="92" symbol="X_bar_y"/>
+<entry field="true" id="90" symbol="X_bar_x_left"/>
+<entry field="true" id="30" symbol="AVG_Duration_Title"/>
+<entry field="true" id="72" symbol="TimeOfDay_Value"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389137" method="true" symbol="compute"/>
-<entry field="true" id="45" symbol="Y_bar_y_bottom"/>
+<entry field="true" id="75" symbol="Distance_Unit"/>
+<entry field="true" id="96" symbol="Y_bar_y_bottom"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
-<entry id="47" method="true" symbol="textR"/>
+<entry id="98" method="true" symbol="textR"/>
+<entry id="99" method="true" symbol="textL"/>
+<entry field="true" id="52" symbol="PWR_Value"/>
 <entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="32" symbol="Loop_Index"/>
 <entry id="16" method="true" symbol="TopRightLayout"/>
+<entry field="true" id="33" symbol="Loop_Size"/>
+<entry field="true" id="21" symbol="Field_Timer_Label_Title"/>
+<entry field="true" id="51" symbol="PWR_Label_font"/>
 <entry id="8389348" symbol="font"/>
-<entry field="true" id="40" symbol="X_bar_x_right"/>
+<entry field="true" id="25" symbol="Field_TimeOfDay_Duration_Title"/>
+<entry field="true" id="91" symbol="X_bar_x_right"/>
+<entry field="true" id="34" symbol="Loop_Value"/>
 <entry id="8389347" symbol="color"/>
 <entry id="10" object="true" symbol="MeanMaxPowerChartApp"/>
-<entry field="true" id="26" symbol="CurrentPowerValues"/>
-<entry field="true" id="23" symbol="TimeValuesValid"/>
-<entry field="true" id="38" symbol="HR_Value_font"/>
-<entry field="true" id="34" symbol="PowerValuesHistoryAvgCount"/>
+<entry field="true" id="107" symbol="CurrentPowerValues"/>
+<entry field="true" id="104" symbol="TimeValuesValid"/>
+<entry id="100" method="true" symbol="TimeFormat"/>
+<entry field="true" id="36" symbol="AxisColor"/>
+<entry field="true" id="71" symbol="HR_Value_font"/>
+<entry field="true" id="47" symbol="PowerValuesHistoryAvgCount"/>
 <entry id="12" module="true" symbol="Layouts"/>
+<entry field="true" id="35" symbol="AVG_Power_Duration"/>
 <entry id="18" method="true" symbol="BottomRightLayout"/>
-<entry field="true" id="21" symbol="TimeValues"/>
-<entry field="true" id="27" symbol="RidePowerValues"/>
-<entry field="true" id="29" symbol="PowerNumberOfSamples"/>
-<entry field="true" id="43" symbol="Y_bar_x"/>
-<entry field="true" id="48" symbol="Garmin_Device_Type"/>
+<entry field="true" id="74" symbol="Distance_Value"/>
+<entry field="true" id="102" symbol="TimeValues"/>
+<entry field="true" id="108" symbol="RidePowerValues"/>
+<entry field="true" id="112" symbol="PowerNumberOfSamples"/>
+<entry field="true" id="94" symbol="Y_bar_x"/>
 <entry field="true" id="8389425" object="true" symbol="Device"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="41" symbol="RecordPowerValuesAreaColor"/>
 <entry field="true" id="8389063" symbol="identifier"/>
-<entry field="true" id="24" symbol="TimeValues_x"/>
+<entry field="true" id="40" symbol="RecordPowerValuesLineColor"/>
+<entry field="true" id="37" symbol="CurrentPowerValuesLineColor"/>
+<entry field="true" id="105" symbol="TimeValues_x"/>
 <entry id="11" module="true" symbol="Menus"/>
-<entry field="true" id="28" symbol="PowerSumOfSamples"/>
-<entry field="true" id="33" symbol="PowerValuesHistoryAvgSum"/>
-<entry field="true" id="31" symbol="PowerValuesHistoryAvgPeriod"/>
+<entry field="true" id="85" symbol="RollingValue_Unit_font"/>
+<entry field="true" id="62" symbol="CAD_Value_y"/>
+<entry field="true" id="61" symbol="CAD_Value_x"/>
+<entry field="true" id="111" symbol="PowerSumOfSamples"/>
+<entry field="true" id="46" symbol="PowerValuesHistoryAvgSum"/>
+<entry field="true" id="64" symbol="HR_Label"/>
+<entry field="true" id="44" symbol="PowerValuesHistoryAvgPeriod"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="60" symbol="CAD_Value"/>
+<entry field="true" id="73" symbol="TimeOfDay_Meridiem_Value"/>
 </symbolTable>
 <localVars>
 <entry endPc="268435501" name="dictionary" stackId="1" startPc="268435460"/>
 <entry endPc="268435517" name="color" stackId="1" startPc="268435502"/>
 <entry endPc="268435566" name="dc" stackId="1" startPc="268435517"/>
-<entry endPc="268436192" name="j" stackId="2" startPc="268436160"/>
-<entry endPc="268436205" name="i" stackId="1" startPc="268436079"/>
-<entry endPc="268436497" name="i" stackId="3" startPc="268436235"/>
-<entry endPc="268436619" name="dc" stackId="1" startPc="268436498"/>
-<entry endPc="268437272" name="OldestIndex" stackId="4" startPc="268436824"/>
-<entry endPc="268437288" name="j" stackId="3" startPc="268436807"/>
-<entry endPc="268437431" name="i" stackId="2" startPc="268436698"/>
-<entry endPc="268437435" name="info" stackId="1" startPc="268436619"/>
-<entry endPc="268438062" name="y" stackId="5" startPc="268437862"/>
-<entry endPc="268438075" name="i" stackId="4" startPc="268437862"/>
-<entry endPc="268438209" name="j" stackId="9" startPc="268438166"/>
-<entry endPc="268438279" name="TimeValueToDisplay" stackId="8" startPc="268438135"/>
-<entry endPc="268438385" name="GridTop_y" stackId="7" startPc="268438105"/>
-<entry endPc="268438398" name="i" stackId="6" startPc="268438105"/>
-<entry endPc="268438885" name="y2" stackId="12" startPc="268438483"/>
-<entry endPc="268438885" name="y1" stackId="11" startPc="268438483"/>
-<entry endPc="268438901" name="i" stackId="10" startPc="268438434"/>
-<entry endPc="268438958" name="FontDisplayColor" stackId="2" startPc="268437439"/>
-<entry endPc="268438958" name="PowerMax" stackId="3" startPc="268437439"/>
-<entry endPc="268438959" name="dc" stackId="1" startPc="268437435"/>
-<entry endPc="268439049" name="x" stackId="2" startPc="268438959"/>
-<entry endPc="268439049" name="dc" stackId="1" startPc="268438959"/>
-<entry endPc="268439049" name="color" stackId="5" startPc="268438959"/>
-<entry endPc="268439049" name="font" stackId="4" startPc="268438959"/>
-<entry endPc="268439049" name="s" stackId="6" startPc="268438959"/>
-<entry endPc="268439049" name="y" stackId="3" startPc="268438959"/>
-<entry endPc="268439322" name="DeviceSettings" stackId="1" startPc="268439053"/>
-<entry endPc="268439328" name="state" stackId="1" startPc="268439323"/>
-<entry endPc="268439333" name="state" stackId="1" startPc="268439328"/>
-<entry endPc="268440020" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268439387"/>
-<entry endPc="268440020" name="rez_cmp_local_bitmap_value_fontHeight" stackId="6" startPc="268439387"/>
-<entry endPc="268440020" name="rez_cmp_local_bitmap_value" stackId="5" startPc="268439387"/>
-<entry endPc="268440020" name="rez_cmp_local_custom_drawable_WB92GW8GUI5C6YVERS2J" stackId="2" startPc="268439387"/>
-<entry endPc="268440020" name="rez_cmp_local_bitmap_label_fontHeight" stackId="4" startPc="268439387"/>
-<entry endPc="268440021" name="dc" stackId="1" startPc="268439375"/>
-<entry endPc="268440360" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268440033"/>
-<entry endPc="268440360" name="rez_cmp_local_custom_drawable_2064H7AHFBXUCLP13DEP" stackId="2" startPc="268440033"/>
-<entry endPc="268440360" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268440033"/>
-<entry endPc="268440361" name="dc" stackId="1" startPc="268440021"/>
-<entry endPc="268440700" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268440373"/>
-<entry endPc="268440700" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268440373"/>
-<entry endPc="268440700" name="rez_cmp_local_custom_drawable_RIUTGUQS7SEHVA23CGRM" stackId="2" startPc="268440373"/>
-<entry endPc="268440701" name="dc" stackId="1" startPc="268440361"/>
-<entry endPc="268441040" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268440713"/>
-<entry endPc="268441040" name="rez_cmp_local_custom_drawable_SYFVSXDC0XYBY2VLL05K" stackId="2" startPc="268440713"/>
-<entry endPc="268441040" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268440713"/>
-<entry endPc="268441041" name="dc" stackId="1" startPc="268440701"/>
-<entry endPc="268441380" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268441053"/>
-<entry endPc="268441380" name="rez_cmp_local_custom_drawable_DFUIUHTX399DO3ZF1Q51" stackId="2" startPc="268441053"/>
-<entry endPc="268441380" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268441053"/>
-<entry endPc="268441381" name="dc" stackId="1" startPc="268441041"/>
+<entry endPc="268435972" name="i" stackId="4" startPc="268435905"/>
+<entry endPc="268436812" name="j" stackId="6" startPc="268436780"/>
+<entry endPc="268436825" name="i" stackId="5" startPc="268436699"/>
+<entry endPc="268437183" name="i" stackId="7" startPc="268436861"/>
+<entry endPc="268437183" name="Label_Value" stackId="2" startPc="268435570"/>
+<entry endPc="268437183" name="Duration_Value" stackId="3" startPc="268435570"/>
+<entry endPc="268437184" name="Args" stackId="1" startPc="268435566"/>
+<entry endPc="268437305" name="dc" stackId="1" startPc="268437184"/>
+<entry endPc="268438626" name="OldestIndex" stackId="10" startPc="268438026"/>
+<entry endPc="268438642" name="j" stackId="9" startPc="268438003"/>
+<entry endPc="268438785" name="i" stackId="8" startPc="268437888"/>
+<entry endPc="268438788" name="meridiemTxt" stackId="6" startPc="268437309"/>
+<entry endPc="268438788" name="hour" stackId="3" startPc="268437309"/>
+<entry endPc="268438788" name="min" stackId="4" startPc="268437309"/>
+<entry endPc="268438788" name="sec" stackId="5" startPc="268437309"/>
+<entry endPc="268438788" name="time" stackId="2" startPc="268437309"/>
+<entry endPc="268438788" name="timeStr" stackId="7" startPc="268437309"/>
+<entry endPc="268438789" name="info" stackId="1" startPc="268437305"/>
+<entry endPc="268439271" name="km_mi_conv" stackId="6" startPc="268439238"/>
+<entry endPc="268440251" name="y2" stackId="10" startPc="268439760"/>
+<entry endPc="268440251" name="y1" stackId="9" startPc="268439760"/>
+<entry endPc="268440806" name="y2" stackId="12" startPc="268440315"/>
+<entry endPc="268440806" name="y1" stackId="11" startPc="268440315"/>
+<entry endPc="268442033" name="py2" stackId="16" startPc="268441077"/>
+<entry endPc="268442033" name="py1" stackId="15" startPc="268441077"/>
+<entry endPc="268442036" name="y2" stackId="14" startPc="268440870"/>
+<entry endPc="268442036" name="y1" stackId="13" startPc="268440870"/>
+<entry endPc="268442321" name="y2" stackId="18" startPc="268442100"/>
+<entry endPc="268442321" name="y1" stackId="17" startPc="268442100"/>
+<entry endPc="268442337" name="i" stackId="8" startPc="268439699"/>
+<entry endPc="268442560" name="y" stackId="20" startPc="268442364"/>
+<entry endPc="268442573" name="i" stackId="19" startPc="268442364"/>
+<entry endPc="268442725" name="j" stackId="24" startPc="268442682"/>
+<entry endPc="268442801" name="TimeValueToDisplay" stackId="23" startPc="268442645"/>
+<entry endPc="268442915" name="GridTop_y" stackId="22" startPc="268442609"/>
+<entry endPc="268442928" name="i" stackId="21" startPc="268442609"/>
+<entry endPc="268443414" name="Field" stackId="3" startPc="268438793"/>
+<entry endPc="268443414" name="Value_Picked" stackId="4" startPc="268438793"/>
+<entry endPc="268443414" name="FontDisplayColor" stackId="2" startPc="268438793"/>
+<entry endPc="268443414" name="Value_Unit_Picked" stackId="5" startPc="268438793"/>
+<entry endPc="268443414" name="PowerMax" stackId="7" startPc="268438793"/>
+<entry endPc="268443415" name="dc" stackId="1" startPc="268438789"/>
+<entry endPc="268443490" name="x" stackId="2" startPc="268443415"/>
+<entry endPc="268443490" name="dc" stackId="1" startPc="268443415"/>
+<entry endPc="268443490" name="color" stackId="5" startPc="268443415"/>
+<entry endPc="268443490" name="font" stackId="4" startPc="268443415"/>
+<entry endPc="268443490" name="s" stackId="6" startPc="268443415"/>
+<entry endPc="268443490" name="y" stackId="3" startPc="268443415"/>
+<entry endPc="268443565" name="x" stackId="2" startPc="268443490"/>
+<entry endPc="268443565" name="dc" stackId="1" startPc="268443490"/>
+<entry endPc="268443565" name="color" stackId="5" startPc="268443490"/>
+<entry endPc="268443565" name="font" stackId="4" startPc="268443490"/>
+<entry endPc="268443565" name="s" stackId="6" startPc="268443490"/>
+<entry endPc="268443565" name="y" stackId="3" startPc="268443490"/>
+<entry endPc="268443710" name="Second" stackId="6" startPc="268443569"/>
+<entry endPc="268443710" name="Rest" stackId="3" startPc="268443569"/>
+<entry endPc="268443710" name="Return_Value" stackId="7" startPc="268443569"/>
+<entry endPc="268443710" name="Seconds" stackId="2" startPc="268443569"/>
+<entry endPc="268443710" name="Minute" stackId="5" startPc="268443569"/>
+<entry endPc="268443710" name="Hour" stackId="4" startPc="268443569"/>
+<entry endPc="268443711" name="milliseconds" stackId="1" startPc="268443565"/>
+<entry endPc="268443781" name="i" stackId="3" startPc="268443730"/>
+<entry endPc="268443785" name="Value" stackId="1" startPc="268443711"/>
+<entry endPc="268443785" name="Duration" stackId="2" startPc="268443711"/>
+<entry endPc="268444058" name="DeviceSettings" stackId="1" startPc="268443789"/>
+<entry endPc="268444064" name="state" stackId="1" startPc="268444059"/>
+<entry endPc="268444093" name="state" stackId="1" startPc="268444064"/>
+<entry endPc="268444166" name="i" stackId="3" startPc="268444137"/>
+<entry endPc="268444530" name="i" stackId="5" startPc="268444501"/>
+<entry endPc="268444755" name="i" stackId="6" startPc="268444726"/>
+<entry endPc="268444820" name="i" stackId="7" startPc="268444785"/>
+<entry endPc="268444919" name="Args" stackId="4" startPc="268444097"/>
+<entry endPc="268444919" name="Label_Value" stackId="1" startPc="268444097"/>
+<entry endPc="268444919" name="Duration_Value" stackId="2" startPc="268444097"/>
+<entry endPc="268444997" name="value" stackId="3" startPc="268444924"/>
+<entry endPc="268444998" name="thisDefault" stackId="2" startPc="268444920"/>
+<entry endPc="268444998" name="key" stackId="1" startPc="268444920"/>
+<entry endPc="268445643" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268445010"/>
+<entry endPc="268445643" name="rez_cmp_local_bitmap_value_fontHeight" stackId="6" startPc="268445010"/>
+<entry endPc="268445643" name="rez_cmp_local_bitmap_value" stackId="5" startPc="268445010"/>
+<entry endPc="268445643" name="rez_cmp_local_custom_drawable_4UZL9D8UN5Q2II920KBB" stackId="2" startPc="268445010"/>
+<entry endPc="268445643" name="rez_cmp_local_bitmap_label_fontHeight" stackId="4" startPc="268445010"/>
+<entry endPc="268445644" name="dc" stackId="1" startPc="268444998"/>
+<entry endPc="268445983" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268445656"/>
+<entry endPc="268445983" name="rez_cmp_local_custom_drawable_UOSLLMAAC20YPHF8733W" stackId="2" startPc="268445656"/>
+<entry endPc="268445983" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268445656"/>
+<entry endPc="268445984" name="dc" stackId="1" startPc="268445644"/>
+<entry endPc="268446323" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268445996"/>
+<entry endPc="268446323" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268445996"/>
+<entry endPc="268446323" name="rez_cmp_local_custom_drawable_VE6EVLCYZS38E81JO96E" stackId="2" startPc="268445996"/>
+<entry endPc="268446324" name="dc" stackId="1" startPc="268445984"/>
+<entry endPc="268446663" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268446336"/>
+<entry endPc="268446663" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268446336"/>
+<entry endPc="268446663" name="rez_cmp_local_custom_drawable_7ZAD95H3XHMED5J0SCF1" stackId="2" startPc="268446336"/>
+<entry endPc="268446664" name="dc" stackId="1" startPc="268446324"/>
+<entry endPc="268447003" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268446676"/>
+<entry endPc="268447003" name="rez_cmp_local_custom_drawable_O55K8N4A43NCRI4MMFMP" stackId="2" startPc="268446676"/>
+<entry endPc="268447003" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268446676"/>
+<entry endPc="268447004" name="dc" stackId="1" startPc="268446664"/>
 </localVars>
 <annotations/>
 <functions>
@@ -309,6 +606,7 @@
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="MeanMaxPowerChartView">
+<param id="Args"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onLayout" parent="MeanMaxPowerChartView">
@@ -332,6 +630,24 @@
 <param id="s"/>
 <documentation/>
 </functionEntry>
+<functionEntry accessMode="public" name="textL" parent="MeanMaxPowerChartView">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="font"/>
+<param id="color"/>
+<param id="s"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="TimeFormat" parent="MeanMaxPowerChartView">
+<param id="milliseconds"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="Initialize_Loop_Value" parent="MeanMaxPowerChartView">
+<param id="Value"/>
+<param id="Duration"/>
+<documentation/>
+</functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="MeanMaxPowerChartApp">
 <documentation/>
 </functionEntry>
@@ -345,6 +661,11 @@
 </functionEntry>
 <functionEntry accessMode="public" name="getInitialView" parent="MeanMaxPowerChartApp">
 <documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="readPropertyKeyInt" parent="MeanMaxPowerChartApp">
+<param id="key"/>
+<param id="thisDefault"/>
+<documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="MainLayout" parent="Layouts">
 <param id="dc"/>
@@ -377,7 +698,7 @@
 <dataEntry offset="433" parentId="Rez" symbolId="JsonData" type="module"/>
 <dataEntry offset="464" parentId="Rez" symbolId="Layouts" type="module"/>
 <dataEntry offset="535" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="590" parentId="globals" symbolId="MeanMaxPowerChartView" type="class"/>
-<dataEntry offset="885" parentId="globals" symbolId="MeanMaxPowerChartApp" type="class"/>
+<dataEntry offset="678" parentId="globals" symbolId="MeanMaxPowerChartView" type="class"/>
+<dataEntry offset="1317" parentId="globals" symbolId="MeanMaxPowerChartApp" type="class"/>
 </dataEntryOffsetMappings>
 </debugInfo>
