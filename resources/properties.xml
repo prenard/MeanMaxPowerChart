@@ -11,6 +11,31 @@
 	    <property id="Field_Distance_Duration" type="number">2</property>
 	    <property id="Field_TimeOfDay_Label" type="string">Time of Day</property>
 	    <property id="Field_TimeOfDay_Duration" type="number">2</property>
+	    <property id="Field_PP_00001s" type="number">812</property>
+	    <property id="Field_PP_00002s" type="number">806</property>
+	    <property id="Field_PP_00003s" type="number">803</property>
+	    <property id="Field_PP_00005s" type="number">793</property>
+	    <property id="Field_PP_00010s" type="number">754</property>
+	    <property id="Field_PP_00015s" type="number">631</property>
+	    <property id="Field_PP_00020s" type="number">548</property>
+	    <property id="Field_PP_00030s" type="number">472</property>
+	    <property id="Field_PP_00040s" type="number">455</property>
+	    <property id="Field_PP_00060s" type="number">442</property>
+	    <property id="Field_PP_00090s" type="number">379</property>
+	    <property id="Field_PP_00120s" type="number">371</property>
+	    <property id="Field_PP_00180s" type="number">341</property>
+	    <property id="Field_PP_00300s" type="number">319</property>
+	    <property id="Field_PP_00600s" type="number">299</property>
+	    <property id="Field_PP_00900s" type="number">292</property>
+	    <property id="Field_PP_01200s" type="number">290</property>
+	    <property id="Field_PP_01800s" type="number">284</property>
+	    <property id="Field_PP_02400s" type="number">283</property>
+	    <property id="Field_PP_03600s" type="number">272</property>
+	    <property id="Field_PP_04800s" type="number">272</property>
+	    <property id="Field_PP_06000s" type="number">265</property>
+	    <property id="Field_PP_07200s" type="number">247</property>
+	    <property id="Field_PP_09000s" type="number">240</property>
+	    <property id="Field_PP_10800s" type="number">203</property>
 	</properties>
 
 	<strings>
@@ -25,6 +50,31 @@
 	    <string id="Field_Distance_Duration_Title">Distance field duration</string>
 	    <string id="Field_TimeOfDay_Label_Title">Time of Day</string>
 	    <string id="Field_TimeOfDay_Duration_Title">Time of Day duration</string>
+	    <string id="Field_PP_00001s_Title">Peak Power 00001 Sec</string>
+	    <string id="Field_PP_00002s_Title">Peak Power 00002 Sec</string>
+	    <string id="Field_PP_00003s_Title">Peak Power 00003 Sec</string>
+	    <string id="Field_PP_00005s_Title">Peak Power 00005 Sec</string>
+	    <string id="Field_PP_00010s_Title">Peak Power 00010 Sec</string>
+	    <string id="Field_PP_00015s_Title">Peak Power 00015 Sec</string>
+	    <string id="Field_PP_00020s_Title">Peak Power 00020 Sec</string>
+	    <string id="Field_PP_00030s_Title">Peak Power 00030 Sec</string>
+	    <string id="Field_PP_00040s_Title">Peak Power 00040 Sec</string>
+	    <string id="Field_PP_00060s_Title">Peak Power 00060 Sec</string>
+	    <string id="Field_PP_00090s_Title">Peak Power 00090 Sec</string>
+	    <string id="Field_PP_00120s_Title">Peak Power 00120 Sec</string>
+	    <string id="Field_PP_00180s_Title">Peak Power 00180 Sec</string>
+	    <string id="Field_PP_00300s_Title">Peak Power 00300 Sec</string>
+	    <string id="Field_PP_00600s_Title">Peak Power 00600 Sec</string>
+	    <string id="Field_PP_00900s_Title">Peak Power 00900 Sec</string>
+	    <string id="Field_PP_01200s_Title">Peak Power 01200 Sec</string>
+	    <string id="Field_PP_01800s_Title">Peak Power 01800 Sec</string>
+	    <string id="Field_PP_02400s_Title">Peak Power 02400 Sec</string>
+	    <string id="Field_PP_03600s_Title">Peak Power 03600 Sec</string>
+	    <string id="Field_PP_04800s_Title">Peak Power 04800 Sec</string>
+	    <string id="Field_PP_06000s_Title">Peak Power 06000 Sec</string>
+	    <string id="Field_PP_07200s_Title">Peak Power 07200 Sec</string>
+	    <string id="Field_PP_09000s_Title">Peak Power 09000 Sec</string>
+	    <string id="Field_PP_10800s_Title">Peak Power 10800 Sec</string>
 	</strings>
 	
 	<settings>
@@ -49,7 +99,6 @@
 	    <setting propertyKey="@Properties.Field_Timer_Duration" title="@Strings.Field_Timer_Duration_Title">
 	        <settingConfig type="numeric" min="0" max="10" />
 	    </setting>
-
 	    <setting propertyKey="@Properties.Field_Distance_Label" title="@Strings.Field_Distance_Label_Title">
 	        <settingConfig type="alphaNumeric" readonly="true" />
 	    </setting>
@@ -61,6 +110,82 @@
 	    </setting>
 	    <setting propertyKey="@Properties.Field_TimeOfDay_Duration" title="@Strings.Field_TimeOfDay_Duration_Title">
 	        <settingConfig type="numeric" min="0" max="10" />
+	    </setting>
+
+	    <setting propertyKey="@Properties.Field_PP_00001s" title="@Strings.Field_PP_00001s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00002s" title="@Strings.Field_PP_00002s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00003s" title="@Strings.Field_PP_00003s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00005s" title="@Strings.Field_PP_00005s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00010s" title="@Strings.Field_PP_00010s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00015s" title="@Strings.Field_PP_00015s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00020s" title="@Strings.Field_PP_00020s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00030s" title="@Strings.Field_PP_00030s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00040s" title="@Strings.Field_PP_00040s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00060s" title="@Strings.Field_PP_00060s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00090s" title="@Strings.Field_PP_00090s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00120s" title="@Strings.Field_PP_00120s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00180s" title="@Strings.Field_PP_00180s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00300s" title="@Strings.Field_PP_00300s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00600s" title="@Strings.Field_PP_00600s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00900s" title="@Strings.Field_PP_00900s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_01200s" title="@Strings.Field_PP_01200s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_01800s" title="@Strings.Field_PP_01800s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_02400s" title="@Strings.Field_PP_02400s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_03600s" title="@Strings.Field_PP_03600s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_04800s" title="@Strings.Field_PP_04800s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_06000s" title="@Strings.Field_PP_06000s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_07200s" title="@Strings.Field_PP_07200s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_09000s" title="@Strings.Field_PP_09000s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_10800s" title="@Strings.Field_PP_10800s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
 	    </setting>
 	</settings>
 </resources>

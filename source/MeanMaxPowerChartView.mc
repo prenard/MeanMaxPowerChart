@@ -30,12 +30,15 @@ class MeanMaxPowerChartView extends Ui.DataField
 	var AxisColor =  Gfx.COLOR_DK_GRAY;
 
 	var CurrentPowerValuesLineColor =  Gfx.COLOR_GREEN;
-	var RidePowerValuesLineColor =  Gfx.COLOR_ORANGE;
+	var RidePowerValuesLineColor =  Gfx.COLOR_DK_GREEN;
 	var RidePowerValuesAreaColor =  Gfx.COLOR_YELLOW;
-	var RecordPowerValuesLineColor =  Gfx.COLOR_DK_GRAY;
+	var RecordPowerValuesLineColor =  Gfx.COLOR_DK_BLUE;
 	var RecordPowerValuesAreaColor =  Gfx.COLOR_LT_GRAY;
 	var DeltaRecordPowerValuesAreaColor =  Gfx.COLOR_RED;
-		
+
+	var PowerZonesPercent = [0,60,80];
+	var PowerZonesColor = [Gfx.COLOR_DK_GREEN, Gfx.COLOR_YELLOW, Gfx.COLOR_RED];
+
     var PowerValuesHistory = new [2];
     var PowerValuesHistoryAvgPeriod = new [2];
 	var PowerValuesHistoryIndex = new [2];
@@ -102,7 +105,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 	var	X_bar_x_right = 0;
 	var X_bar_y = 0;
 	var X_bar_font = Gfx.FONT_XTINY;
-	
+	var X_bar_Unit_font = Gfx.FONT_XTINY;
+		
 	var	Y_bar_x = 0;
 	var	Y_bar_y_top = 0;
 	var Y_bar_y_bottom = 0;
@@ -556,8 +560,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 				var y2 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RidePowerValues[i + 1] / PowerMax;
 				//System.println("y1 = " + y1 + " - y2 = " + y2);
 
-				dc.setColor(RidePowerValuesAreaColor, Gfx.COLOR_TRANSPARENT);
-				dc.fillPolygon([[app.TimeValues_x[i], Y_bar_y_bottom], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], Y_bar_y_bottom]]);
+				//dc.setColor(RidePowerValuesAreaColor, Gfx.COLOR_TRANSPARENT);
+				//dc.fillPolygon([[app.TimeValues_x[i], Y_bar_y_bottom], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], Y_bar_y_bottom]]);
 
 				dc.setColor(RidePowerValuesLineColor, Gfx.COLOR_TRANSPARENT);
    				dc.setPenWidth(3);
@@ -569,6 +573,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 				// Draw Record Curve
 				var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RecordPowerValues[i] / PowerMax;
 				var y2 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RecordPowerValues[i + 1] / PowerMax;
+
 				// Draw Record Curve - Delta
 				if ((app.RecordPowerValues[i] > app.PreviousRecordPowerValues[i]) or (app.RecordPowerValues[i+1] > app.PreviousRecordPowerValues[i+1]))
 				{
@@ -580,6 +585,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 					var py2 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.PreviousRecordPowerValues[i + 1] / PowerMax;
 
 					dc.setColor(DeltaRecordPowerValuesAreaColor, Gfx.COLOR_TRANSPARENT);
+
+
 					if ((app.RecordPowerValues[i] > app.PreviousRecordPowerValues[i]) and (app.RecordPowerValues[i+1] > app.PreviousRecordPowerValues[i+1]))
 					{
 						dc.fillPolygon([[app.TimeValues_x[i], py1], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], py2]]);
@@ -595,6 +602,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 							dc.fillPolygon([[app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], py2]]);
 						}
 					}
+
 				}
 
 			}
@@ -604,7 +612,22 @@ class MeanMaxPowerChartView extends Ui.DataField
 				// Draw Current Curve
 				var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.CurrentPowerValues[i] / PowerMax;
 				var y2 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.CurrentPowerValues[i + 1] / PowerMax;
-				//System.println("y1 = " + y1 + " - y2 = " + y2);
+
+				var CurrentPowerZoneColor = Gfx.COLOR_TRANSPARENT;
+				for (var j = (PowerZonesPercent.size() - 1); j >= 0; --j)
+				{
+					//System.println("Looking for Power color...");
+					if ((app.CurrentPowerValues[i] > (PowerZonesPercent[j].toFloat() / 100 * app.RecordPowerValues[i])) or (app.CurrentPowerValues[i+1] > (PowerZonesPercent[j].toFloat() / 100 * app.RecordPowerValues[i+1])))
+					{
+						//System.println("... Color is found !");
+						CurrentPowerZoneColor = PowerZonesColor[j];
+						break;
+					}
+				}
+
+				dc.setColor(CurrentPowerZoneColor, Gfx.COLOR_TRANSPARENT);
+				dc.fillPolygon([[app.TimeValues_x[i], Y_bar_y_bottom], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], Y_bar_y_bottom]]);
+
 				dc.setColor(CurrentPowerValuesLineColor, Gfx.COLOR_TRANSPARENT);
    				dc.setPenWidth(3);
    				dc.drawLine(app.TimeValues_x[i], y1, app.TimeValues_x[i + 1], y2);
@@ -641,7 +664,26 @@ class MeanMaxPowerChartView extends Ui.DataField
 						TimeValueToDisplay = TimeValueToDisplay / 60;
 					}
 				}
-				textR(dc, app.TimeValues_x[i], X_bar_y + 5, X_bar_font, FontDisplayColor, (TimeValueToDisplay).toString());
+				textR(dc, app.TimeValues_x[i], X_bar_y + 2, X_bar_font, FontDisplayColor, (TimeValueToDisplay).toString());
+
+				var TimeUnitToDisplay = "";
+				
+				if (app.TimeValues[i] == 1)
+				{
+					TimeUnitToDisplay = "Sec";
+				}
+				else
+				if (app.TimeValues[i] == 60)
+				{
+					TimeUnitToDisplay = "Min";
+				}
+				else
+				if (app.TimeValues[i] == 3600)
+				{
+					TimeUnitToDisplay = "Hour";
+				}
+
+				textL(dc, app.TimeValues_x[i], X_bar_y + 15, X_bar_Unit_font, FontDisplayColor, (TimeUnitToDisplay).toString());
 				GridTop_y = Y_bar_y_top;
 			}
 			dc.setColor(AxisColor, Gfx.COLOR_TRANSPARENT);

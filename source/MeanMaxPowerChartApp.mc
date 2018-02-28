@@ -95,10 +95,13 @@ class MeanMaxPowerChartApp extends App.AppBase
 		if (Args[1])
 		{
 			System.println("Going to reset Power Values Record...");
+			ReadPowerFromProperty();
+/*			
 			for (var i = 0; i < TimeValues.size(); ++i)
 			{
 				RecordPowerValues[i] = 0;
 			}
+*/
 			System.println("Saving new RecordPowerValues to storage... RecordPowerValues = " + RecordPowerValues);
 			Storage.setValue("RecordPowerValues", RecordPowerValues);
 		}
@@ -111,10 +114,13 @@ class MeanMaxPowerChartApp extends App.AppBase
 		else
 		{
 			System.println("Going to initialize Power Values Record...");
+			ReadPowerFromProperty();
+/*
 			for (var i = 0; i < TimeValues.size(); ++i)
 			{
 				RecordPowerValues[i] = 0;
 			}
+*/
 		}
 
 		for (var i = 0; i < TimeValues.size(); ++i)
@@ -147,5 +153,33 @@ class MeanMaxPowerChartApp extends App.AppBase
 		return value;
 	}
 
+	function ReadPowerFromProperty()
+	{
+		RecordPowerValues[0] = readPropertyKeyInt("Field_PP_00001s",0);
+		RecordPowerValues[1] = readPropertyKeyInt("Field_PP_00002s",0);
+		RecordPowerValues[2] = readPropertyKeyInt("Field_PP_00003s",0);
+		RecordPowerValues[3] = readPropertyKeyInt("Field_PP_00005s",0);
+		RecordPowerValues[4] = readPropertyKeyInt("Field_PP_00010s",0);
+		RecordPowerValues[5] = readPropertyKeyInt("Field_PP_00015s",0);
+		RecordPowerValues[6] = readPropertyKeyInt("Field_PP_00020s",0);
+		RecordPowerValues[7] = readPropertyKeyInt("Field_PP_00030s",0);
+		RecordPowerValues[8] = readPropertyKeyInt("Field_PP_00040s",0);
+		RecordPowerValues[9] = readPropertyKeyInt("Field_PP_00060s",0);
+		RecordPowerValues[10] = readPropertyKeyInt("Field_PP_00090s",0);
+		RecordPowerValues[11] = readPropertyKeyInt("Field_PP_00120s",0);
+		RecordPowerValues[12] = readPropertyKeyInt("Field_PP_00180s",0);
+		RecordPowerValues[13] = readPropertyKeyInt("Field_PP_00300s",0);
+		RecordPowerValues[14] = readPropertyKeyInt("Field_PP_00600s",0);
+		RecordPowerValues[15] = readPropertyKeyInt("Field_PP_00900s",0);
+		RecordPowerValues[16] = readPropertyKeyInt("Field_PP_01200s",0);
+		RecordPowerValues[17] = readPropertyKeyInt("Field_PP_01800s",0);
+		RecordPowerValues[18] = readPropertyKeyInt("Field_PP_02400s",0);
+		RecordPowerValues[19] = readPropertyKeyInt("Field_PP_03600s",0);
+		RecordPowerValues[20] = readPropertyKeyInt("Field_PP_04800s",0);
+		RecordPowerValues[21] = readPropertyKeyInt("Field_PP_06000s",0);
+		RecordPowerValues[22] = readPropertyKeyInt("Field_PP_07200s",0);
+		RecordPowerValues[23] = readPropertyKeyInt("Field_PP_09000s",0);
+		RecordPowerValues[24] = readPropertyKeyInt("Field_PP_10800s",0);
+	}
 
 }
