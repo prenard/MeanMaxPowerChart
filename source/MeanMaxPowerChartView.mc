@@ -25,7 +25,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 	var CurrentPowerValuesLineColor =  Gfx.COLOR_GREEN;
 	var RidePowerValuesLineColor =  Gfx.COLOR_DK_GREEN;
-	var RidePowerValuesAreaColor =  Gfx.COLOR_YELLOW;
+	var RidePowerValuesAreaColor =  0xC8C8C8;
 	var RecordPowerValuesLineColor =  Gfx.COLOR_DK_GRAY;
 	var RecordPowerValuesAreaColor =  0xE5E5E5;
 	var DeltaRecordPowerValuesAreaColor =  Gfx.COLOR_RED;
@@ -70,6 +70,11 @@ class MeanMaxPowerChartView extends Ui.DataField
 	var HR_Value_y = 0;
 	var HR_Value_font = Gfx.FONT_XTINY;
 
+	var FTP = 0;
+	var NP = 0;
+	var NP_Samples_Number = 0;
+	var	NP_Sum_30AvgP4 = 0;
+
 
 	// Rolling Field
 
@@ -79,7 +84,8 @@ class MeanMaxPowerChartView extends Ui.DataField
     var Distance_Unit = "km";
     var Timer_Value = 0;
     var Time_Value = 0;
-
+	var TSS_Value = 0;
+	
 	var RollingValue = "";
 	var RollingValue_x = 0;
 	var RollingValue_y = 0;
@@ -124,7 +130,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 	var BatteryLevel = 0;
 	var BatteryLevel_font = Gfx.FONT_XTINY;
 
-	var Zone_Color_Gray = 0xBFBFBF;
+	var Zone_Color_Gray = 0xABABAB;
 	var Zone_Color_Blue = 0x00B0F0;
 	var Zone_Color_Green = 0x92D050;
 	var Zone_Color_Yellow = 0xFFFF00;
@@ -175,6 +181,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 		Zone_L = Args[4];
 		Zone_H = Args[5];
 		Zone_Display_Timer = Args[6];
+		FTP = Args[7];
 
 		Zone_Time = new [app.Max_Zones_Number];
 		Zone_Loop_Value = new [Max_Zone_Display_Timer * app.Max_Zones_Number];
@@ -439,6 +446,16 @@ class MeanMaxPowerChartView extends Ui.DataField
 							{
 								app.TimeValuesValid[j] = true;
 								app.CurrentPowerValues[j] = app.PowerSumOfSamples[j] / (app.TimeValues[j] / PowerValuesHistoryAvgPeriod[app.TimeValuesAvgPeriod[j]]);
+								// Compute NP
+								if (app.TimeValues[j] == 30)
+								{
+									NP_Samples_Number++;
+									NP_Sum_30AvgP4 += Math.pow(app.CurrentPowerValues[j], 4);
+									NP = Math.sqrt(Math.sqrt(NP_Sum_30AvgP4 / NP_Samples_Number));
+									System.println("NP = " + NP);
+									TSS_Value = ((info.elapsedTime / 1000) * NP * (NP / FTP) / (FTP * 3600)) * 100;
+									System.println("TSS = " + TSS);
+								}
 								if (app.CurrentPowerValues[j] > app.RidePowerValues[j])
 								{
 									app.RidePowerValues[j] = app.CurrentPowerValues[j];
@@ -579,14 +596,14 @@ class MeanMaxPowerChartView extends Ui.DataField
             Value_Picked = Time_Value.toString();
 			Value_Unit_Picked = "";
 		}
-
+		else
 		if (Field.equals(Ui.loadResource(Rez.Strings.Field_Timer_Label_Title)))
 		//if (Field.equals("Timer"))
 		{
             Value_Picked = Timer_Value.toString();
 			Value_Unit_Picked = "";
 		}
-		
+		else
 		if (Field.equals(Ui.loadResource(Rez.Strings.Field_Distance_Label_Title)))
 		//if (Field.equals("Distance")) 
 		{
@@ -604,13 +621,19 @@ class MeanMaxPowerChartView extends Ui.DataField
 			//System.println(Distance_Value);
             Value_Picked = Distance_Value.format("%.1f").toString();
 		}
-
+		else
 		if (Field.equals(Ui.loadResource(Rez.Strings.Field_TimeOfDay_Label_Title)))
-		//if (Field.equals("Time of Day")) 
 		{
             Value_Picked = TimeOfDay_Value.toString();
             Value_Unit_Picked = TimeOfDay_Meridiem_Value.toString();
 		}
+		else
+		if (Field.equals(Ui.loadResource(Rez.Strings.Field_TSS_Label_Title)))
+		{
+            Value_Picked = TSS_Value.format("%.1f").toString();
+            Value_Unit_Picked = "";
+		}
+
 
 		RollingValue = Value_Picked;
  		RollingValue_Unit = Value_Unit_Picked;
@@ -655,8 +678,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 				var y2 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RidePowerValues[i + 1] / PowerMax;
 				//System.println("y1 = " + y1 + " - y2 = " + y2);
 
-				//dc.setColor(RidePowerValuesAreaColor, Gfx.COLOR_TRANSPARENT);
-				//dc.fillPolygon([[app.TimeValues_x[i], Y_bar_y_bottom], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], Y_bar_y_bottom]]);
+				dc.setColor(RidePowerValuesAreaColor, Gfx.COLOR_TRANSPARENT);
+				dc.fillPolygon([[app.TimeValues_x[i], Y_bar_y_bottom], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], Y_bar_y_bottom]]);
 
 				dc.setColor(RidePowerValuesLineColor, Gfx.COLOR_TRANSPARENT);
    				dc.setPenWidth(LineWidth);
@@ -782,7 +805,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 						TimeValueToDisplay = TimeValueToDisplay / 60;
 					}
 				}
-				textR(dc, app.TimeValues_x[i], X_bar_y + 2, X_bar_font, FontDisplayColor, (TimeValueToDisplay).toString());
+				textR(dc, app.TimeValues_x[i], X_bar_y + 2, X_bar_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, (TimeValueToDisplay).toString());
 
 				var TimeUnitToDisplay = "";
 				
@@ -801,7 +824,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 					TimeUnitToDisplay = "H";
 				}
 
-				textL(dc, app.TimeValues_x[i] + 1, X_bar_y + 7, X_bar_Unit_font, FontDisplayColor, (TimeUnitToDisplay).toString());
+				textL(dc, app.TimeValues_x[i] + 1, X_bar_y + 7, X_bar_Unit_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, (TimeUnitToDisplay).toString());
 				GridTop_y = Y_bar_y_top;
 			}
 			dc.setColor(AxisColor, Gfx.COLOR_TRANSPARENT);
@@ -812,26 +835,26 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 		PWR_Value = app.CurrentPowerValues[AVG_Power_Duration_Idx];
 
-		textL(dc, PWR_Label_x, PWR_Label_y, PWR_Label_font, FontDisplayColor, PWR_Label);
-		textL(dc, PWR_Label_x, PWR_Label_y + 10, PWR_Label_font, FontDisplayColor, AVG_Power_Duration.toString() + " s");
-		textR(dc, PWR_Value_x, PWR_Value_y, PWR_Value_font, FontDisplayColor, PWR_Value.toString());
+		textL(dc, PWR_Label_x, PWR_Label_y, PWR_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, PWR_Label);
+		textL(dc, PWR_Label_x, PWR_Label_y + 10, PWR_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, AVG_Power_Duration.toString() + " s");
+		textR(dc, PWR_Value_x, PWR_Value_y, PWR_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, PWR_Value.toString());
 
-		textL(dc, CAD_Label_x, CAD_Label_y, CAD_Label_font, FontDisplayColor, CAD_Label);
-		textR(dc, CAD_Value_x, CAD_Value_y, CAD_Value_font, FontDisplayColor, CAD_Value.toString());
+		textL(dc, CAD_Label_x, CAD_Label_y, CAD_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, CAD_Label);
+		textR(dc, CAD_Value_x, CAD_Value_y, CAD_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, CAD_Value.toString());
 
-		textL(dc, HR_Label_x, HR_Label_y, HR_Label_font, FontDisplayColor, HR_Label);
-		textR(dc, HR_Value_x, HR_Value_y, HR_Value_font, FontDisplayColor, HR_Value.toString());
+		textL(dc, HR_Label_x, HR_Label_y, HR_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, HR_Label);
+		textR(dc, HR_Value_x, HR_Value_y, HR_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, HR_Value.toString());
 
-		textL(dc, ZoneRollingValue_x, ZoneRollingValue_y, ZoneRollingValue_font, ZoneRollingValue_font_Color, ZoneRollingValue.toString());
-		textL(dc, ZoneRollingValue_Label_x, ZoneRollingValue_Label_y, ZoneRollingValue_Label_font, FontDisplayColor, ZoneRollingValue_Label.toString());
+		textL(dc, ZoneRollingValue_x, ZoneRollingValue_y, ZoneRollingValue_font, Gfx.COLOR_BLACK, ZoneRollingValue_font_Color, ZoneRollingValue.toString());
+		textL(dc, ZoneRollingValue_Label_x, ZoneRollingValue_Label_y, ZoneRollingValue_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, ZoneRollingValue_Label.toString());
 
 		//textR(dc, Timer_Value_x, Timer_Value_y, Timer_Value_font, FontDisplayColor, Timer_Value.toString());
-		textR(dc, RollingValue_x, RollingValue_y, RollingValue_font, FontDisplayColor, RollingValue.toString());
-		textR(dc, RollingValue_Unit_x, RollingValue_Unit_y, RollingValue_Unit_font, FontDisplayColor, RollingValue_Unit.toString());
-		textR(dc, RollingValue_Label_x, RollingValue_Label_y, RollingValue_Label_font, FontDisplayColor, RollingValue_Label.toString());
+		textR(dc, RollingValue_x, RollingValue_y, RollingValue_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, RollingValue.toString());
+		textR(dc, RollingValue_Unit_x, RollingValue_Unit_y, RollingValue_Unit_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, RollingValue_Unit.toString());
+		textR(dc, RollingValue_Label_x, RollingValue_Label_y, RollingValue_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, RollingValue_Label.toString());
 
 		BatteryLevelBitmap.setBitmap(BatteryLevelBitmapIdentifier);
-		textL(dc, BatteryLevelBitmap_x + 25, BatteryLevelBitmap_y, BatteryLevel_font, FontDisplayColor, BatteryLevel.format("%.0f").toString() + "%");
+		textL(dc, BatteryLevelBitmap_x + 25, BatteryLevelBitmap_y, BatteryLevel_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, BatteryLevel.format("%.0f").toString() + "%");
 		BatteryLevelBitmap.draw(dc);
 
 		/*
@@ -842,21 +865,21 @@ class MeanMaxPowerChartView extends Ui.DataField
 		*/
     }
 
-	function textR(dc, x, y, font, color, s)
+	function textR(dc, x, y, font, fg_color, bg_color, s)
 	{
 		if (s != null)
 		{
-			dc.setColor(color, Gfx.COLOR_TRANSPARENT);
+			dc.setColor(fg_color, bg_color);
 			dc.drawText(x, y, font, s, Graphics.TEXT_JUSTIFY_RIGHT);
 			//dc.drawText(x, y, font, s, Graphics.TEXT_JUSTIFY_RIGHT|Graphics.TEXT_JUSTIFY_VCENTER);
 		}
 	}
 
-	function textL(dc, x, y, font, color, s)
+	function textL(dc, x, y, font, fg_color, bg_color, s)
 	{
 		if (s != null)
 		{
-			dc.setColor(color, Gfx.COLOR_TRANSPARENT);
+			dc.setColor(fg_color, bg_color);
 			dc.drawText(x, y, font, s, Graphics.TEXT_JUSTIFY_LEFT);
 			//dc.drawText(x, y, font, s, Graphics.TEXT_JUSTIFY_RIGHT|Graphics.TEXT_JUSTIFY_VCENTER);
 		}
@@ -910,7 +933,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 		dc.drawLine(Y_bar_x - 0, y, X_bar_x_right, y);
 		if (ShowPowerValue)
 		{
-			textR(dc, Y_bar_x - 5, y - 10, Y_bar_font, FontDisplayColor, PowerValue.format("%.0f").toString());
+			textR(dc, Y_bar_x - 5, y - 10, Y_bar_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, PowerValue.format("%.0f").toString());
 		}
 	}
 

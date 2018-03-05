@@ -75,8 +75,8 @@ class MeanMaxPowerChartApp extends App.AppBase
     {
 
 
-		var Label_Value = new [4];
-		var Duration_Value = new [4];
+		var Label_Value = new [5];
+		var Duration_Value = new [5];
 
 		for (var i = 0; i < Label_Value.size() ; ++i)
        	{
@@ -97,13 +97,17 @@ class MeanMaxPowerChartApp extends App.AppBase
 		Label_Value[3] = getProperty("Field_TimeOfDay_Label");
 		Duration_Value[3] = getProperty("Field_TimeOfDay_Duration");
 
+		Label_Value[4] = getProperty("Field_TSS_Label");
+		Duration_Value[4] = getProperty("Field_TSS_Duration");
+
 		var Max_Power = 1999;
 
 
 		var Z_H = new [Max_Zones_Number - 1];
 		var Zone_L = new [0];
 		var Zone_H = new [0];
-			
+
+				
 		Z_H[0]  = readPropertyKeyInt("Z1_H",160);
 		Z_H[1]  = readPropertyKeyInt("Z2_H",220);
 		Z_H[2]  = readPropertyKeyInt("Z3_H",250);
@@ -153,7 +157,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 		Zone_Loop_Size = Zone_Loop_Index;
 */
 		
-		var Args = new [7];
+		var Args = new [8];
 		
 		Args[0]  = readPropertyKeyInt("AVG_Power_Duration",3);
 		Args[1] = getProperty("Reset_RecordValues");
@@ -162,6 +166,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 		Args[4] = Zone_L;
 		Args[5] = Zone_H;
 		Args[6] = readPropertyKeyInt("Zone_Display_Timer",2);
+		Args[7] = readPropertyKeyInt("FTP",250);
 
 		if (Args[1])
 		{
