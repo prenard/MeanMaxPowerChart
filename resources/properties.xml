@@ -25,6 +25,7 @@
 	    <property id="Field_PP_00120s" type="number">371</property>
 	    <property id="Field_PP_00180s" type="number">341</property>
 	    <property id="Field_PP_00300s" type="number">319</property>
+	    <property id="Field_PP_00480s" type="number">302</property>
 	    <property id="Field_PP_00600s" type="number">299</property>
 	    <property id="Field_PP_00900s" type="number">292</property>
 	    <property id="Field_PP_01200s" type="number">290</property>
@@ -36,11 +37,18 @@
 	    <property id="Field_PP_07200s" type="number">247</property>
 	    <property id="Field_PP_09000s" type="number">240</property>
 	    <property id="Field_PP_10800s" type="number">203</property>
+	    <property id="Z1_H" type="number">157</property>
+	    <property id="Z2_H" type="number">213</property>
+	    <property id="Z3_H" type="number">266</property>
+	    <property id="Z4_H" type="number">294</property>
+	    <property id="Z5_H" type="number">408</property>
+		<property id="Z6_H" type="number">550</property>
+		<property id="Zone_Display_Timer" type="number">2</property>
 	</properties>
 
 	<strings>
     	<string id="DF_Title_Title">Data Field Title</string>
-	    <string id="AVG_Duration_Title">AVG Power Duration</string>
+	    <string id="AVG_Power_Duration_Title">AVG Power Duration</string>
 	    <string id="Reset_RecordValues_Title">Reset Power Values Records</string>
 	    <string id="Field_Time_Label_Title">Time</string>
 	    <string id="Field_Time_Duration_Title">Time field duration</string>
@@ -64,6 +72,7 @@
 	    <string id="Field_PP_00120s_Title">Peak Power 00120 Sec</string>
 	    <string id="Field_PP_00180s_Title">Peak Power 00180 Sec</string>
 	    <string id="Field_PP_00300s_Title">Peak Power 00300 Sec</string>
+	    <string id="Field_PP_00480s_Title">Peak Power 00480 Sec</string>
 	    <string id="Field_PP_00600s_Title">Peak Power 00600 Sec</string>
 	    <string id="Field_PP_00900s_Title">Peak Power 00900 Sec</string>
 	    <string id="Field_PP_01200s_Title">Peak Power 01200 Sec</string>
@@ -75,14 +84,27 @@
 	    <string id="Field_PP_07200s_Title">Peak Power 07200 Sec</string>
 	    <string id="Field_PP_09000s_Title">Peak Power 09000 Sec</string>
 	    <string id="Field_PP_10800s_Title">Peak Power 10800 Sec</string>
+	    <string id="Z1_H_Title">PWR Zone 1 - High</string>
+	    <string id="Z2_H_Title">PWR Zone 2 - High</string>
+		<string id="Z3_H_Title">PWR Zone 3 - High</string>
+	    <string id="Z4_H_Title">PWR Zone 4 - High</string>
+	    <string id="Z5_H_Title">PWR Zone 5 - High</string>
+	    <string id="Z6_H_Title">PWR Zone 6 - High</string>
+	    <string id="Zone_Display_Timer_Title">Zone Display Timer</string>
 	</strings>
 	
 	<settings>
 	    <setting propertyKey="@Properties.DF_Title" title="@Strings.DF_Title_Title">
 	        <settingConfig type="alphaNumeric" readonly="true" />
 	    </setting>
-		<setting propertyKey="@Properties.AVG_Power_Duration" title="@Strings.AVG_Duration_Title">
-	        <settingConfig type="numeric" min="1" max="3600" />
+		<setting propertyKey="@Properties.AVG_Power_Duration" title="@Strings.AVG_Power_Duration_Title">
+	        <settingConfig type="list">
+				<listEntry value="1">@Strings.Sec_1</listEntry>
+				<listEntry value="2">@Strings.Sec_2</listEntry>
+				<listEntry value="3">@Strings.Sec_3</listEntry>
+				<listEntry value="5">@Strings.Sec_5</listEntry>
+				<listEntry value="10">@Strings.Sec_10</listEntry>
+	        </settingConfig>
 	    </setting>
 	    <setting propertyKey="@Properties.Reset_RecordValues" title="@Strings.Reset_RecordValues_Title">
 	        <settingConfig type="boolean"/>
@@ -154,6 +176,9 @@
 	    <setting propertyKey="@Properties.Field_PP_00300s" title="@Strings.Field_PP_00300s_Title">
 	        <settingConfig type="numeric" min="0" max="3000" />
 	    </setting>
+	    <setting propertyKey="@Properties.Field_PP_00480s" title="@Strings.Field_PP_00480s_Title">
+	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
 	    <setting propertyKey="@Properties.Field_PP_00600s" title="@Strings.Field_PP_00600s_Title">
 	        <settingConfig type="numeric" min="0" max="3000" />
 	    </setting>
@@ -186,6 +211,27 @@
 	    </setting>
 	    <setting propertyKey="@Properties.Field_PP_10800s" title="@Strings.Field_PP_10800s_Title">
 	        <settingConfig type="numeric" min="0" max="3000" />
+	    </setting>
+	    <setting propertyKey="@Properties.Z1_H" title="@Strings.Z1_H_Title">
+	        <settingConfig type="numeric" min="0" max="9999" />
+	    </setting>
+	    <setting propertyKey="@Properties.Z2_H" title="@Strings.Z2_H_Title">
+	        <settingConfig type="numeric" min="0" max="9999" />
+	    </setting>
+	    <setting propertyKey="@Properties.Z3_H" title="@Strings.Z3_H_Title">
+	        <settingConfig type="numeric" min="0" max="9999" />
+	    </setting>
+	    <setting propertyKey="@Properties.Z4_H" title="@Strings.Z4_H_Title">
+	        <settingConfig type="numeric" min="0" max="9999" />
+	    </setting>
+	    <setting propertyKey="@Properties.Z5_H" title="@Strings.Z5_H_Title">
+	        <settingConfig type="numeric" min="0" max="9999" />
+	    </setting>
+	    <setting propertyKey="@Properties.Z6_H" title="@Strings.Z6_H_Title">
+	        <settingConfig type="numeric" min="0" max="9999" />
+	    </setting>
+	    <setting propertyKey="@Properties.Zone_Display_Timer" title="@Strings.Zone_Display_Timer_Title">
+	        <settingConfig type="numeric" min="1" max="10" />
 	    </setting>
 	</settings>
 </resources>

@@ -1,5 +1,8 @@
 <strings>
     <string id="AppName">MeanMaxPowerChart</string>
-
-    <string id="label">My Value</string>
+    <string id="Sec_1">1 Sec</string>
+    <string id="Sec_2">2 Sec</string>
+    <string id="Sec_3">3 Sec</string>
+    <string id="Sec_5">5 Sec</string>
+    <string id="Sec_10">10 Sec</string>
 </strings>

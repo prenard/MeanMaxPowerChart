@@ -8,33 +8,28 @@ class MeanMaxPowerChartView extends Ui.DataField
 {
 	var app;
 	
-    var Loop_Index;
-    var Loop_Size;
-	var Loop_Value = new [40];
+    var Rolling_Loop_Index;
+    //var Rolling_Loop_Size;
+	var Rolling_Loop_Value = new [0];
+
+    var Rolling_Zone_Loop_Index;
+    //var Rolling_Zone_Loop_Size;
+	var Rolling_Zone_Loop_Value = new [0];
 
 	var AVG_Power_Duration = 0;
-
-	//var TimeValues = [1,2,3,5,10,15,20,30,40,60,90,120,180,300,600,900,1200,1800,2400,3600,4800,6000,7200,9000,10800];
-	//var TimeValuesAvgPeriod = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1];
-	//var TimeValuesValid = new [app.TimeValues.size()];
-	//var TimeValues_x = new [app.TimeValues.size()];
-	//var TimeValuesX = [1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1];
+	var AVG_Power_Duration_Idx = 0;
 	
-	//var CurrentPowerValues = new [app.TimeValues.size()];
-	//var RidePowerValues = new [app.TimeValues.size()];
-	//var RecordPowerValues = new [app.TimeValues.size()];
-		
-	//var PowerSumOfSamples = new [app.imeValues.size()];
-	//var PowerNumberOfSamples = new [app.TimeValues.size()];
-
+	var UserWeight;
+	
 	var AxisColor =  Gfx.COLOR_DK_GRAY;
 
 	var CurrentPowerValuesLineColor =  Gfx.COLOR_GREEN;
 	var RidePowerValuesLineColor =  Gfx.COLOR_DK_GREEN;
 	var RidePowerValuesAreaColor =  Gfx.COLOR_YELLOW;
-	var RecordPowerValuesLineColor =  Gfx.COLOR_DK_BLUE;
-	var RecordPowerValuesAreaColor =  Gfx.COLOR_LT_GRAY;
+	var RecordPowerValuesLineColor =  Gfx.COLOR_DK_GRAY;
+	var RecordPowerValuesAreaColor =  0xE5E5E5;
 	var DeltaRecordPowerValuesAreaColor =  Gfx.COLOR_RED;
+	var LineWidth = 1;
 
 	var PowerZonesPercent = [0,60,80];
 	var PowerZonesColor = [Gfx.COLOR_DK_GREEN, Gfx.COLOR_YELLOW, Gfx.COLOR_RED];
@@ -100,6 +95,17 @@ class MeanMaxPowerChartView extends Ui.DataField
 	var RollingValue_Label_y = 0;
 	var RollingValue_Label_font = Gfx.FONT_XTINY;
 
+	var ZoneRollingValue = "";
+	var ZoneRollingValue_x = 0;
+	var ZoneRollingValue_y = 0;
+	var ZoneRollingValue_font = Gfx.FONT_XTINY;
+	var ZoneRollingValue_font_Color = Gfx.COLOR_BLACK;
+
+	var ZoneRollingValue_Label = "";
+	var ZoneRollingValue_Label_x = 0;
+	var ZoneRollingValue_Label_y = 0;
+	var ZoneRollingValue_Label_font = Gfx.FONT_XTINY;
+
 
 	var	X_bar_x_left = 0;
 	var	X_bar_x_right = 0;
@@ -111,6 +117,31 @@ class MeanMaxPowerChartView extends Ui.DataField
 	var	Y_bar_y_top = 0;
 	var Y_bar_y_bottom = 0;
 	var Y_bar_font = Gfx.FONT_XTINY;
+	
+	var BatteryLevelBitmap;
+	var BatteryLevelBitmap_x = 0;
+	var BatteryLevelBitmap_y = 0;
+	var BatteryLevel = 0;
+	var BatteryLevel_font = Gfx.FONT_XTINY;
+
+	var Zone_Color_Gray = 0xBFBFBF;
+	var Zone_Color_Blue = 0x00B0F0;
+	var Zone_Color_Green = 0x92D050;
+	var Zone_Color_Yellow = 0xFFFF00;
+	var Zone_Color_Orange = 0xF79646;
+	var Zone_Color_Red = 0xFF0000;
+	var Zone_Color_Dark_Red = 0xD80000;
+
+	var Zone_L;
+	var Zone_H;
+	var Max_Zone_Display_Timer = 10;
+	var Zone_Display_Timer = 0;
+	var Zone_Color = [Zone_Color_Gray,Zone_Color_Blue,Zone_Color_Green,Zone_Color_Yellow,Zone_Color_Orange,Zone_Color_Red,Zone_Color_Dark_Red];
+
+	var Zone_Time;
+    var Zone_Loop_Index;
+    var Zone_Loop_Size;
+	var Zone_Loop_Value;
 	
     function initialize(Args)
     {
@@ -124,6 +155,15 @@ class MeanMaxPowerChartView extends Ui.DataField
 		AVG_Power_Duration		= Args[0];
 		System.println("AVG_Power_Duration = " + AVG_Power_Duration);
 
+		for (var i = 0; i < app.TimeValues.size(); ++i)
+		{
+			if (app.TimeValues[i] == AVG_Power_Duration)
+			{
+				AVG_Power_Duration_Idx = i;
+				break;
+			}
+		}
+
 		System.println("RecordPowerValue = " + Storage.getValue("RecordPowerValues"));
 
 		System.println("TimeValues.size() = " + app.TimeValues.size()); 
@@ -132,25 +172,45 @@ class MeanMaxPowerChartView extends Ui.DataField
 		var Label_Value = Args[2];
 		var Duration_Value = Args[3];
 
-		Loop_Index = 0;
-		Loop_Size = 0;
+		Zone_L = Args[4];
+		Zone_H = Args[5];
+		Zone_Display_Timer = Args[6];
 
-		//System.println(Label_Value.size());
+		Zone_Time = new [app.Max_Zones_Number];
+		Zone_Loop_Value = new [Max_Zone_Display_Timer * app.Max_Zones_Number];
 
+		Zone_Loop_Index = 0;
+		for (var i = 0; i <= app.Zones_Number ; ++i)
+       	{
+			Zone_Time[i] = 0;
+			var j = i + 1;
+			System.println("Zone " + j + " : " + Zone_L[i] + " - " + Zone_H[i]);
+			for (var k = 0; k < Zone_Display_Timer; ++k)
+    	   	{
+    	   		Zone_Loop_Value[Zone_Loop_Index] = i;
+    	   		Zone_Loop_Index++;
+			}
+		}
+		Zone_Loop_Size = Zone_Loop_Index;
+
+		Rolling_Zone_Loop_Index = 0;
+		for (var i = 0; i < Zone_L.size() ; ++i)
+       	{
+			Initialize_Rolling_Zone_Loop_Value(i,Zone_Display_Timer);
+		}
+		//Rolling_Zone_Loop_Index = 0;
+		
+		Rolling_Loop_Index = 0;
 		for (var i = 0; i < Label_Value.size() ; ++i)
        	{
 			//System.println(Label_Value[i]);
        	   	if (Label_Value[i] != null)
        	   	{
-				Initialize_Loop_Value(Label_Value[i],Duration_Value[i]);
-       	   		Loop_Size += Duration_Value[i];
+				Initialize_Rolling_Loop_Value(Label_Value[i],Duration_Value[i]);
+       	   		//Rolling_Loop_Size += Duration_Value[i];
        	   	}
 		}
-
-		Loop_Index = 0;
-
-
-
+		//Rolling_Loop_Index = 0;
 
 
 		PowerValuesHistoryAvgPeriod[0] = 1; 
@@ -188,17 +248,27 @@ class MeanMaxPowerChartView extends Ui.DataField
 			HR_Value_y = 81;
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			RollingValue_x = 185;
-			RollingValue_y = 235;
+			RollingValue_x = 199;
+			RollingValue_y = 237;
 			RollingValue_font = Gfx.FONT_NUMBER_MILD;
 
 			RollingValue_Unit_x = 199;
-			RollingValue_Unit_y = 235;
+			RollingValue_Unit_y = 226;
 			RollingValue_Unit_font = Gfx.FONT_XTINY;
 
-			RollingValue_Label_x = 80;
-			RollingValue_Label_y = 250;
+			RollingValue_Label_x = 175;
+			RollingValue_Label_y = 226;
 			RollingValue_Label_font = Gfx.FONT_XTINY;
+
+			ZoneRollingValue = "";
+			ZoneRollingValue_x = 0;
+			ZoneRollingValue_y = 237;
+			ZoneRollingValue_font = Gfx.FONT_NUMBER_MILD;
+
+			ZoneRollingValue_Label = "";
+			ZoneRollingValue_Label_x = 0;
+			ZoneRollingValue_Label_y = 226;
+			ZoneRollingValue_Label_font = Gfx.FONT_XTINY;
 
 
 			X_bar_x_left = 35;
@@ -208,11 +278,15 @@ class MeanMaxPowerChartView extends Ui.DataField
 			
 			Y_bar_y_top = 20;
 			Y_bar_font = Gfx.FONT_SMALL;
+
+			BatteryLevelBitmap_x = 35; 
+			BatteryLevelBitmap_y = 1;
 		}
 		
 		Y_bar_x = X_bar_x_left;
 		Y_bar_y_bottom = X_bar_y;
 
+		BatteryLevelBitmap = new Ui.Bitmap({:rezId=>Rez.Drawables.BatteryLevel100});
 
 		for (var i = 0; i < PowerValuesHistory.size(); ++i)
 		{
@@ -238,6 +312,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 			System.println("TimeValues_x[" + i + "] = " + app.TimeValues_x[i]);
 		}
 
+		UserWeight =  UserProfile.getProfile().weight / 1000;
+		System.println("UserWeight = " + UserWeight);
     }
 
     // Set your layout here. Anytime the size of obscurity of
@@ -248,6 +324,8 @@ class MeanMaxPowerChartView extends Ui.DataField
     	System.println("DC Height  = " + dc.getHeight());
       	System.println("DC Width  = " + dc.getWidth());
 
+		BatteryLevelBitmap.setLocation(BatteryLevelBitmap_x,BatteryLevelBitmap_y);
+		
     	View.setLayout(Rez.Layouts.MainLayout(dc));
 
         return true;
@@ -264,12 +342,12 @@ class MeanMaxPowerChartView extends Ui.DataField
         {
 			HR_Value = info.currentHeartRate;
 		}
-
+/*
         if( (info.currentPower != null))
         {
 			PWR_Value = info.currentPower;
 		}
-
+*/
         if( (info.currentCadence != null))
         {
 			CAD_Value = info.currentCadence;
@@ -279,12 +357,12 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 		if( info.elapsedTime != null )
             {
-                Time_Value = TimeFormat(info.elapsedTime);
+                Time_Value = TimeFormat((info.elapsedTime / 1000), "h:mm:ss");
             }
 		
 		if( info.timerTime != null )
             {
-                Timer_Value = TimeFormat(info.timerTime);
+                Timer_Value = TimeFormat((info.timerTime / 1000), "h:mm:ss");
             }
 
 		Distance_Value = 0;
@@ -336,40 +414,26 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 
 
-        if( (info.currentPower != null))
+        if (info.currentPower != null && info.elapsedTime != null && info.elapsedTime > 0)
         {
 			//System.println("==> New - info.currentPower = " + info.currentPower);
+
+			Zone_Time[GetPowerZone(info.currentPower)]++;
 			
 			for (var i = 0; i < PowerValuesHistory.size(); ++i)
 			{
 				PowerValuesHistoryAvgSum[i] += info.currentPower;
 				PowerValuesHistoryAvgCount[i]++;
-//var z = PowerValuesHistory[i].size();
-//System.println("New 00 - " + PowerValuesHistoryIndex[i] + " - " + z);
 				if (((PowerValuesHistoryAvgCount[i] % PowerValuesHistoryAvgPeriod[i]) == 0))
 				{
-//System.println("New 0 - i = " + i + " - PowerValuesHistoryIndex[" + i + "] = " + PowerValuesHistoryIndex[i]);
 
-//System.println("New 1");
 		           	for (var j = 0; j < app.TimeValues.size(); ++j)
 		           	{
-//System.println("New 2");
 		           		if ((app.TimeValuesAvgPeriod[j] == i))
 		           		{
-							//System.println("Should add entry for TimeValues[" + j + "] = " + TimeValues[j]); 
-		        			// subtract the oldest sample from our moving sum+
         					var OldestIndex = (PowerValuesHistoryIndex[i] - (app.TimeValues[j] / PowerValuesHistoryAvgPeriod[app.TimeValuesAvgPeriod[j]]) + PowerValuesHistory[i].size()) % (PowerValuesHistory[i].size());
-							//System.println("Before - " + TimeValues[j] + " - PowerSumOfSamples[" + j + "] = " + PowerSumOfSamples[j]);
-							//System.println("OldestIndex = " + OldestIndex);
-	//System.println("i = " + i + " - j = " + j + " - OldestIndex = " + OldestIndex);
-	//System.println("PowerValuesHistory[" + i + "] = " + PowerValuesHistory[i]); 
-	//System.println("PowerValuesHistoryIndex[" + i + "] = " + PowerValuesHistoryIndex[i] + " - PowerValuesHistoryAvgPeriod[TimeValuesAvgPeriod[" + j + "]] = "  + PowerValuesHistoryAvgPeriod[TimeValuesAvgPeriod[j]]);
-	//System.println("Before - PowerSumOfSamples[" + j + "] = " + PowerSumOfSamples[j]);
 							app.PowerSumOfSamples[j] -= PowerValuesHistory[i][OldestIndex];
-							// add the newest sample to our moving sum
 							app.PowerSumOfSamples[j] += PowerValuesHistoryAvgSum[i] / PowerValuesHistoryAvgCount[i];
-	//System.println("After - PowerSumOfSamples[" + j + "] = " + PowerSumOfSamples[j]);
-							//System.println("After - " + TimeValues[j] + " - PowerSumOfSamples[" + j + "] = " + PowerSumOfSamples[j]);
 							app.PowerNumberOfSamples[j]++;
 							if ((app.PowerNumberOfSamples[j] * PowerValuesHistoryAvgPeriod[app.TimeValuesAvgPeriod[j]]) >= app.TimeValues[j])
 							{
@@ -454,6 +518,29 @@ class MeanMaxPowerChartView extends Ui.DataField
     // once a second when the data field is visible.
     function onUpdate(dc)
     {
+
+		BatteryLevel = System.getSystemStats().battery;
+		//System.println("BatteryLevel = " + BatteryLevel);
+		var BatteryLevelBitmapIdentifier = Rez.Drawables.BatteryLevel100;
+		if (BatteryLevel > 75)
+		{
+			BatteryLevelBitmapIdentifier = Rez.Drawables.BatteryLevel100;
+		}
+		else
+		if (BatteryLevel > 50)
+		{
+			BatteryLevelBitmapIdentifier = Rez.Drawables.BatteryLevel075;
+		}
+		else
+		if (BatteryLevel > 25)
+		{
+			BatteryLevelBitmapIdentifier = Rez.Drawables.BatteryLevel050;
+		}
+		else
+		{
+			BatteryLevelBitmapIdentifier = Rez.Drawables.BatteryLevel025;
+		}
+
         // Set the background color
         View.findDrawableById("Background").setColor(getBackgroundColor());
 
@@ -468,11 +555,19 @@ class MeanMaxPowerChartView extends Ui.DataField
             FontDisplayColor = Gfx.COLOR_BLACK;
         }
 
+		// Manage Zone Rolling Field
+
+  	    Rolling_Zone_Loop_Index = (Rolling_Zone_Loop_Index + 1) % Rolling_Zone_Loop_Value.size();
+
+  	    ZoneRollingValue = TimeFormat(Zone_Time[Rolling_Zone_Loop_Value[Rolling_Zone_Loop_Index]], "m:ss");
+ 		ZoneRollingValue_Label = "Zone " + (Rolling_Zone_Loop_Value[Rolling_Zone_Loop_Index] + 1) + " " + Zone_L[Rolling_Zone_Loop_Value[Rolling_Zone_Loop_Index]] + "-" + Zone_H[Rolling_Zone_Loop_Value[Rolling_Zone_Loop_Index]];
+		ZoneRollingValue_font_Color = Zone_Color[Rolling_Zone_Loop_Value[Rolling_Zone_Loop_Index]];
+  	    
 		// Manage Rolling Field
 
-  	    Loop_Index = (Loop_Index + 1) % Loop_Size;
+  	    Rolling_Loop_Index = (Rolling_Loop_Index + 1) % Rolling_Loop_Value.size();
   	   
-  	    var Field = Loop_Value[Loop_Index];
+  	    var Field = Rolling_Loop_Value[Rolling_Loop_Index];
   	    var Value_Picked = "";
   	    var Value_Unit_Picked = "";
 
@@ -524,7 +619,7 @@ class MeanMaxPowerChartView extends Ui.DataField
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
 
-		var PowerMax = Math.ceil((app.RecordPowerValues[0].toFloat() / 100)) * 100;
+		var PowerMax = Math.ceil((max(app.RecordPowerValues[0],Zone_L[Zone_L.size()-1] + 100).toFloat() / 100)) * 100;
 		if (PowerMax == 0)
 		{
 			PowerMax = 100;
@@ -549,7 +644,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 				dc.fillPolygon([[app.TimeValues_x[i], Y_bar_y_bottom], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], Y_bar_y_bottom]]);
 
 				dc.setColor(RecordPowerValuesLineColor, Gfx.COLOR_TRANSPARENT);
-   				dc.setPenWidth(3);
+   				dc.setPenWidth(LineWidth);
    				dc.drawLine(app.TimeValues_x[i], y1, app.TimeValues_x[i + 1], y2);
 			}
 
@@ -564,7 +659,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 				//dc.fillPolygon([[app.TimeValues_x[i], Y_bar_y_bottom], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], Y_bar_y_bottom]]);
 
 				dc.setColor(RidePowerValuesLineColor, Gfx.COLOR_TRANSPARENT);
-   				dc.setPenWidth(3);
+   				dc.setPenWidth(LineWidth);
    				dc.drawLine(app.TimeValues_x[i], y1, app.TimeValues_x[i + 1], y2);
 			}
 
@@ -610,10 +705,14 @@ class MeanMaxPowerChartView extends Ui.DataField
 			if (app.RidePowerValues[i] > 0 and app.RidePowerValues[i + 1] > 0)
 			{
 				// Draw Current Curve
+
+				var CurrentPowerZoneColor = Gfx.COLOR_TRANSPARENT;
+
 				var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.CurrentPowerValues[i] / PowerMax;
 				var y2 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.CurrentPowerValues[i + 1] / PowerMax;
 
-				var CurrentPowerZoneColor = Gfx.COLOR_TRANSPARENT;
+				CurrentPowerZoneColor = Zone_Color[GetPowerZone(app.CurrentPowerValues[i])];
+/*
 				for (var j = (PowerZonesPercent.size() - 1); j >= 0; --j)
 				{
 					//System.println("Looking for Power color...");
@@ -624,12 +723,12 @@ class MeanMaxPowerChartView extends Ui.DataField
 						break;
 					}
 				}
-
+*/
 				dc.setColor(CurrentPowerZoneColor, Gfx.COLOR_TRANSPARENT);
 				dc.fillPolygon([[app.TimeValues_x[i], Y_bar_y_bottom], [app.TimeValues_x[i], y1], [app.TimeValues_x[i+1], y2], [app.TimeValues_x[i+1], Y_bar_y_bottom]]);
 
 				dc.setColor(CurrentPowerValuesLineColor, Gfx.COLOR_TRANSPARENT);
-   				dc.setPenWidth(3);
+   				dc.setPenWidth(LineWidth);
    				dc.drawLine(app.TimeValues_x[i], y1, app.TimeValues_x[i + 1], y2);
 			}
 		}
@@ -637,7 +736,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 
 		// Draw Y axis
-		
+/*		
 		for (var i = 0; i < ((PowerMax / 100) + 1); ++i)
 		{
 			var y = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * (i * 100) / PowerMax; 
@@ -646,7 +745,26 @@ class MeanMaxPowerChartView extends Ui.DataField
    			dc.setPenWidth(1);
    			dc.drawLine(Y_bar_x - 0, y, X_bar_x_right, y);
 			textR(dc, Y_bar_x - 5, y - 10, Y_bar_font, FontDisplayColor, (i * 100).toString());
+			// Watts / Kg 
+			//textL(dc, Y_bar_x + 5, y - 10, Y_bar_font, FontDisplayColor, (i.toFloat() * 100 / UserWeight).format("%.1f").toString());
 		}
+*/
+
+		//System.println("PowerMax = " + PowerMax);
+		DrawHorizontalAxis(dc,0,AxisColor,1,PowerMax,FontDisplayColor,true);
+
+
+		for (var i = 1; i < Zone_L.size(); ++i)
+		{
+			var y = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * Zone_L[i] / PowerMax; 
+			var ShowPowerValue = false;
+			if (i == Rolling_Zone_Loop_Value[Rolling_Zone_Loop_Index])
+			{
+				ShowPowerValue = true;
+			}
+			DrawHorizontalAxis(dc,Zone_L[i],Zone_Color[i],2,PowerMax,Zone_Color[i],ShowPowerValue);
+		}
+		DrawHorizontalAxis(dc,PowerMax,AxisColor,1,PowerMax,FontDisplayColor,true);
 
 		// Draw X axis
 		
@@ -670,20 +788,20 @@ class MeanMaxPowerChartView extends Ui.DataField
 				
 				if (app.TimeValues[i] == 1)
 				{
-					TimeUnitToDisplay = "Sec";
+					TimeUnitToDisplay = "S";
 				}
 				else
 				if (app.TimeValues[i] == 60)
 				{
-					TimeUnitToDisplay = "Min";
+					TimeUnitToDisplay = "M";
 				}
 				else
 				if (app.TimeValues[i] == 3600)
 				{
-					TimeUnitToDisplay = "Hour";
+					TimeUnitToDisplay = "H";
 				}
 
-				textL(dc, app.TimeValues_x[i], X_bar_y + 15, X_bar_Unit_font, FontDisplayColor, (TimeUnitToDisplay).toString());
+				textL(dc, app.TimeValues_x[i] + 1, X_bar_y + 7, X_bar_Unit_font, FontDisplayColor, (TimeUnitToDisplay).toString());
 				GridTop_y = Y_bar_y_top;
 			}
 			dc.setColor(AxisColor, Gfx.COLOR_TRANSPARENT);
@@ -692,7 +810,10 @@ class MeanMaxPowerChartView extends Ui.DataField
 		}
 
 
+		PWR_Value = app.CurrentPowerValues[AVG_Power_Duration_Idx];
+
 		textL(dc, PWR_Label_x, PWR_Label_y, PWR_Label_font, FontDisplayColor, PWR_Label);
+		textL(dc, PWR_Label_x, PWR_Label_y + 10, PWR_Label_font, FontDisplayColor, AVG_Power_Duration.toString() + " s");
 		textR(dc, PWR_Value_x, PWR_Value_y, PWR_Value_font, FontDisplayColor, PWR_Value.toString());
 
 		textL(dc, CAD_Label_x, CAD_Label_y, CAD_Label_font, FontDisplayColor, CAD_Label);
@@ -701,10 +822,24 @@ class MeanMaxPowerChartView extends Ui.DataField
 		textL(dc, HR_Label_x, HR_Label_y, HR_Label_font, FontDisplayColor, HR_Label);
 		textR(dc, HR_Value_x, HR_Value_y, HR_Value_font, FontDisplayColor, HR_Value.toString());
 
+		textL(dc, ZoneRollingValue_x, ZoneRollingValue_y, ZoneRollingValue_font, ZoneRollingValue_font_Color, ZoneRollingValue.toString());
+		textL(dc, ZoneRollingValue_Label_x, ZoneRollingValue_Label_y, ZoneRollingValue_Label_font, FontDisplayColor, ZoneRollingValue_Label.toString());
+
 		//textR(dc, Timer_Value_x, Timer_Value_y, Timer_Value_font, FontDisplayColor, Timer_Value.toString());
 		textR(dc, RollingValue_x, RollingValue_y, RollingValue_font, FontDisplayColor, RollingValue.toString());
 		textR(dc, RollingValue_Unit_x, RollingValue_Unit_y, RollingValue_Unit_font, FontDisplayColor, RollingValue_Unit.toString());
 		textR(dc, RollingValue_Label_x, RollingValue_Label_y, RollingValue_Label_font, FontDisplayColor, RollingValue_Label.toString());
+
+		BatteryLevelBitmap.setBitmap(BatteryLevelBitmapIdentifier);
+		textL(dc, BatteryLevelBitmap_x + 25, BatteryLevelBitmap_y, BatteryLevel_font, FontDisplayColor, BatteryLevel.format("%.0f").toString() + "%");
+		BatteryLevelBitmap.draw(dc);
+
+		/*
+		for (var i = 0; i < Zone_L.size(); ++i)
+		{
+			System.println("TimeFormat(Zone_Time[" + i + "]) = " + TimeFormat(Zone_Time[i], "m:ss"));
+		}
+		*/
     }
 
 	function textR(dc, x, y, font, color, s)
@@ -727,29 +862,99 @@ class MeanMaxPowerChartView extends Ui.DataField
 		}
 	}
 
-    function TimeFormat(milliseconds)
-    {
-      //elapsedTime is in ms.
-      var Seconds = milliseconds / 1000;
-      var Rest;
-               
-      var Hour   = (Seconds - Seconds % 3600) / 3600; 
-      Rest = Seconds - Hour * 3600;
-      var Minute = (Rest - Rest % 60) / 60;
-      var Second = Rest - Minute * 60; 
-
-      var Return_Value = Hour.format("%d") + ":" + Minute.format("%02d") + ":" + Second.format("%02d");
-      return Return_Value;
-    }
-
-    function Initialize_Loop_Value(Value,Duration)
+    function Initialize_Rolling_Loop_Value(Value,Duration)
     {
 		for (var i = 0; i < Duration; ++i)
        	{
-       	   Loop_Value[Loop_Index] = Value;
-       	   Loop_Index++;
+			Rolling_Loop_Value.add(Value);
+			//Rolling_Loop_Index++;
 		}
         return true;
 	}
+
+    function Initialize_Rolling_Zone_Loop_Value(Value,Duration)
+    {
+		for (var i = 0; i < Duration; ++i)
+       	{
+			Rolling_Zone_Loop_Value.add(Value);
+		}
+        return true;
+	}
+
+
+    function min(a,b)
+    {
+		var min_value = b;
+		if (a < b)
+		{
+			min_value = a;
+		}
+        return min_value;
+	}
+
+    function max(a,b)
+    {
+		var max_value = a;
+		if (a < b)
+		{
+			max_value = b;
+		}
+        return max_value;
+	}
+
+	function DrawHorizontalAxis(dc,PowerValue,AxisColor,AxisWidth,PowerMax,FontDisplayColor,ShowPowerValue)
+	{
+		var y = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * PowerValue / PowerMax; 
+		dc.setColor(AxisColor, Gfx.COLOR_TRANSPARENT);
+		dc.setPenWidth(AxisWidth);
+		dc.drawLine(Y_bar_x - 0, y, X_bar_x_right, y);
+		if (ShowPowerValue)
+		{
+			textR(dc, Y_bar_x - 5, y - 10, Y_bar_font, FontDisplayColor, PowerValue.format("%.0f").toString());
+		}
+	}
+
+    function GetPowerZone(pwr)
+    {
+		var Power_Zone = 0;
+		for (var i = 0; i < Zone_L.size() ; ++i)
+    	{
+    		if ((Zone_L[i] <= pwr) and (pwr <= Zone_H[i]))
+    	   	{
+    	   		Power_Zone = i;
+    	   		return Power_Zone;
+    	   	}
+        }
+    	return Power_Zone;
+	}
+
+    function TimeFormat(Seconds,format)
+    {
+		var Rest;
+               
+		var Hour   = (Seconds - Seconds % 3600) / 3600; 
+		Rest = Seconds - Hour * 3600;
+		var Minute = (Rest - Rest % 60) / 60;
+		var Second = Rest - Minute * 60; 
+
+		var Return_Value = "h:mm:ss";
+		
+		if (format.equals("h:mm:ss"))
+		{
+			Return_Value = Hour.format("%d") + ":" + Minute.format("%02d") + ":" + Second.format("%02d");
+		}
+		else
+		if (format.equals("h:mm"))
+		{
+			Return_Value = Hour.format("%d") + ":" + Minute.format("%02d");
+		}
+		else
+		if (format.equals("m:ss"))
+		{
+			Return_Value = (Hour * 60 + Minute).format("%1d") + ":" + Second.format("%02d");
+		}
+
+		return Return_Value;
+    }
 
 }
