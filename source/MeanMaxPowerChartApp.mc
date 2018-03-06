@@ -19,6 +19,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 	var TimeValuesValid = new [TimeValues.size()];
 	var TimeValues_x = new [TimeValues.size()];
 	var TimeValuesX = [1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1];
+	var TimeValuesCP = [1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0];
 	
 	var CurrentPowerValues = new [TimeValues.size()];
 	var RidePowerValues = new [TimeValues.size()];
