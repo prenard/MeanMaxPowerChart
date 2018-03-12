@@ -268,7 +268,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			ZoneRollingValue_Label_x = 0;
 			ZoneRollingValue_Label_font = Gfx.FONT_XTINY;
 
-			zone_bar_width = 4;
+			zone_bar_width = 5;
 			
 			X_bar_x_left = 38;
 			X_bar_x_right = 190;
@@ -638,7 +638,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 		if (app.Device_Type.equals("edge_820"))
 		{
-			Rolling_Zone_Loop_Value_Mask = "mmm:ss";
+			Rolling_Zone_Loop_Value_Mask = "m:ss";
 		}
 
   	    ZoneRollingValue = TimeFormat(Zone_Time[Rolling_Zone_Loop_Value[Rolling_Zone_Loop_Index]], Rolling_Zone_Loop_Value_Mask);
@@ -840,6 +840,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 		//System.println("PowerMax = " + PowerMax);
 		//DrawHorizontalAxis(dc, 0, AxisColor, 1, PowerMax, FontDisplayColor, Gfx.COLOR_TRANSPARENT, true);
+
 		for (var i = 0; i < Zone_L.size(); ++i)
 		{
 			var y = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * Zone_L[i] / PowerMax; 
@@ -898,17 +899,29 @@ class MeanMaxPowerChartView extends Ui.DataField
 				GridTop_y = Y_bar_y_top;
 			}
 
-			if (app.TimeValuesCP[i] == 1 and app.RidePowerValues[i] > 0)
-			{
-				var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RidePowerValues[i] / PowerMax;
-				textL(dc, app.TimeValues_x[i] + 3, y1 - 20, X_bar_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, app.RidePowerValues[i].toString());
-			}
 
 			dc.setColor(AxisColor, Gfx.COLOR_TRANSPARENT);
    			dc.setPenWidth(1);
    			dc.drawLine(app.TimeValues_x[i], GridTop_y, app.TimeValues_x[i], X_bar_y + 5);
 		}
 
+		// Display CP Value
+		
+		var MaxCPValueY = X_bar_y - 20;
+		for (var i = app.TimeValues.size() - 1; i >= 0; --i)
+		{
+			if (app.TimeValuesCP[i] == 1 and app.RidePowerValues[i] > 0)
+			{
+				var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RidePowerValues[i] / PowerMax - 20;
+				//Gfx.getFontHeight(X_bar_font)
+
+				y1 = min(y1, MaxCPValueY);
+
+				textL(dc, app.TimeValues_x[i] + 3, y1, X_bar_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, app.RidePowerValues[i].toString());
+
+				MaxCPValueY = y1 - Gfx.getFontHeight(X_bar_font);
+			}
+		}
 
 		PWR_Value = app.CurrentPowerValues[AVG_Power_Duration_Idx];
 
@@ -1048,6 +1061,10 @@ class MeanMaxPowerChartView extends Ui.DataField
 			Return_Value = Hour.format("%d") + ":" + Minute.format("%02d");
 		}
 		else
+		if (format.equals("m:ss"))
+		{
+			Return_Value = (Hour * 60 + Minute).format("%01d") + ":" + Second.format("%02d");
+		}
 		if (format.equals("mmm:ss"))
 		{
 			Return_Value = (Hour * 60 + Minute).format("%03d") + ":" + Second.format("%02d");
