@@ -534,37 +534,37 @@
 <entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="258" pc="268450929" symbol="ReadPowerFromProperty"/>
 <entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="259" pc="268450964" symbol="ReadPowerFromProperty"/>
 <entry filename="W:\\save-w\\softs-conf\\Garmin\\Connect-IQ\\workplace\\my-workplace-Neon\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="260" pc="268450999" symbol="ReadPowerFromProperty"/>
-<entry filename="Rez" lineNum="75" pc="268451035" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="79" pc="268451047" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="80" pc="268451071" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="81" pc="268451234" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="82" pc="268451259" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="83" pc="268451311" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="84" pc="268451357" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="85" pc="268451520" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="86" pc="268451545" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="87" pc="268451597" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="90" pc="268451643" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="99" pc="268451681" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="103" pc="268451693" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="104" pc="268451717" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="105" pc="268451850" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="108" pc="268451983" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="117" pc="268452021" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="121" pc="268452033" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="122" pc="268452057" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="123" pc="268452190" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="126" pc="268452323" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="135" pc="268452361" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="139" pc="268452373" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="140" pc="268452397" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="141" pc="268452530" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="144" pc="268452663" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="153" pc="268452701" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="157" pc="268452713" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="158" pc="268452737" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="159" pc="268452870" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="162" pc="268453003" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="74" pc="268451035" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="78" pc="268451047" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="79" pc="268451071" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="80" pc="268451234" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="81" pc="268451259" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="82" pc="268451311" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="83" pc="268451357" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="84" pc="268451520" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="85" pc="268451545" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="86" pc="268451597" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="89" pc="268451643" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="98" pc="268451681" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="102" pc="268451693" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="103" pc="268451717" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="104" pc="268451850" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="107" pc="268451983" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="116" pc="268452021" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="120" pc="268452033" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="121" pc="268452057" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="122" pc="268452190" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="125" pc="268452323" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="134" pc="268452361" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="138" pc="268452373" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="139" pc="268452397" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="140" pc="268452530" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="143" pc="268452663" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="152" pc="268452701" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="156" pc="268452713" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="157" pc="268452737" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="158" pc="268452870" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="161" pc="268453003" symbol="BottomRightLayout"/>
 </pcToLineNum>
 <symbolTable>
 <entry field="true" id="136" symbol="RollingValue_y"/>
@@ -767,7 +767,6 @@
 <entry field="true" id="207" symbol="Zones_Number"/>
 <entry id="8389345" symbol="rezId"/>
 <entry id="189" method="true" symbol="Initialize_Rolling_Zone_Loop_Value"/>
-<entry field="true" id="8389425" object="true" symbol="Device"/>
 <entry field="true" id="154" symbol="ZoneRollingValue_Label_font"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry field="true" id="13" symbol="BatteryLevel025"/>
@@ -927,23 +926,23 @@
 <entry endPc="268451680" name="rez_cmp_local_bitmap_value_fontHeight" stackId="6" startPc="268451047"/>
 <entry endPc="268451680" name="rez_cmp_local_bitmap_value" stackId="5" startPc="268451047"/>
 <entry endPc="268451680" name="rez_cmp_local_bitmap_label_fontHeight" stackId="4" startPc="268451047"/>
-<entry endPc="268451680" name="rez_cmp_local_custom_drawable_X5EA5OAUXUSOS146INDO" stackId="2" startPc="268451047"/>
+<entry endPc="268451680" name="rez_cmp_local_custom_drawable_HG8GJWGS1XVJ7L5DNXX4" stackId="2" startPc="268451047"/>
 <entry endPc="268451681" name="dc" stackId="1" startPc="268451035"/>
 <entry endPc="268452020" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268451693"/>
-<entry endPc="268452020" name="rez_cmp_local_custom_drawable_UMQ0R565URFT2R73QVQ3" stackId="2" startPc="268451693"/>
 <entry endPc="268452020" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268451693"/>
+<entry endPc="268452020" name="rez_cmp_local_custom_drawable_ETHB2ZX4P8QKYBJXPYBZ" stackId="2" startPc="268451693"/>
 <entry endPc="268452021" name="dc" stackId="1" startPc="268451681"/>
 <entry endPc="268452360" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268452033"/>
 <entry endPc="268452360" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268452033"/>
-<entry endPc="268452360" name="rez_cmp_local_custom_drawable_HPGUR6PO9D02ZCEEASP8" stackId="2" startPc="268452033"/>
+<entry endPc="268452360" name="rez_cmp_local_custom_drawable_LMC3OXC4RKIST6VSFXNI" stackId="2" startPc="268452033"/>
 <entry endPc="268452361" name="dc" stackId="1" startPc="268452021"/>
 <entry endPc="268452700" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268452373"/>
 <entry endPc="268452700" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268452373"/>
-<entry endPc="268452700" name="rez_cmp_local_custom_drawable_6ZLKSM7BHURHVOZ7UNL5" stackId="2" startPc="268452373"/>
+<entry endPc="268452700" name="rez_cmp_local_custom_drawable_7XCPWOQXHWX19T3BZ1KL" stackId="2" startPc="268452373"/>
 <entry endPc="268452701" name="dc" stackId="1" startPc="268452361"/>
 <entry endPc="268453040" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268452713"/>
+<entry endPc="268453040" name="rez_cmp_local_custom_drawable_5PYQHNEJBFIQPCMO8U16" stackId="2" startPc="268452713"/>
 <entry endPc="268453040" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268452713"/>
-<entry endPc="268453040" name="rez_cmp_local_custom_drawable_YULH1S67R7SAJ49SX0CF" stackId="2" startPc="268452713"/>
 <entry endPc="268453041" name="dc" stackId="1" startPc="268452701"/>
 </localVars>
 <annotations/>
@@ -1088,7 +1087,7 @@
 <dataEntry offset="465" parentId="Rez" symbolId="JsonData" type="module"/>
 <dataEntry offset="496" parentId="Rez" symbolId="Layouts" type="module"/>
 <dataEntry offset="567" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="1030" parentId="globals" symbolId="MeanMaxPowerChartView" type="class"/>
-<dataEntry offset="2053" parentId="globals" symbolId="MeanMaxPowerChartApp" type="class"/>
+<dataEntry offset="1022" parentId="globals" symbolId="MeanMaxPowerChartView" type="class"/>
+<dataEntry offset="2045" parentId="globals" symbolId="MeanMaxPowerChartApp" type="class"/>
 </dataEntryOffsetMappings>
 </debugInfo>
