@@ -1,3 +1,7 @@
+// 
+// Prod id = 
+// Dev id  = edfaf41a772447198554b3c090e283db
+//
 // History:
 //
 // 2018-01-21 - V 01.00
@@ -19,7 +23,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 	var TimeValuesValid = new [TimeValues.size()];
 	var TimeValues_x = new [TimeValues.size()];
 	var TimeValuesX = [1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1];
-	var TimeValuesCP = [1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0];
+	var TimeValuesCP = [0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0];
 	
 	var CurrentPowerValues = new [TimeValues.size()];
 	var RidePowerValues = new [TimeValues.size()];
@@ -49,7 +53,7 @@ class MeanMaxPowerChartApp extends App.AppBase
         AppBase.initialize();
 		var DeviceSettings = System.getDeviceSettings();
 
-   		System.println("Application Start - Total Memory = " + System.getSystemStats().totalMemory + " / Used Memory = " + System.getSystemStats().usedMemory);
+   		//System.println("Application Start - Total Memory = " + System.getSystemStats().totalMemory + " / Used Memory = " + System.getSystemStats().usedMemory);
 
         Device_Type = Ui.loadResource(Rez.Strings.Device);
 
@@ -119,11 +123,12 @@ class MeanMaxPowerChartApp extends App.AppBase
 		Zone_L.add(0);
 		for (var i = 0; i < Z_H.size() ; ++i)
    	   	{
+			/*
 			for (var j = 0; j < Zones_Number ; ++j)
    			{
 				System.println("Zone " + j + " : " + Zone_L[j] + " - " + Zone_H[j]);
 			}
-
+			*/
 			if ((Z_H[i] == 0) and (!Last_Zone))
 			{
 				Zone_H.add(Max_HR);
@@ -142,22 +147,6 @@ class MeanMaxPowerChartApp extends App.AppBase
 		System.println("Zone_L = " + Zone_L);
 		System.println("Zone_H = " + Zone_H);
 
-/*
-		Zone_Loop_Index = 0;
-		for (var i = 0; i <= Zones_Number ; ++i)
-       	{
-			Zone_Time[i] = 0;
-			var j = i + 1;
-			System.println("Zone " + j + " : " + Zone_L[i] + " - " + Zone_H[i]);
-			for (var k = 0; k < Zone_Display_Timer; ++k)
-    	   	{
-    	   		Zone_Loop_Value[Zone_Loop_Index] = i;
-    	   		Zone_Loop_Index++;
-			}
-		}
-		Zone_Loop_Size = Zone_Loop_Index;
-*/
-		
 		var Args = new [8];
 		
 		Args[0]  = readPropertyKeyInt("AVG_Power_Duration",3);
@@ -171,33 +160,21 @@ class MeanMaxPowerChartApp extends App.AppBase
 
 		if (Args[1])
 		{
-			System.println("Going to reset Power Values Record...");
+			//System.println("Going to reset Power Values Record...");
 			ReadPowerFromProperty();
-/*			
-			for (var i = 0; i < TimeValues.size(); ++i)
-			{
-				RecordPowerValues[i] = 0;
-			}
-*/
-			System.println("Saving new RecordPowerValues to storage... RecordPowerValues = " + RecordPowerValues);
+			//System.println("Saving new RecordPowerValues to storage... RecordPowerValues = " + RecordPowerValues);
 			Storage.setValue("RecordPowerValues", RecordPowerValues);
 		}
 
 		if (Storage.getValue("RecordPowerValues") != null)
 		{
-			System.println("Loading RecordPowerValues from storage...");
+			//System.println("Loading RecordPowerValues from storage...");
 			RecordPowerValues = Storage.getValue("RecordPowerValues");
 		}
 		else
 		{
-			System.println("Going to initialize Power Values Record...");
+			//System.println("Going to initialize Power Values Record...");
 			ReadPowerFromProperty();
-/*
-			for (var i = 0; i < TimeValues.size(); ++i)
-			{
-				RecordPowerValues[i] = 0;
-			}
-*/
 		}
 
 		for (var i = 0; i < TimeValues.size(); ++i)
@@ -206,9 +183,8 @@ class MeanMaxPowerChartApp extends App.AppBase
 		}
 
 
-		System.println("RecordPowerValues = " + RecordPowerValues);
-		//PreviousRecordPowerValues = RecordPowerValues;
-		System.println("PreviousRecordPowerValues = " + PreviousRecordPowerValues);
+		//System.println("RecordPowerValues = " + RecordPowerValues);
+		//System.println("PreviousRecordPowerValues = " + PreviousRecordPowerValues);
 				
         return [ new MeanMaxPowerChartView(Args) ];
     }

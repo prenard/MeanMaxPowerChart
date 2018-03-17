@@ -1,0 +1,7 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="BatteryLevel025" filename="../../resources/drawables/Battery_Level_025.png" dithering="none" />
+    <bitmap id="BatteryLevel050" filename="../../resources/drawables/Battery_Level_050.png" dithering="none" />    
+    <bitmap id="BatteryLevel075" filename="../../resources/drawables/Battery_Level_075.png" dithering="none" />
+    <bitmap id="BatteryLevel100" filename="../../resources/drawables/Battery_Level_100.png" dithering="none" />
+</drawables>

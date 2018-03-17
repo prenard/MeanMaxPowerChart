@@ -75,6 +75,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 	var NP_Samples_Number = 0;
 	var	NP_Sum_30AvgP4 = 0;
 
+	var CP_Value_font = Gfx.FONT_XTINY;
 
 	// Rolling Field
 
@@ -192,7 +193,7 @@ class MeanMaxPowerChartView extends Ui.DataField
        	{
 			Zone_Time[i] = 0;
 			var j = i + 1;
-			System.println("Zone " + j + " : " + Zone_L[i] + " - " + Zone_H[i]);
+			//System.println("Zone " + j + " : " + Zone_L[i] + " - " + Zone_H[i]);
 			for (var k = 0; k < Zone_Display_Timer; ++k)
     	   	{
     	   		Zone_Loop_Value[Zone_Loop_Index] = i;
@@ -226,30 +227,25 @@ class MeanMaxPowerChartView extends Ui.DataField
 		PowerValuesHistoryAvgPeriod[1] = 5; 
 		PowerValuesHistory[1] = new [2160];
 
-		if (app.Device_Type.equals("edge_520"))
-		{
-		}
-		else
 		if (app.Device_Type.equals("edge_820"))
 		{
-			PWR_Label_x = 100;
+			PWR_Label_x = 1;
 			PWR_Label_y = 1;
 			PWR_Label_font = Gfx.FONT_XTINY;
 
-			PWR_Value_x = 199;
+			PWR_Value_x = 100;
 			PWR_Value_y = 1;
 			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			CAD_Label_y = 41;
+			CAD_Label_x = 105;
 			CAD_Label_font = Gfx.FONT_XTINY;
 
-			CAD_Value_y = 41;
+			CAD_Value_x = 199;
 			CAD_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			HR_Label_x = 1;
+			HR_Label_y = 41;
 			HR_Label_font = Gfx.FONT_XTINY;
 
-			HR_Value_x = 90;
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;
 
 			RollingValue_y = 237;
@@ -276,33 +272,90 @@ class MeanMaxPowerChartView extends Ui.DataField
 			X_bar_y = 207;
 			X_bar_font = Gfx.FONT_SMALL;
 			
-			//Y_bar_y_top = 17;
 			Y_bar_y_top = 50;
 			Y_bar_font = Gfx.FONT_SMALL;
 
 			BatteryLevelBitmap_x = 155;
 			BatteryLevelBitmap_y = 85;
+
+			//CP_Value_font = Gfx.FONT_SMALL;
+			CP_Value_font = Gfx.FONT_LARGE;
+		}
+		else
+		if (app.Device_Type.equals("edge_1000"))
+		{
+			PWR_Label_x = 1;
+			PWR_Label_y = 1;
+			PWR_Label_font = Gfx.FONT_XTINY;
+
+			PWR_Value_x = 130;
+			PWR_Value_y = 1;
+			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			CAD_Label_x = 140;
+			CAD_Label_font = Gfx.FONT_XTINY;
+
+			CAD_Value_x = 237;
+			CAD_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			HR_Label_y = 51;
+			HR_Label_font = Gfx.FONT_XTINY;
+
+			HR_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			RollingValue_y = 367;
+			RollingValue_font = Gfx.FONT_NUMBER_MILD;
+			
+			RollingValue_Unit_y = 352;
+			RollingValue_Unit_font = Gfx.FONT_XTINY;
+
+			RollingValue_Label_x = 220;
+			RollingValue_Label_font = Gfx.FONT_XTINY;
+
+			ZoneRollingValue = "";
+			ZoneRollingValue_x = 0;
+			ZoneRollingValue_font = Gfx.FONT_NUMBER_MILD;
+
+			ZoneRollingValue_Label = "";
+			ZoneRollingValue_Label_x = 0;
+			ZoneRollingValue_Label_font = Gfx.FONT_XTINY;
+
+			zone_bar_width = 10;
+			
+			X_bar_x_left = 38;
+			X_bar_x_right = 220;
+			X_bar_y = 330;
+			X_bar_font = Gfx.FONT_SMALL;
+			
+			Y_bar_y_top = 50;
+			Y_bar_font = Gfx.FONT_SMALL;
+
+			BatteryLevelBitmap_x = 195;
+			BatteryLevelBitmap_y = 110;
+
+			//CP_Value_font = Gfx.FONT_MEDIUM;
+			CP_Value_font = Gfx.FONT_LARGE;
 		}
 		else
 		if (app.Device_Type.equals("edge_1030"))
 		{
-			PWR_Label_x = 150;
+			PWR_Label_x = 1;
 			PWR_Label_y = 1;
 			PWR_Label_font = Gfx.FONT_XTINY;
 
-			PWR_Value_x = 281;
+			PWR_Value_x = 140;
 			PWR_Value_y = 1;
 			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
 
+			CAD_Label_x = 150;
 			CAD_Label_font = Gfx.FONT_XTINY;
 
-			CAD_Value_y = 51;
+			CAD_Value_x = 281;
 			CAD_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			HR_Label_x = 1;
+			HR_Label_y = 50;
 			HR_Label_font = Gfx.FONT_XTINY;
 
-			HR_Value_x = 120;
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;
 
 			RollingValue_y = 435;
@@ -325,7 +378,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			zone_bar_width = 10;
 
 			X_bar_x_left = 50;
-			X_bar_x_right = 270;
+			X_bar_x_right = 265;
 			X_bar_y = 395;
 			X_bar_font = Gfx.FONT_SMALL;
 			
@@ -334,15 +387,18 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 			BatteryLevelBitmap_x = 230;
 			BatteryLevelBitmap_y = 105;
+
+			//CP_Value_font = Gfx.FONT_MEDIUM;
+			CP_Value_font = Gfx.FONT_LARGE;
 		}
 
-		HR_Label_y = PWR_Label_y;
+		CAD_Label_y = PWR_Label_y;
+		CAD_Value_y = PWR_Value_y;		
 
-		CAD_Label_x = PWR_Label_x;
-		CAD_Label_y = CAD_Value_y;
-		CAD_Value_x = PWR_Value_x;		
-
-		//HR_Value_x = PWR_Value_x;
+		HR_Label_x = CAD_Label_x;
+		HR_Value_x = CAD_Value_x;
+		HR_Value_y = HR_Label_y;
+					
 		RollingValue_x = PWR_Value_x;
 			
 		Y_bar_x = X_bar_x_left;
@@ -351,8 +407,9 @@ class MeanMaxPowerChartView extends Ui.DataField
 		ZoneRollingValue_y = RollingValue_y;
 
 		RollingValue_Label_y = RollingValue_Unit_y;
-		RollingValue_Unit_x = PWR_Value_x;
-
+		RollingValue_Unit_x = CAD_Value_x;
+		RollingValue_x = CAD_Value_x;
+			
 		ZoneRollingValue_Label_y = RollingValue_Unit_y;
 						
 		BatteryLevelBitmap = new Ui.Bitmap({:rezId=>Rez.Drawables.BatteryLevel100});
@@ -378,7 +435,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			app.CurrentPowerValues[i] = 0;
 			app.RidePowerValues[i] = 0;
 			app.TimeValues_x[i] = X_bar_x_left + (X_bar_x_right - X_bar_x_left + 1) * Math.log(app.TimeValues[i], 10) / Math.log(app.TimeValues[app.TimeValues.size() - 1], 10); 
-			System.println("TimeValues_x[" + i + "] = " + app.TimeValues_x[i]);
+			//System.println("TimeValues_x[" + i + "] = " + app.TimeValues_x[i]);
 		}
 
 		UserWeight =  UserProfile.getProfile().weight / 1000;
@@ -544,50 +601,6 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 				}
 			}
-/*
-			for (var i = 0; i < PowerValuesHistory.size(); ++i)
-			{
-				for (var j = 0; j < PowerValuesHistoryIndex[i]; ++j)
-				{
-					System.println("PowerValuesHistory[" + i + "] [" + j + "] = " + PowerValuesHistory[i][j]);
-
-        			// subtract the oldest sample from our moving sum
-        			var OldestIndex = (PowerValuesHistoryIndex[j] - TimeValues[j] + PowerValuesHistory[j].size()) % (PowerValuesHistory[j].size());
-					System.println("Before - " + TimeValues[j] + " - PowerSumOfSamples[" + j + "] = " + PowerSumOfSamples[j]);
-					System.println("OldestIndex = " + OldestIndex);
-					PowerSumOfSamples[j] -= PowerValuesHistory[j][OldestIndex]; 
-
-					// add the newest sample to our moving sum
-					//PowerSumOfSamples[j] += PowerValuesHistory[j][PowerValuesHistoryIndex[i];
-					//System.println("After - " + TimeValues[j] + " - PowerSumOfSamples[" + j + "] = " + PowerSumOfSamples[j]);]
-
-
-				}
-			}
-*/
-
-//			PowerValuesHistory[PowerValuesHistoryIndex] = info.currentPower;
-//			System.println("PowerValuesHistory[" + PowerValuesHistoryIndex + "] = " + PowerValuesHistory[PowerValuesHistoryIndex]);
-
-/*			
-           	for (var i = 0; i < TimeValues.size(); ++i)
-       		{
-				var AvgPeriod = TimeValuesAvgPeriod[i];
-				
-				System.println("TimeValues[" + i + "] = " + TimeValues[i] + " - TimeValuesAvgPeriod[" + i + "] =  " + TimeValuesAvgPeriod[i]);
-        		// subtract the oldest sample from our moving sum
-        		var OldestIndex = (PowerValuesHistoryIndex - TimeValues[i] + PowerValuesHistory.size()) % (PowerValuesHistory.size());
-				System.println("Before - " + TimeValues[i] + " - PowerSumOfSamples[" + i + "] = " + PowerSumOfSamples[i]);
-				System.println("OldestIndex = " + OldestIndex);
-				PowerSumOfSamples[i] -= PowerValuesHistory[OldestIndex]; 
-
-				// add the newest sample to our moving sum
-				PowerSumOfSamples[i] += PowerValuesHistory[PowerValuesHistoryIndex];
-				System.println("After - " + TimeValues[i] + " - PowerSumOfSamples[" + i + "] = " + PowerSumOfSamples[i]);
-			}
-*/
-			// Goe to the next sample, and wrap around to the beginning
-//			PowerValuesHistoryIndex = (PowerValuesHistoryIndex + 1) % PowerValuesHistory.size();
 
 		}
 
@@ -828,22 +841,6 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 
 		// Draw Y axis
-/*		
-		for (var i = 0; i < ((PowerMax / 100) + 1); ++i)
-		{
-			var y = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * (i * 100) / PowerMax; 
-			//System.println("y = " + y);
-			dc.setColor(AxisColor, Gfx.COLOR_TRANSPARENT);
-   			dc.setPenWidth(1);
-   			dc.drawLine(Y_bar_x - 0, y, X_bar_x_right, y);
-			textR(dc, Y_bar_x - 5, y - 10, Y_bar_font, FontDisplayColor, (i * 100).toString());
-			// Watts / Kg 
-			//textL(dc, Y_bar_x + 5, y - 10, Y_bar_font, FontDisplayColor, (i.toFloat() * 100 / UserWeight).format("%.1f").toString());
-		}
-*/
-
-		//System.println("PowerMax = " + PowerMax);
-		//DrawHorizontalAxis(dc, 0, AxisColor, 1, PowerMax, FontDisplayColor, Gfx.COLOR_TRANSPARENT, true);
 
 		for (var i = 0; i < Zone_L.size(); ++i)
 		{
@@ -853,7 +850,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			{
 				ShowPowerValue = true;
 
-				var yL = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * Zone_L[i] / PowerMax - 30;
+				var yL = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * Zone_L[i] / PowerMax - 15;
 				//var yH = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * min(Zone_H[i], PowerMax) / PowerMax;
 				//var zone_bar_x = Y_bar_x - zone_bar_width;
 				dc.setColor(Zone_Color[i], Gfx.COLOR_TRANSPARENT);
@@ -881,7 +878,6 @@ class MeanMaxPowerChartView extends Ui.DataField
 						TimeValueToDisplay = TimeValueToDisplay / 60;
 					}
 				}
-				textR(dc, app.TimeValues_x[i], X_bar_y + 2, X_bar_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, (TimeValueToDisplay).toString());
 
 				var TimeUnitToDisplay = "";
 				
@@ -900,7 +896,11 @@ class MeanMaxPowerChartView extends Ui.DataField
 					TimeUnitToDisplay = "H";
 				}
 
-				textL(dc, app.TimeValues_x[i] + 1, X_bar_y + 7, X_bar_Unit_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, (TimeUnitToDisplay).toString());
+				textL(dc, app.TimeValues_x[i], X_bar_y, X_bar_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, (TimeValueToDisplay).toString());
+				//textL(dc, app.TimeValues_x[i] + dc.getTextWidthInPixels((TimeValueToDisplay).toString(), X_bar_font), X_bar_y + Gfx.getFontHeight(X_bar_Unit_font), X_bar_Unit_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, (TimeUnitToDisplay).toString());
+				textL(dc, app.TimeValues_x[i] + dc.getTextWidthInPixels((TimeValueToDisplay).toString(), X_bar_font), X_bar_y + 3, X_bar_Unit_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, (TimeUnitToDisplay).toString());
+
+
 				GridTop_y = Y_bar_y_top;
 			}
 
@@ -922,9 +922,9 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 				y1 = min(y1, MaxCPValueY);
 
-				textL(dc, app.TimeValues_x[i] + 3, y1, X_bar_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, app.RidePowerValues[i].toString());
+				textL(dc, app.TimeValues_x[i] + 1, y1, CP_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, app.RidePowerValues[i].toString());
 
-				MaxCPValueY = y1 - Gfx.getFontHeight(X_bar_font);
+				MaxCPValueY = y1 - Gfx.getFontHeight(CP_Value_font);
 			}
 		}
 
@@ -1027,7 +1027,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 		dc.drawLine(Y_bar_x - 0, y, X_bar_x_right, y);
 		if (ShowPowerValue)
 		{
-			textR(dc, Y_bar_x - 5, y - 20, Y_bar_font, FontFgColor, FontBgColor, PowerValue.format("%.0f").toString());
+			textR(dc, Y_bar_x - 5, y - 5, Y_bar_font, FontFgColor, FontBgColor, PowerValue.format("%.0f").toString());
 		}
 	}
 
