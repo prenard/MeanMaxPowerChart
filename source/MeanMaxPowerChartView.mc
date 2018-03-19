@@ -298,7 +298,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			CAD_Value_x = 237;
 			CAD_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			HR_Label_y = 51;
+			HR_Label_y = 55;
 			HR_Label_font = Gfx.FONT_XTINY;
 
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;
@@ -343,7 +343,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			PWR_Label_y = 1;
 			PWR_Label_font = Gfx.FONT_XTINY;
 
-			PWR_Value_x = 140;
+			PWR_Value_x = 145;
 			PWR_Value_y = 1;
 			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
 
@@ -353,7 +353,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			CAD_Value_x = 281;
 			CAD_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			HR_Label_y = 50;
+			HR_Label_y = 55;
 			HR_Label_font = Gfx.FONT_XTINY;
 
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;

@@ -8,6 +8,9 @@ It shows the peak power of your current ride against your historical peak power 
 
 This datafield was designed as a training / racing tool. It shows other important data as:
 
+* Power AVG for the last 3 seconds (you can change the duration)
+* Cadence
+* Heart Rate
 * Ride Max Power Average for 5s, 1m, 5m and 20m
 * Ride timer
 * Ride distance
@@ -28,5 +31,5 @@ You can specify which "rolling" data field you want to display (Time, Timer, Dis
 
 Release History:
 
-- V1.00 - 2016-09-03
+- V1.00 - 2018-03-19
 * Original version
