@@ -560,271 +560,266 @@
 <entry filename="D:\\save-w\\softs-conf\\Garmin-CIQ\\workplace\\my-workplace\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="234" pc="268451086" symbol="ReadPowerFromProperty"/>
 <entry filename="D:\\save-w\\softs-conf\\Garmin-CIQ\\workplace\\my-workplace\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="235" pc="268451121" symbol="ReadPowerFromProperty"/>
 <entry filename="D:\\save-w\\softs-conf\\Garmin-CIQ\\workplace\\my-workplace\\MeanMaxPowerChart\\.\\source\\MeanMaxPowerChartApp.mc" lineNum="236" pc="268451156" symbol="ReadPowerFromProperty"/>
-<entry filename="Rez" lineNum="75" pc="268451192" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="79" pc="268451204" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="80" pc="268451228" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="81" pc="268451391" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="82" pc="268451416" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="83" pc="268451468" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="84" pc="268451514" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="85" pc="268451677" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="86" pc="268451702" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="87" pc="268451754" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="90" pc="268451800" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="99" pc="268451838" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="103" pc="268451850" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="104" pc="268451874" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="105" pc="268452007" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="108" pc="268452140" symbol="TopLeftLayout"/>
-<entry filename="Rez" lineNum="117" pc="268452178" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="121" pc="268452190" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="122" pc="268452214" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="123" pc="268452347" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="126" pc="268452480" symbol="TopRightLayout"/>
-<entry filename="Rez" lineNum="135" pc="268452518" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="139" pc="268452530" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="140" pc="268452554" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="141" pc="268452687" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="144" pc="268452820" symbol="BottomLeftLayout"/>
-<entry filename="Rez" lineNum="153" pc="268452858" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="157" pc="268452870" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="158" pc="268452894" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="159" pc="268453027" symbol="BottomRightLayout"/>
-<entry filename="Rez" lineNum="162" pc="268453160" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="70" pc="268451192" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="74" pc="268451204" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="75" pc="268451228" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="76" pc="268451391" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="77" pc="268451416" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="78" pc="268451468" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="79" pc="268451514" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="80" pc="268451677" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="81" pc="268451702" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="82" pc="268451754" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="85" pc="268451800" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="94" pc="268451838" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="98" pc="268451850" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="99" pc="268451874" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="100" pc="268452007" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="103" pc="268452140" symbol="TopLeftLayout"/>
+<entry filename="Rez" lineNum="112" pc="268452178" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="116" pc="268452190" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="117" pc="268452214" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="118" pc="268452347" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="121" pc="268452480" symbol="TopRightLayout"/>
+<entry filename="Rez" lineNum="130" pc="268452518" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="134" pc="268452530" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="135" pc="268452554" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="136" pc="268452687" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="139" pc="268452820" symbol="BottomLeftLayout"/>
+<entry filename="Rez" lineNum="148" pc="268452858" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="152" pc="268452870" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="153" pc="268452894" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="154" pc="268453027" symbol="BottomRightLayout"/>
+<entry filename="Rez" lineNum="157" pc="268453160" symbol="BottomRightLayout"/>
 </pcToLineNum>
 <symbolTable>
-<entry field="true" id="137" symbol="RollingValue_y"/>
-<entry field="true" id="136" symbol="RollingValue_x"/>
-<entry field="true" id="149" symbol="ZoneRollingValue_y"/>
-<entry field="true" id="148" symbol="ZoneRollingValue_x"/>
+<entry field="true" id="133" symbol="RollingValue_y"/>
+<entry field="true" id="132" symbol="RollingValue_x"/>
+<entry field="true" id="145" symbol="ZoneRollingValue_y"/>
+<entry field="true" id="144" symbol="ZoneRollingValue_x"/>
 <entry id="8388644" module="true" symbol="System"/>
-<entry field="true" id="42" symbol="Field_PP_00005s_Title"/>
-<entry field="true" id="41" symbol="Field_PP_00003s_Title"/>
-<entry field="true" id="199" symbol="TimeValuesX"/>
+<entry field="true" id="38" symbol="Field_PP_00005s_Title"/>
+<entry field="true" id="37" symbol="Field_PP_00003s_Title"/>
+<entry field="true" id="195" symbol="TimeValuesX"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
-<entry field="true" id="110" symbol="CAD_Label_font"/>
-<entry field="true" id="83" symbol="UserWeight"/>
+<entry field="true" id="106" symbol="CAD_Label_font"/>
+<entry field="true" id="79" symbol="UserWeight"/>
 <entry id="8389349" symbol="justification"/>
-<entry field="true" id="172" symbol="Zone_Color_Blue"/>
-<entry field="true" id="50" symbol="Field_PP_00300s_Title"/>
-<entry field="true" id="96" symbol="PowerValuesHistoryIndex"/>
-<entry field="true" id="109" symbol="CAD_Label_y"/>
-<entry field="true" id="108" symbol="CAD_Label_x"/>
-<entry field="true" id="87" symbol="RidePowerValuesAreaColor"/>
-<entry field="true" id="154" symbol="ZoneRollingValue_Label_y"/>
-<entry field="true" id="60" symbol="Field_Distance_Duration_Title"/>
-<entry field="true" id="153" symbol="ZoneRollingValue_Label_x"/>
-<entry field="true" id="86" symbol="RidePowerValuesLineColor"/>
-<entry field="true" id="163" symbol="Y_bar_y_top"/>
-<entry field="true" id="121" symbol="HR_Value_y"/>
-<entry field="true" id="120" symbol="HR_Value_x"/>
-<entry field="true" id="101" symbol="PWR_Label_y"/>
-<entry field="true" id="156" symbol="zone_bar_width"/>
-<entry field="true" id="100" symbol="PWR_Label_x"/>
-<entry field="true" id="99" symbol="PWR_Label"/>
+<entry field="true" id="168" symbol="Zone_Color_Blue"/>
+<entry field="true" id="46" symbol="Field_PP_00300s_Title"/>
+<entry field="true" id="92" symbol="PowerValuesHistoryIndex"/>
+<entry field="true" id="105" symbol="CAD_Label_y"/>
+<entry field="true" id="104" symbol="CAD_Label_x"/>
+<entry field="true" id="83" symbol="RidePowerValuesAreaColor"/>
+<entry field="true" id="150" symbol="ZoneRollingValue_Label_y"/>
+<entry field="true" id="56" symbol="Field_Distance_Duration_Title"/>
+<entry field="true" id="149" symbol="ZoneRollingValue_Label_x"/>
+<entry field="true" id="82" symbol="RidePowerValuesLineColor"/>
+<entry field="true" id="159" symbol="Y_bar_y_top"/>
+<entry field="true" id="117" symbol="HR_Value_y"/>
+<entry field="true" id="116" symbol="HR_Value_x"/>
+<entry field="true" id="97" symbol="PWR_Label_y"/>
+<entry field="true" id="152" symbol="zone_bar_width"/>
+<entry field="true" id="96" symbol="PWR_Label_x"/>
+<entry field="true" id="95" symbol="PWR_Label"/>
 <entry id="8390424" module="true" symbol="Storage"/>
-<entry field="true" id="93" symbol="PowerZonesColor"/>
-<entry field="true" id="26" symbol="Field_PP_03600s_Title"/>
-<entry field="true" id="35" symbol="Zone_Display_Timer_Title"/>
-<entry field="true" id="71" symbol="Z1_H_Title"/>
-<entry id="19" method="true" symbol="TopLeftLayout"/>
+<entry field="true" id="89" symbol="PowerZonesColor"/>
+<entry field="true" id="22" symbol="Field_PP_03600s_Title"/>
+<entry field="true" id="31" symbol="Zone_Display_Timer_Title"/>
+<entry field="true" id="67" symbol="Z1_H_Title"/>
+<entry id="15" method="true" symbol="TopLeftLayout"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="106" symbol="PWR_Value_font"/>
-<entry field="true" id="173" symbol="Zone_Color_Green"/>
-<entry field="true" id="127" symbol="CP_Value_font"/>
-<entry field="true" id="143" symbol="RollingValue_Label"/>
+<entry field="true" id="102" symbol="PWR_Value_font"/>
+<entry field="true" id="169" symbol="Zone_Color_Green"/>
+<entry field="true" id="123" symbol="CP_Value_font"/>
+<entry field="true" id="139" symbol="RollingValue_Label"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
-<entry field="true" id="200" symbol="TimeValuesCP"/>
-<entry field="true" id="124" symbol="NP"/>
-<entry field="true" id="28" symbol="Field_Time_Duration_Title"/>
-<entry field="true" id="24" symbol="AVG_Power_Duration_Title"/>
-<entry field="true" id="44" symbol="Field_PP_00900s_Title"/>
-<entry field="true" id="126" symbol="NP_Sum_30AvgP4"/>
-<entry field="true" id="170" symbol="BatteryLevel_font"/>
-<entry field="true" id="175" symbol="Zone_Color_Orange"/>
-<entry field="true" id="69" symbol="Reset_RecordValues_Title"/>
-<entry field="true" id="123" symbol="FTP"/>
-<entry id="21" method="true" symbol="BottomLeftLayout"/>
+<entry field="true" id="196" symbol="TimeValuesCP"/>
+<entry field="true" id="120" symbol="NP"/>
+<entry field="true" id="24" symbol="Field_Time_Duration_Title"/>
+<entry field="true" id="20" symbol="AVG_Power_Duration_Title"/>
+<entry field="true" id="40" symbol="Field_PP_00900s_Title"/>
+<entry field="true" id="122" symbol="NP_Sum_30AvgP4"/>
+<entry field="true" id="166" symbol="BatteryLevel_font"/>
+<entry field="true" id="171" symbol="Zone_Color_Orange"/>
+<entry field="true" id="65" symbol="Reset_RecordValues_Title"/>
+<entry field="true" id="119" symbol="FTP"/>
+<entry id="17" method="true" symbol="BottomLeftLayout"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
-<entry field="true" id="118" symbol="HR_Label_font"/>
-<entry field="true" id="58" symbol="Field_PP_00180s_Title"/>
-<entry field="true" id="209" symbol="Device_Type"/>
-<entry field="true" id="105" symbol="PWR_Value_y"/>
-<entry field="true" id="104" symbol="PWR_Value_x"/>
+<entry field="true" id="114" symbol="HR_Label_font"/>
+<entry field="true" id="54" symbol="Field_PP_00180s_Title"/>
+<entry field="true" id="205" symbol="Device_Type"/>
+<entry field="true" id="101" symbol="PWR_Value_y"/>
+<entry field="true" id="100" symbol="PWR_Value_x"/>
 <entry id="8389068" method="true" symbol="draw"/>
-<entry field="true" id="64" symbol="Sec_5"/>
-<entry field="true" id="36" symbol="Field_PP_00010s_Title"/>
-<entry field="true" id="62" symbol="Sec_3"/>
-<entry field="true" id="63" symbol="Sec_2"/>
-<entry field="true" id="61" symbol="Sec_1"/>
-<entry field="true" id="147" symbol="ZoneRollingValue"/>
-<entry field="true" id="204" symbol="PreviousRecordPowerValues"/>
-<entry field="true" id="174" symbol="Zone_Color_Yellow"/>
-<entry field="true" id="39" symbol="Field_Timer_Duration_Title"/>
+<entry field="true" id="60" symbol="Sec_5"/>
+<entry field="true" id="32" symbol="Field_PP_00010s_Title"/>
+<entry field="true" id="58" symbol="Sec_3"/>
+<entry field="true" id="59" symbol="Sec_2"/>
+<entry field="true" id="57" symbol="Sec_1"/>
+<entry field="true" id="143" symbol="ZoneRollingValue"/>
+<entry field="true" id="200" symbol="PreviousRecordPowerValues"/>
+<entry field="true" id="170" symbol="Zone_Color_Yellow"/>
+<entry field="true" id="35" symbol="Field_Timer_Duration_Title"/>
 <entry id="9" object="true" symbol="MeanMaxPowerChartView"/>
-<entry field="true" id="23" symbol="FTP_Title"/>
-<entry id="18" method="true" symbol="MainLayout"/>
-<entry field="true" id="138" symbol="RollingValue_font"/>
-<entry field="true" id="37" symbol="DF_Title_Title"/>
-<entry field="true" id="184" symbol="Zone_Loop_Index"/>
-<entry field="true" id="32" symbol="Field_PP_07200s_Title"/>
-<entry field="true" id="185" symbol="Zone_Loop_Size"/>
+<entry field="true" id="19" symbol="FTP_Title"/>
+<entry id="14" method="true" symbol="MainLayout"/>
+<entry field="true" id="134" symbol="RollingValue_font"/>
+<entry field="true" id="33" symbol="DF_Title_Title"/>
+<entry field="true" id="180" symbol="Zone_Loop_Index"/>
+<entry field="true" id="28" symbol="Field_PP_07200s_Title"/>
+<entry field="true" id="181" symbol="Zone_Loop_Size"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry field="true" id="43" symbol="Field_PP_00030s_Title"/>
-<entry field="true" id="75" symbol="Field_PP_01200s_Title"/>
-<entry field="true" id="114" symbol="CAD_Value_font"/>
-<entry field="true" id="117" symbol="HR_Label_y"/>
-<entry field="true" id="116" symbol="HR_Label_x"/>
-<entry field="true" id="146" symbol="RollingValue_Label_font"/>
-<entry field="true" id="34" symbol="Z6_H_Title"/>
-<entry field="true" id="177" symbol="Zone_Color_Dark_Red"/>
-<entry id="211" method="true" symbol="ReadPowerFromProperty"/>
-<entry field="true" id="186" symbol="Zone_Loop_Value"/>
-<entry field="true" id="150" symbol="ZoneRollingValue_font"/>
-<entry field="true" id="135" symbol="RollingValue"/>
-<entry field="true" id="51" symbol="Field_PP_10800s_Title"/>
-<entry field="true" id="82" symbol="AVG_Power_Duration_Idx"/>
-<entry id="193" method="true" symbol="GetPowerZone"/>
+<entry field="true" id="39" symbol="Field_PP_00030s_Title"/>
+<entry field="true" id="71" symbol="Field_PP_01200s_Title"/>
+<entry field="true" id="110" symbol="CAD_Value_font"/>
+<entry field="true" id="113" symbol="HR_Label_y"/>
+<entry field="true" id="112" symbol="HR_Label_x"/>
+<entry field="true" id="142" symbol="RollingValue_Label_font"/>
+<entry field="true" id="30" symbol="Z6_H_Title"/>
+<entry field="true" id="173" symbol="Zone_Color_Dark_Red"/>
+<entry id="207" method="true" symbol="ReadPowerFromProperty"/>
+<entry field="true" id="182" symbol="Zone_Loop_Value"/>
+<entry field="true" id="146" symbol="ZoneRollingValue_font"/>
+<entry field="true" id="131" symbol="RollingValue"/>
+<entry field="true" id="47" symbol="Field_PP_10800s_Title"/>
+<entry field="true" id="78" symbol="AVG_Power_Duration_Idx"/>
+<entry id="189" method="true" symbol="GetPowerZone"/>
 <entry field="true" id="8389130" symbol="mColor"/>
-<entry field="true" id="133" symbol="Time_Value"/>
-<entry field="true" id="40" symbol="Field_PP_00001s_Title"/>
+<entry field="true" id="129" symbol="Time_Value"/>
+<entry field="true" id="36" symbol="Field_PP_00001s_Title"/>
 <entry id="8389131" method="true" symbol="setColor"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="48" symbol="Field_TimeOfDay_Label_Title"/>
-<entry field="true" id="54" symbol="AppName"/>
-<entry field="true" id="29" symbol="Field_TSS_Label_Title"/>
-<entry field="true" id="67" symbol="Field_PP_00015s_Title"/>
-<entry field="true" id="52" symbol="Field_Time_Label_Title"/>
-<entry field="true" id="152" symbol="ZoneRollingValue_Label"/>
-<entry field="true" id="119" symbol="HR_Value"/>
-<entry field="true" id="53" symbol="Field_Distance_Label_Title"/>
-<entry field="true" id="56" symbol="Field_PP_00060s_Title"/>
-<entry id="210" method="true" symbol="readPropertyKeyInt"/>
-<entry field="true" id="160" symbol="X_bar_font"/>
-<entry field="true" id="70" symbol="Field_PP_01800s_Title"/>
-<entry field="true" id="94" symbol="PowerValuesHistory"/>
-<entry field="true" id="168" symbol="BatteryLevelBitmap_y"/>
-<entry field="true" id="167" symbol="BatteryLevelBitmap_x"/>
-<entry field="true" id="33" symbol="Field_PP_00480s_Title"/>
-<entry field="true" id="90" symbol="DeltaRecordPowerValuesAreaColor"/>
-<entry field="true" id="141" symbol="RollingValue_Unit_y"/>
-<entry field="true" id="140" symbol="RollingValue_Unit_x"/>
-<entry field="true" id="145" symbol="RollingValue_Label_y"/>
-<entry field="true" id="79" symbol="Rolling_Zone_Loop_Index"/>
-<entry field="true" id="144" symbol="RollingValue_Label_x"/>
+<entry field="true" id="44" symbol="Field_TimeOfDay_Label_Title"/>
+<entry field="true" id="50" symbol="AppName"/>
+<entry field="true" id="25" symbol="Field_TSS_Label_Title"/>
+<entry field="true" id="63" symbol="Field_PP_00015s_Title"/>
+<entry field="true" id="48" symbol="Field_Time_Label_Title"/>
+<entry field="true" id="148" symbol="ZoneRollingValue_Label"/>
+<entry field="true" id="115" symbol="HR_Value"/>
+<entry field="true" id="49" symbol="Field_Distance_Label_Title"/>
+<entry field="true" id="52" symbol="Field_PP_00060s_Title"/>
+<entry id="206" method="true" symbol="readPropertyKeyInt"/>
+<entry field="true" id="156" symbol="X_bar_font"/>
+<entry field="true" id="66" symbol="Field_PP_01800s_Title"/>
+<entry field="true" id="90" symbol="PowerValuesHistory"/>
+<entry field="true" id="164" symbol="BatteryLevelBitmap_y"/>
+<entry field="true" id="163" symbol="BatteryLevelBitmap_x"/>
+<entry field="true" id="29" symbol="Field_PP_00480s_Title"/>
+<entry field="true" id="86" symbol="DeltaRecordPowerValuesAreaColor"/>
+<entry field="true" id="137" symbol="RollingValue_Unit_y"/>
+<entry field="true" id="136" symbol="RollingValue_Unit_x"/>
+<entry field="true" id="141" symbol="RollingValue_Label_y"/>
+<entry field="true" id="75" symbol="Rolling_Zone_Loop_Index"/>
+<entry field="true" id="140" symbol="RollingValue_Label_x"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
-<entry field="true" id="76" symbol="app"/>
-<entry field="true" id="180" symbol="Max_Zone_Display_Timer"/>
-<entry field="true" id="165" symbol="Y_bar_font"/>
+<entry field="true" id="72" symbol="app"/>
+<entry field="true" id="176" symbol="Max_Zone_Display_Timer"/>
+<entry field="true" id="161" symbol="Y_bar_font"/>
 <entry id="8388641" module="true" symbol="Math"/>
-<entry field="true" id="107" symbol="CAD_Label"/>
-<entry field="true" id="17" symbol="LauncherIcon"/>
-<entry field="true" id="182" symbol="Zone_Color"/>
-<entry field="true" id="196" symbol="TimeValuesAvgPeriod"/>
-<entry field="true" id="80" symbol="Rolling_Zone_Loop_Value"/>
-<entry field="true" id="183" symbol="Zone_Time"/>
-<entry field="true" id="49" symbol="Z2_H_Title"/>
-<entry field="true" id="132" symbol="Timer_Value"/>
-<entry field="true" id="203" symbol="RecordPowerValues"/>
-<entry field="true" id="27" symbol="Field_PP_00090s_Title"/>
+<entry field="true" id="103" symbol="CAD_Label"/>
+<entry field="true" id="13" symbol="LauncherIcon"/>
+<entry field="true" id="178" symbol="Zone_Color"/>
+<entry field="true" id="192" symbol="TimeValuesAvgPeriod"/>
+<entry field="true" id="76" symbol="Rolling_Zone_Loop_Value"/>
+<entry field="true" id="179" symbol="Zone_Time"/>
+<entry field="true" id="45" symbol="Z2_H_Title"/>
+<entry field="true" id="128" symbol="Timer_Value"/>
+<entry field="true" id="199" symbol="RecordPowerValues"/>
+<entry field="true" id="23" symbol="Field_PP_00090s_Title"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry field="true" id="139" symbol="RollingValue_Unit"/>
-<entry field="true" id="159" symbol="X_bar_y"/>
-<entry field="true" id="157" symbol="X_bar_x_left"/>
-<entry field="true" id="128" symbol="TimeOfDay_Value"/>
-<entry field="true" id="16" symbol="BatteryLevel100"/>
-<entry field="true" id="31" symbol="Field_PP_04800s_Title"/>
-<entry field="true" id="46" symbol="Z4_H_Title"/>
+<entry field="true" id="135" symbol="RollingValue_Unit"/>
+<entry field="true" id="155" symbol="X_bar_y"/>
+<entry field="true" id="153" symbol="X_bar_x_left"/>
+<entry field="true" id="124" symbol="TimeOfDay_Value"/>
+<entry field="true" id="27" symbol="Field_PP_04800s_Title"/>
+<entry field="true" id="42" symbol="Z4_H_Title"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389137" method="true" symbol="compute"/>
-<entry field="true" id="131" symbol="Distance_Unit"/>
-<entry field="true" id="178" symbol="Zone_L"/>
-<entry field="true" id="179" symbol="Zone_H"/>
-<entry field="true" id="164" symbol="Y_bar_y_bottom"/>
+<entry field="true" id="127" symbol="Distance_Unit"/>
+<entry field="true" id="174" symbol="Zone_L"/>
+<entry field="true" id="175" symbol="Zone_H"/>
+<entry field="true" id="160" symbol="Y_bar_y_bottom"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
-<entry field="true" id="207" symbol="Max_Zones_Number"/>
-<entry id="187" method="true" symbol="textR"/>
-<entry id="188" method="true" symbol="textL"/>
-<entry field="true" id="169" symbol="BatteryLevel"/>
-<entry field="true" id="103" symbol="PWR_Value"/>
+<entry field="true" id="203" symbol="Max_Zones_Number"/>
+<entry id="183" method="true" symbol="textR"/>
+<entry id="184" method="true" symbol="textL"/>
+<entry field="true" id="165" symbol="BatteryLevel"/>
+<entry field="true" id="99" symbol="PWR_Value"/>
 <entry id="8389279" method="true" symbol="onStart"/>
-<entry field="true" id="166" symbol="BatteryLevelBitmap"/>
-<entry field="true" id="91" symbol="LineWidth"/>
-<entry field="true" id="59" symbol="Field_PP_00020s_Title"/>
-<entry id="20" method="true" symbol="TopRightLayout"/>
-<entry field="true" id="25" symbol="Field_Timer_Label_Title"/>
-<entry field="true" id="102" symbol="PWR_Label_font"/>
+<entry field="true" id="162" symbol="BatteryLevelBitmap"/>
+<entry field="true" id="87" symbol="LineWidth"/>
+<entry field="true" id="55" symbol="Field_PP_00020s_Title"/>
+<entry id="16" method="true" symbol="TopRightLayout"/>
+<entry field="true" id="21" symbol="Field_Timer_Label_Title"/>
+<entry field="true" id="98" symbol="PWR_Label_font"/>
 <entry id="8389348" symbol="font"/>
-<entry field="true" id="45" symbol="Field_TimeOfDay_Duration_Title"/>
-<entry field="true" id="158" symbol="X_bar_x_right"/>
-<entry field="true" id="57" symbol="Field_PP_00040s_Title"/>
+<entry field="true" id="41" symbol="Field_TimeOfDay_Duration_Title"/>
+<entry field="true" id="154" symbol="X_bar_x_right"/>
+<entry field="true" id="53" symbol="Field_PP_00040s_Title"/>
 <entry id="8389347" symbol="color"/>
 <entry id="10" object="true" symbol="MeanMaxPowerChartApp"/>
-<entry field="true" id="201" symbol="CurrentPowerValues"/>
-<entry field="true" id="197" symbol="TimeValuesValid"/>
-<entry field="true" id="72" symbol="Field_PP_00120s_Title"/>
-<entry field="true" id="77" symbol="Rolling_Loop_Index"/>
-<entry field="true" id="73" symbol="Field_PP_02400s_Title"/>
-<entry id="189" method="true" symbol="Initialize_Rolling_Loop_Value"/>
-<entry field="true" id="134" symbol="TSS_Value"/>
-<entry id="194" method="true" symbol="TimeFormat"/>
-<entry field="true" id="84" symbol="AxisColor"/>
-<entry field="true" id="176" symbol="Zone_Color_Red"/>
-<entry field="true" id="78" symbol="Rolling_Loop_Value"/>
-<entry id="192" method="true" symbol="DrawHorizontalAxis"/>
-<entry field="true" id="122" symbol="HR_Value_font"/>
-<entry field="true" id="161" symbol="X_bar_Unit_font"/>
-<entry field="true" id="98" symbol="PowerValuesHistoryAvgCount"/>
+<entry field="true" id="197" symbol="CurrentPowerValues"/>
+<entry field="true" id="193" symbol="TimeValuesValid"/>
+<entry field="true" id="68" symbol="Field_PP_00120s_Title"/>
+<entry field="true" id="73" symbol="Rolling_Loop_Index"/>
+<entry field="true" id="69" symbol="Field_PP_02400s_Title"/>
+<entry id="185" method="true" symbol="Initialize_Rolling_Loop_Value"/>
+<entry field="true" id="130" symbol="TSS_Value"/>
+<entry id="190" method="true" symbol="TimeFormat"/>
+<entry field="true" id="80" symbol="AxisColor"/>
+<entry field="true" id="172" symbol="Zone_Color_Red"/>
+<entry field="true" id="74" symbol="Rolling_Loop_Value"/>
+<entry id="188" method="true" symbol="DrawHorizontalAxis"/>
+<entry field="true" id="118" symbol="HR_Value_font"/>
+<entry field="true" id="157" symbol="X_bar_Unit_font"/>
+<entry field="true" id="94" symbol="PowerValuesHistoryAvgCount"/>
 <entry id="12" module="true" symbol="Layouts"/>
-<entry field="true" id="81" symbol="AVG_Power_Duration"/>
-<entry id="22" method="true" symbol="BottomRightLayout"/>
-<entry field="true" id="15" symbol="BatteryLevel075"/>
+<entry field="true" id="77" symbol="AVG_Power_Duration"/>
+<entry id="18" method="true" symbol="BottomRightLayout"/>
 <entry field="true" id="8388721" method="true" symbol="min"/>
-<entry field="true" id="151" symbol="ZoneRollingValue_font_Color"/>
-<entry field="true" id="130" symbol="Distance_Value"/>
-<entry field="true" id="47" symbol="Sec_10"/>
-<entry field="true" id="195" symbol="TimeValues"/>
-<entry field="true" id="14" symbol="BatteryLevel050"/>
-<entry field="true" id="202" symbol="RidePowerValues"/>
-<entry field="true" id="206" symbol="PowerNumberOfSamples"/>
-<entry field="true" id="162" symbol="Y_bar_x"/>
-<entry field="true" id="55" symbol="Field_TSS_Duration_Title"/>
-<entry field="true" id="208" symbol="Zones_Number"/>
+<entry field="true" id="147" symbol="ZoneRollingValue_font_Color"/>
+<entry field="true" id="126" symbol="Distance_Value"/>
+<entry field="true" id="43" symbol="Sec_10"/>
+<entry field="true" id="191" symbol="TimeValues"/>
+<entry field="true" id="198" symbol="RidePowerValues"/>
+<entry field="true" id="202" symbol="PowerNumberOfSamples"/>
+<entry field="true" id="158" symbol="Y_bar_x"/>
+<entry field="true" id="51" symbol="Field_TSS_Duration_Title"/>
+<entry field="true" id="204" symbol="Zones_Number"/>
 <entry id="8389345" symbol="rezId"/>
-<entry id="190" method="true" symbol="Initialize_Rolling_Zone_Loop_Value"/>
-<entry field="true" id="8389425" object="true" symbol="Device"/>
-<entry field="true" id="155" symbol="ZoneRollingValue_Label_font"/>
+<entry id="186" method="true" symbol="Initialize_Rolling_Zone_Loop_Value"/>
+<entry field="true" id="151" symbol="ZoneRollingValue_Label_font"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry field="true" id="13" symbol="BatteryLevel025"/>
-<entry field="true" id="65" symbol="Field_PP_00002s_Title"/>
-<entry field="true" id="30" symbol="Field_PP_06000s_Title"/>
-<entry field="true" id="89" symbol="RecordPowerValuesAreaColor"/>
+<entry field="true" id="61" symbol="Field_PP_00002s_Title"/>
+<entry field="true" id="26" symbol="Field_PP_06000s_Title"/>
+<entry field="true" id="85" symbol="RecordPowerValuesAreaColor"/>
 <entry field="true" id="8389063" symbol="identifier"/>
-<entry field="true" id="88" symbol="RecordPowerValuesLineColor"/>
-<entry id="191" method="true" symbol="max"/>
-<entry field="true" id="171" symbol="Zone_Color_Gray"/>
-<entry field="true" id="68" symbol="Z3_H_Title"/>
-<entry field="true" id="85" symbol="CurrentPowerValuesLineColor"/>
-<entry field="true" id="198" symbol="TimeValues_x"/>
+<entry field="true" id="84" symbol="RecordPowerValuesLineColor"/>
+<entry id="187" method="true" symbol="max"/>
+<entry field="true" id="167" symbol="Zone_Color_Gray"/>
+<entry field="true" id="64" symbol="Z3_H_Title"/>
+<entry field="true" id="81" symbol="CurrentPowerValuesLineColor"/>
+<entry field="true" id="194" symbol="TimeValues_x"/>
 <entry id="11" module="true" symbol="Menus"/>
-<entry field="true" id="142" symbol="RollingValue_Unit_font"/>
-<entry field="true" id="113" symbol="CAD_Value_y"/>
-<entry field="true" id="112" symbol="CAD_Value_x"/>
-<entry field="true" id="205" symbol="PowerSumOfSamples"/>
-<entry field="true" id="97" symbol="PowerValuesHistoryAvgSum"/>
-<entry field="true" id="115" symbol="HR_Label"/>
-<entry field="true" id="66" symbol="Z5_H_Title"/>
-<entry field="true" id="92" symbol="PowerZonesPercent"/>
-<entry field="true" id="95" symbol="PowerValuesHistoryAvgPeriod"/>
+<entry field="true" id="138" symbol="RollingValue_Unit_font"/>
+<entry field="true" id="109" symbol="CAD_Value_y"/>
+<entry field="true" id="108" symbol="CAD_Value_x"/>
+<entry field="true" id="201" symbol="PowerSumOfSamples"/>
+<entry field="true" id="93" symbol="PowerValuesHistoryAvgSum"/>
+<entry field="true" id="111" symbol="HR_Label"/>
+<entry field="true" id="62" symbol="Z5_H_Title"/>
+<entry field="true" id="88" symbol="PowerZonesPercent"/>
+<entry field="true" id="91" symbol="PowerValuesHistoryAvgPeriod"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-<entry field="true" id="111" symbol="CAD_Value"/>
-<entry field="true" id="129" symbol="TimeOfDay_Meridiem_Value"/>
-<entry field="true" id="125" symbol="NP_Samples_Number"/>
-<entry field="true" id="74" symbol="Field_PP_00600s_Title"/>
-<entry field="true" id="38" symbol="Field_PP_09000s_Title"/>
-<entry field="true" id="181" symbol="Zone_Display_Timer"/>
+<entry field="true" id="107" symbol="CAD_Value"/>
+<entry field="true" id="125" symbol="TimeOfDay_Meridiem_Value"/>
+<entry field="true" id="121" symbol="NP_Samples_Number"/>
+<entry field="true" id="70" symbol="Field_PP_00600s_Title"/>
+<entry field="true" id="34" symbol="Field_PP_09000s_Title"/>
+<entry field="true" id="177" symbol="Zone_Display_Timer"/>
 </symbolTable>
 <localVars>
 <entry endPc="268435501" name="dictionary" stackId="1" startPc="268435460"/>
@@ -948,25 +943,25 @@
 <entry endPc="268450277" name="thisDefault" stackId="2" startPc="268450199"/>
 <entry endPc="268450277" name="key" stackId="1" startPc="268450199"/>
 <entry endPc="268451837" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268451204"/>
+<entry endPc="268451837" name="rez_cmp_local_custom_drawable_KGEGN9FXN151YPSRCKX4" stackId="2" startPc="268451204"/>
 <entry endPc="268451837" name="rez_cmp_local_bitmap_value_fontHeight" stackId="6" startPc="268451204"/>
-<entry endPc="268451837" name="rez_cmp_local_custom_drawable_SO3DRUQKBDQ07SWX3KC7" stackId="2" startPc="268451204"/>
 <entry endPc="268451837" name="rez_cmp_local_bitmap_value" stackId="5" startPc="268451204"/>
 <entry endPc="268451837" name="rez_cmp_local_bitmap_label_fontHeight" stackId="4" startPc="268451204"/>
 <entry endPc="268451838" name="dc" stackId="1" startPc="268451192"/>
 <entry endPc="268452177" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268451850"/>
-<entry endPc="268452177" name="rez_cmp_local_custom_drawable_IDW5OB0NIF4DWVKCRTGF" stackId="2" startPc="268451850"/>
+<entry endPc="268452177" name="rez_cmp_local_custom_drawable_WBV1TVIB7O6C0754R3WN" stackId="2" startPc="268451850"/>
 <entry endPc="268452177" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268451850"/>
 <entry endPc="268452178" name="dc" stackId="1" startPc="268451838"/>
 <entry endPc="268452517" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268452190"/>
+<entry endPc="268452517" name="rez_cmp_local_custom_drawable_SPS1QNG6A5FB71OE0QCS" stackId="2" startPc="268452190"/>
 <entry endPc="268452517" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268452190"/>
-<entry endPc="268452517" name="rez_cmp_local_custom_drawable_7PTWRUOWXV7RT2ER3DO0" stackId="2" startPc="268452190"/>
 <entry endPc="268452518" name="dc" stackId="1" startPc="268452178"/>
 <entry endPc="268452857" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268452530"/>
 <entry endPc="268452857" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268452530"/>
-<entry endPc="268452857" name="rez_cmp_local_custom_drawable_HGLSIVO4XZO6P01PMZZA" stackId="2" startPc="268452530"/>
+<entry endPc="268452857" name="rez_cmp_local_custom_drawable_FCZ62RR6DAVO89O7W7E4" stackId="2" startPc="268452530"/>
 <entry endPc="268452858" name="dc" stackId="1" startPc="268452518"/>
 <entry endPc="268453197" name="rez_cmp_local_bitmap_label" stackId="3" startPc="268452870"/>
-<entry endPc="268453197" name="rez_cmp_local_custom_drawable_5ZCZN9SXQWWJCJV1ONW4" stackId="2" startPc="268452870"/>
+<entry endPc="268453197" name="rez_cmp_local_custom_drawable_MQ6ERVNNPIVUCFBTNARY" stackId="2" startPc="268452870"/>
 <entry endPc="268453197" name="rez_cmp_local_bitmap_value" stackId="4" startPc="268452870"/>
 <entry endPc="268453198" name="dc" stackId="1" startPc="268452858"/>
 </localVars>
@@ -1107,12 +1102,12 @@
 <dataEntry offset="182" parentId="globals" symbolId="Background" type="class"/>
 <dataEntry offset="253" parentId="globals" symbolId="Rez" type="module"/>
 <dataEntry offset="332" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="403" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="434" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="465" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="496" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="567" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="1030" parentId="globals" symbolId="MeanMaxPowerChartView" type="class"/>
-<dataEntry offset="2061" parentId="globals" symbolId="MeanMaxPowerChartApp" type="class"/>
+<dataEntry offset="371" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="402" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="433" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="464" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="535" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="990" parentId="globals" symbolId="MeanMaxPowerChartView" type="class"/>
+<dataEntry offset="2021" parentId="globals" symbolId="MeanMaxPowerChartApp" type="class"/>
 </dataEntryOffsetMappings>
 </debugInfo>
