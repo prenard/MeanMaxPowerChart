@@ -386,7 +386,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			Y_bar_font = Gfx.FONT_SMALL;
 
 			BatteryLevelBitmap_x = 230;
-			BatteryLevelBitmap_y = 105;
+			BatteryLevelBitmap_y = 110;
 
 			//CP_Value_font = Gfx.FONT_MEDIUM;
 			CP_Value_font = Gfx.FONT_LARGE;
