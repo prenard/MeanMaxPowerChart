@@ -7,7 +7,7 @@ using Toybox.Application.Storage;
 class MeanMaxPowerChartView extends Ui.DataField
 {
 	var app;
-	
+
     var Rolling_Loop_Index;
     //var Rolling_Loop_Size;
 	var Rolling_Loop_Value = new [0];
@@ -150,6 +150,15 @@ class MeanMaxPowerChartView extends Ui.DataField
     var Zone_Loop_Index;
     var Zone_Loop_Size;
 	var Zone_Loop_Value;
+
+	// Manage Lap
+
+	var TimerStartFlag = false;
+	var TimerLapFlag = false;
+	var TimerLapCount = 1;
+	var TimerLapStartTime = 0;
+	var TimerLapDuration = 0;
+	var TimerLapDuration_Value = "";
 	
     function initialize(Args)
     {
@@ -463,7 +472,24 @@ class MeanMaxPowerChartView extends Ui.DataField
     // guarantee that compute() will be called before onUpdate().
     function compute(info)
     {
-
+		// Manage Lap data
+        if( (info.elapsedTime != null))
+        {
+			if (TimerStartFlag and TimerLapCount == 1)
+			{
+				TimerStartFlag = false;
+				TimerLapStartTime = info.elapsedTime;
+			}
+			if (TimerLapFlag)
+			{
+				TimerLapFlag = false;
+				TimerLapStartTime = info.elapsedTime;
+				TimerLapCount++;
+			}
+			TimerLapDuration = info.elapsedTime - TimerLapStartTime;
+    	    TimerLapDuration_Value = TimeFormat((TimerLapDuration / 1000), "h:mm:ss");
+			System.println("TimerLapDuration_Value = " + TimerLapDuration_Value);
+		}
         if( (info.currentHeartRate != null))
         {
 			HR_Value = info.currentHeartRate;
@@ -1078,4 +1104,15 @@ class MeanMaxPowerChartView extends Ui.DataField
 		return Return_Value;
     }
 
+	function onTimerStart()
+	{
+		System.println("onTimerStart");
+		TimerStartFlag = true;
+	}
+
+	function onTimerLap()
+	{
+		System.println("onTimerLap");
+		TimerLapFlag = true;
+	}
 }
