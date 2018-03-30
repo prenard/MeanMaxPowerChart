@@ -147,7 +147,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 		System.println("Zone_L = " + Zone_L);
 		System.println("Zone_H = " + Zone_H);
 
-		var Args = new [8];
+		var Args = new [9];
 		
 		Args[0]  = readPropertyKeyInt("AVG_Power_Duration",3);
 		Args[1] = getProperty("Reset_RecordValues");
@@ -157,6 +157,8 @@ class MeanMaxPowerChartApp extends App.AppBase
 		Args[5] = Zone_H;
 		Args[6] = readPropertyKeyInt("Zone_Display_Timer",2);
 		Args[7] = readPropertyKeyInt("FTP",250);
+		Args[8] = getProperty("Display_Lap_Data");
+
 
 		if (Args[1])
 		{
