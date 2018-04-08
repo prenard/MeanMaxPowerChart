@@ -1,5 +1,5 @@
 // 
-// Prod id = 63cf73f785464f1a950c9b7fa242089b
+// Prod id = b5b612c9-139a-4cf5-ac8a-9974ea783b38
 // Dev id  = edfaf41a772447198554b3c090e283db
 //
 // History:
@@ -147,7 +147,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 		System.println("Zone_L = " + Zone_L);
 		System.println("Zone_H = " + Zone_H);
 
-		var Args = new [8];
+		var Args = new [10];
 		
 		Args[0]  = readPropertyKeyInt("AVG_Power_Duration",3);
 		Args[1] = getProperty("Reset_RecordValues");
@@ -157,6 +157,8 @@ class MeanMaxPowerChartApp extends App.AppBase
 		Args[5] = Zone_H;
 		Args[6] = readPropertyKeyInt("Zone_Display_Timer",2);
 		Args[7] = readPropertyKeyInt("FTP",250);
+		Args[8] = getProperty("Display_Lap_Data");
+		Args[9] = getProperty("Display_CP_Values");
 
 		if (Args[1])
 		{

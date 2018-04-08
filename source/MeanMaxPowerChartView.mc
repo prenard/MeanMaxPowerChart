@@ -7,7 +7,7 @@ using Toybox.Application.Storage;
 class MeanMaxPowerChartView extends Ui.DataField
 {
 	var app;
-	
+
     var Rolling_Loop_Index;
     //var Rolling_Loop_Size;
 	var Rolling_Loop_Value = new [0];
@@ -150,6 +150,41 @@ class MeanMaxPowerChartView extends Ui.DataField
     var Zone_Loop_Index;
     var Zone_Loop_Size;
 	var Zone_Loop_Value;
+
+	var Display_CP_Values_Flag = true;
+
+	// Manage Lap
+
+	var Display_Lap_Data_Flag = false;
+
+	var TimerStartFlag = false;
+	var TimerLapFlag = false;
+	var TimerLapCount = 1;
+	//var TimerLapStartTime = 0;
+	var TimerLapDuration = 0;
+
+	var LapDuration_Label = "Lap";
+	var LapDuration_Label_x = 0;
+	var LapDuration_Label_y = 0;
+	var LapDuration_Label_font = Gfx.FONT_XTINY;
+
+	var LapDuration_Value = 0;
+	var LapDuration_Value_x = 0;
+	var LapDuration_Value_y = 0;
+	var LapDuration_Value_font = Gfx.FONT_XTINY;
+
+	var LapAvgPower_Label = "Lap Pwr";
+	var LapAvgPower_Label_x = 0;
+	var LapAvgPower_Label_y = 0;
+	var LapAvgPower_Label_font = Gfx.FONT_XTINY;
+
+	var LapAvgPower_Value = 0;
+	var LapAvgPower_Value_x = 0;
+	var LapAvgPower_Value_y = 0;
+	var LapAvgPower_Value_font = Gfx.FONT_XTINY;
+
+	var LapAvgPowerCount = 0;
+	var LapAvgPowerSum = 0;
 	
     function initialize(Args)
     {
@@ -184,6 +219,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 		Zone_H = Args[5];
 		Zone_Display_Timer = Args[6];
 		FTP = Args[7];
+		Display_Lap_Data_Flag = Args[8];
+		Display_CP_Values_Flag = Args[9];
 
 		Zone_Time = new [app.Max_Zones_Number];
 		Zone_Loop_Value = new [Max_Zone_Display_Timer * app.Max_Zones_Number];
@@ -248,6 +285,13 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;
 
+			LapDuration_Label_y = 80;
+			LapDuration_Value_y = 100;
+			LapDuration_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			LapAvgPower_Label_y = 130;
+			LapAvgPower_Value_font = Gfx.FONT_NUMBER_MILD;
+
 			RollingValue_y = 237;
 			RollingValue_font = Gfx.FONT_NUMBER_MILD;
 			
@@ -303,6 +347,13 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;
 
+			LapDuration_Label_y = 110;
+			LapDuration_Value_y = 125;
+			LapDuration_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			LapAvgPower_Label_y = 160;
+			LapAvgPower_Value_font = Gfx.FONT_NUMBER_MILD;
+
 			RollingValue_y = 367;
 			RollingValue_font = Gfx.FONT_NUMBER_MILD;
 			
@@ -354,9 +405,16 @@ class MeanMaxPowerChartView extends Ui.DataField
 			CAD_Value_font = Gfx.FONT_NUMBER_HOT;
 
 			HR_Label_y = 55;
-			HR_Label_font = Gfx.FONT_XTINY;
 
+			HR_Label_font = Gfx.FONT_XTINY;
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			LapDuration_Label_y = 110;
+			LapDuration_Value_y = 125;
+			LapDuration_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			LapAvgPower_Label_y = 160;
+			LapAvgPower_Value_font = Gfx.FONT_NUMBER_MILD;
 
 			RollingValue_y = 435;
 			RollingValue_font = Gfx.FONT_NUMBER_MILD;
@@ -386,7 +444,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			Y_bar_font = Gfx.FONT_SMALL;
 
 			BatteryLevelBitmap_x = 230;
-			BatteryLevelBitmap_y = 105;
+			BatteryLevelBitmap_y = 110;
 
 			//CP_Value_font = Gfx.FONT_MEDIUM;
 			CP_Value_font = Gfx.FONT_LARGE;
@@ -398,7 +456,16 @@ class MeanMaxPowerChartView extends Ui.DataField
 		HR_Label_x = CAD_Label_x;
 		HR_Value_x = CAD_Value_x;
 		HR_Value_y = HR_Label_y;
-					
+
+		LapDuration_Label_x = CAD_Label_x;
+		//LapDuration_Value_y = LapDuration_Label_y;
+		LapDuration_Value_x = CAD_Value_x;
+
+		LapAvgPower_Label_x = CAD_Label_x;
+		LapAvgPower_Value_y = LapAvgPower_Label_y;
+		LapAvgPower_Value_x = CAD_Value_x;
+
+							
 		RollingValue_x = PWR_Value_x;
 			
 		Y_bar_x = X_bar_x_left;
@@ -463,6 +530,41 @@ class MeanMaxPowerChartView extends Ui.DataField
     // guarantee that compute() will be called before onUpdate().
     function compute(info)
     {
+		// Manage Lap data
+
+		if (Display_Lap_Data_Flag)
+		{
+	        //if( (info.timerTime != null))
+	        if( (TimerStartFlag))
+    	    {
+				System.println("TimerLapFlag = " + TimerLapFlag);
+				if (TimerLapFlag)
+				{
+					TimerLapFlag = false;
+					TimerLapCount++;
+					///TimerLapStartTime = info.timerTime;
+					LapAvgPowerCount = 0;
+					LapAvgPowerSum = 0;
+				}
+
+		        if( (info.currentPower != null))
+    		    {
+					LapAvgPowerCount++;
+					LapAvgPowerSum += info.currentPower;
+					LapAvgPower_Value = LapAvgPowerSum / LapAvgPowerCount;
+					System.println("LapAvgPower_Value = " + LapAvgPower_Value);
+				}			
+				
+				//LapDuration = info.timerTime - LapStartTime + 1000;
+    	    	//TimerLapDuration_Value = TimeFormat((TimerLapDuration / 1000), "h:mm:ss");
+				//LapDuration_Value = TimeFormat(LapAvgPowerCount, "h:mm:ss");
+				//LapAvgPower_Value = LapAvgPowerSum / (TimerLapDuration / 1000);
+				//System.println("TimerLapDuration = " + TimerLapDuration);
+				//System.println("LapAvgPowerSum = " + LapAvgPowerSum);
+
+			}
+			LapDuration_Value = TimeFormat(LapAvgPowerCount, "h:mm:ss");
+		}
 
         if( (info.currentHeartRate != null))
         {
@@ -540,7 +642,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 
 
-        if (info.currentPower != null && info.elapsedTime != null && info.elapsedTime > 0)
+        //if (info.currentPower != null && info.elapsedTime != null && info.elapsedTime > 0)
+        if (info.currentPower != null)
         {
 			//System.println("==> New - info.currentPower = " + info.currentPower);
 
@@ -582,7 +685,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 									{
 										app.RecordPowerValues[j] = app.RidePowerValues[j];
 										System.println("Saving new RecordPowerValues to storage... RecordPowerValues = " + app.RecordPowerValues);
-										Storage.setValue("RecordPowerValues",app.RidePowerValues);
+										Storage.setValue("RecordPowerValues",app.RecordPowerValues);
 									}
 								}
 								
@@ -911,20 +1014,18 @@ class MeanMaxPowerChartView extends Ui.DataField
 		}
 
 		// Display CP Value
-		
-		var MaxCPValueY = X_bar_y - 20;
-		for (var i = app.TimeValues.size() - 1; i >= 0; --i)
+		if (Display_CP_Values_Flag)
 		{
-			if (app.TimeValuesCP[i] == 1 and app.RidePowerValues[i] > 0)
+			var MaxCPValueY = X_bar_y - 20;
+			for (var i = app.TimeValues.size() - 1; i >= 0; --i)
 			{
-				var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RidePowerValues[i] / PowerMax - 20;
-				//Gfx.getFontHeight(X_bar_font)
-
-				y1 = min(y1, MaxCPValueY);
-
-				textL(dc, app.TimeValues_x[i] + 1, y1, CP_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, app.RidePowerValues[i].toString());
-
-				MaxCPValueY = y1 - Gfx.getFontHeight(CP_Value_font);
+				if (app.TimeValuesCP[i] == 1 and app.RidePowerValues[i] > 0)
+				{
+					var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RidePowerValues[i] / PowerMax - 20;
+					y1 = min(y1, MaxCPValueY);
+					textL(dc, app.TimeValues_x[i] + 1, y1, CP_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, app.RidePowerValues[i].toString());
+					MaxCPValueY = y1 - (Gfx.getFontHeight(CP_Value_font) - 10);
+				}
 			}
 		}
 
@@ -946,6 +1047,16 @@ class MeanMaxPowerChartView extends Ui.DataField
 		textR(dc, RollingValue_x, RollingValue_y, RollingValue_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, RollingValue.toString());
 		textR(dc, RollingValue_Unit_x, RollingValue_Unit_y, RollingValue_Unit_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, RollingValue_Unit.toString());
 		textR(dc, RollingValue_Label_x, RollingValue_Label_y, RollingValue_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, RollingValue_Label.toString());
+
+
+		// Manage Lap Data
+		if (Display_Lap_Data_Flag)
+		{
+			textL(dc, LapDuration_Label_x, LapDuration_Label_y, LapDuration_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, LapDuration_Label + " " + TimerLapCount);
+			textR(dc, LapDuration_Value_x, LapDuration_Value_y, LapDuration_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, LapDuration_Value.toString());
+			textL(dc, LapAvgPower_Label_x, LapAvgPower_Label_y, LapAvgPower_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, LapAvgPower_Label);
+			textR(dc, LapAvgPower_Value_x, LapAvgPower_Value_y, LapAvgPower_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, LapAvgPower_Value.toString());
+		}
 
 		BatteryLevelBitmap.setBitmap(BatteryLevelBitmapIdentifier);
 		textL(dc, BatteryLevelBitmap_x + 25, BatteryLevelBitmap_y, BatteryLevel_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, BatteryLevel.format("%.0f").toString() + "%");
@@ -1078,4 +1189,32 @@ class MeanMaxPowerChartView extends Ui.DataField
 		return Return_Value;
     }
 
+	function onTimerStart()
+	{
+		System.println("onTimerStart");
+		TimerStartFlag = true;
+	}
+
+	function onTimerStop()
+	{
+		System.println("onTimerStop");
+		TimerStartFlag = false;
+	}
+
+	function onTimerPause()
+	{
+		System.println("onTimerPause");
+	}
+
+	function onTimerResumes()
+	{
+		System.println("onTimerResume");
+	}
+
+
+	function onTimerLap()
+	{
+		System.println("onTimerLap");
+		TimerLapFlag = true;
+	}
 }

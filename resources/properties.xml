@@ -47,6 +47,8 @@
 	    <property id="Z5_H" type="number">408</property>
 		<property id="Z6_H" type="number">550</property>
 		<property id="Zone_Display_Timer" type="number">2</property>
+	    <property id="Display_Lap_Data" type="boolean">false</property>
+	    <property id="Display_CP_Values" type="boolean">true</property>
 	</properties>
 
 	<strings>
@@ -97,6 +99,8 @@
 	    <string id="Z5_H_Title">PWR Zone 5 - High</string>
 	    <string id="Z6_H_Title">PWR Zone 6 - High</string>
 	    <string id="Zone_Display_Timer_Title">Zone Display Timer</string>
+	    <string id="Display_Lap_Data_Title">Display Lap Data</string>
+	    <string id="Display_CP_Values_Title">Display CP Values</string>
 	</strings>
 	
 	<settings>
@@ -247,6 +251,12 @@
 	    </setting>
 	    <setting propertyKey="@Properties.Zone_Display_Timer" title="@Strings.Zone_Display_Timer_Title">
 	        <settingConfig type="numeric" min="1" max="10" />
+	    </setting>
+	    <setting propertyKey="@Properties.Display_Lap_Data" title="@Strings.Display_Lap_Data_Title">
+	        <settingConfig type="boolean"/>
+	    </setting>
+	    <setting propertyKey="@Properties.Display_CP_Values" title="@Strings.Display_CP_Values_Title">
+	        <settingConfig type="boolean"/>
 	    </setting>
 	</settings>
 </resources>
