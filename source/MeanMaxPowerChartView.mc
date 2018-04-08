@@ -685,7 +685,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 									{
 										app.RecordPowerValues[j] = app.RidePowerValues[j];
 										System.println("Saving new RecordPowerValues to storage... RecordPowerValues = " + app.RecordPowerValues);
-										Storage.setValue("RecordPowerValues",app.RidePowerValues);
+										Storage.setValue("RecordPowerValues",app.RecordPowerValues);
 									}
 								}
 								
@@ -1024,7 +1024,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 					var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RidePowerValues[i] / PowerMax - 20;
 					y1 = min(y1, MaxCPValueY);
 					textL(dc, app.TimeValues_x[i] + 1, y1, CP_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, app.RidePowerValues[i].toString());
-					MaxCPValueY = y1 - Gfx.getFontHeight(CP_Value_font);
+					MaxCPValueY = y1 - (Gfx.getFontHeight(CP_Value_font) - 10);
 				}
 			}
 		}
