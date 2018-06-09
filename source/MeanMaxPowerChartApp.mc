@@ -36,6 +36,9 @@ class MeanMaxPowerChartApp extends App.AppBase
 	var Max_Zones_Number = 7;
 	var Zones_Number = 0;
 
+	var Display_CP_Values_Flag = true;
+	var Display_CP_Values_Type = 0;
+
 /*
 	var Max_Zone_Display_Timer = 10;
 	var Zone_Display_Timer = 0;
@@ -147,7 +150,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 		System.println("Zone_L = " + Zone_L);
 		System.println("Zone_H = " + Zone_H);
 
-		var Args = new [10];
+		var Args = new [11];
 		
 		Args[0]  = readPropertyKeyInt("AVG_Power_Duration",3);
 		Args[1] = getProperty("Reset_RecordValues");
@@ -159,6 +162,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 		Args[7] = readPropertyKeyInt("FTP",250);
 		Args[8] = getProperty("Display_Lap_Data");
 		Args[9] = getProperty("Display_CP_Values");
+		Args[10] = readPropertyKeyInt("Remove_Power_Spikes_Higher_than",1200);
 
 		if (Args[1])
 		{
@@ -188,7 +192,7 @@ class MeanMaxPowerChartApp extends App.AppBase
 		//System.println("RecordPowerValues = " + RecordPowerValues);
 		//System.println("PreviousRecordPowerValues = " + PreviousRecordPowerValues);
 				
-        return [ new MeanMaxPowerChartView(Args) ];
+        return [ new MeanMaxPowerChartView(Args), new MeanMaxPowerChartDelegate() ];
     }
 
 	function readPropertyKeyInt(key,thisDefault)

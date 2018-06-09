@@ -49,6 +49,7 @@
 		<property id="Zone_Display_Timer" type="number">2</property>
 	    <property id="Display_Lap_Data" type="boolean">false</property>
 	    <property id="Display_CP_Values" type="boolean">true</property>
+		<property id="Remove_Power_Spikes_Higher_than" type="number">1200</property>
 	</properties>
 
 	<strings>
@@ -101,6 +102,7 @@
 	    <string id="Zone_Display_Timer_Title">Zone Display Timer</string>
 	    <string id="Display_Lap_Data_Title">Display Lap Data</string>
 	    <string id="Display_CP_Values_Title">Display CP Values</string>
+	    <string id="Remove_Power_Spikes_Higher_than_Title">Remove Power Spikes higher than</string>
 	</strings>
 	
 	<settings>
@@ -257,6 +259,9 @@
 	    </setting>
 	    <setting propertyKey="@Properties.Display_CP_Values" title="@Strings.Display_CP_Values_Title">
 	        <settingConfig type="boolean"/>
+	    </setting>
+	    <setting propertyKey="@Properties.Remove_Power_Spikes_Higher_than" title="@Strings.Remove_Power_Spikes_Higher_than_Title">
+	        <settingConfig type="numeric" min="1" max="2500" />
 	    </setting>
 	</settings>
 </resources>

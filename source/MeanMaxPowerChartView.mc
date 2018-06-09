@@ -8,6 +8,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 {
 	var app;
 
+	var Remove_Power_Spikes_Higher_than = 0;
+	
     var Rolling_Loop_Index;
     //var Rolling_Loop_Size;
 	var Rolling_Loop_Value = new [0];
@@ -151,8 +153,9 @@ class MeanMaxPowerChartView extends Ui.DataField
     var Zone_Loop_Size;
 	var Zone_Loop_Value;
 
-	var Display_CP_Values_Flag = true;
-
+	//var Display_CP_Values_Flag = true;
+	//var Display_CP_Values_Type = 0;
+	
 	// Manage Lap
 
 	var Display_Lap_Data_Flag = false;
@@ -220,7 +223,8 @@ class MeanMaxPowerChartView extends Ui.DataField
 		Zone_Display_Timer = Args[6];
 		FTP = Args[7];
 		Display_Lap_Data_Flag = Args[8];
-		Display_CP_Values_Flag = Args[9];
+		app.Display_CP_Values_Flag = Args[9];
+		Remove_Power_Spikes_Higher_than = Args[10];
 
 		Zone_Time = new [app.Max_Zones_Number];
 		Zone_Loop_Value = new [Max_Zone_Display_Timer * app.Max_Zones_Number];
@@ -547,7 +551,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 					LapAvgPowerSum = 0;
 				}
 
-		        if( (info.currentPower != null))
+		        if(isPowerValueValid(info.currentPower))
     		    {
 					LapAvgPowerCount++;
 					LapAvgPowerSum += info.currentPower;
@@ -643,7 +647,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 
         //if (info.currentPower != null && info.elapsedTime != null && info.elapsedTime > 0)
-        if (info.currentPower != null)
+		if(isPowerValueValid(info.currentPower))
         {
 			//System.println("==> New - info.currentPower = " + info.currentPower);
 
@@ -1014,16 +1018,32 @@ class MeanMaxPowerChartView extends Ui.DataField
 		}
 
 		// Display CP Value
-		if (Display_CP_Values_Flag)
+		if (app.Display_CP_Values_Flag)
 		{
 			var MaxCPValueY = X_bar_y - 20;
 			for (var i = app.TimeValues.size() - 1; i >= 0; --i)
 			{
 				if (app.TimeValuesCP[i] == 1 and app.RidePowerValues[i] > 0)
 				{
-					var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * app.RidePowerValues[i] / PowerMax - 20;
+					var CP_Value = 0;
+					if (app.Display_CP_Values_Type == 0)
+					{
+						CP_Value = app.CurrentPowerValues[i];
+					}
+					else
+					if (app.Display_CP_Values_Type == 1)
+					{
+						CP_Value = app.RidePowerValues[i];
+					}
+					else
+					if (app.Display_CP_Values_Type == 2)
+					{
+						CP_Value = app.RecordPowerValues[i];
+					}
+
+					var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * CP_Value / PowerMax - 20;
 					y1 = min(y1, MaxCPValueY);
-					textL(dc, app.TimeValues_x[i] + 1, y1, CP_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, app.RidePowerValues[i].toString());
+					textL(dc, app.TimeValues_x[i] + 1, y1, CP_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, CP_Value.toString());
 					MaxCPValueY = y1 - (Gfx.getFontHeight(CP_Value_font) - 10);
 				}
 			}
@@ -1216,5 +1236,18 @@ class MeanMaxPowerChartView extends Ui.DataField
 	{
 		System.println("onTimerLap");
 		TimerLapFlag = true;
+	}
+
+	function isPowerValueValid(PowerValue)
+	{
+		var Return_Value = false;
+        if( (PowerValue != null))
+    	{
+			if (PowerValue < Remove_Power_Spikes_Higher_than)
+			{
+				Return_Value = true;
+			}
+		}
+		return Return_Value;
 	}
 }
