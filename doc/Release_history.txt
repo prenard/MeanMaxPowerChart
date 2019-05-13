@@ -31,6 +31,8 @@ You can specify which "rolling" data field you want to display (Time, Timer, Dis
 
 Release History:
 
+- V1.17 - 2019-05-13
+* Fix bugs
 - V1.13 - 2018-06-09
 * Add onTap support to switch CP values Current / Ride / Records
 - V1.12 - 2018-04-20

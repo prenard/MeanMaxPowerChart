@@ -93,20 +93,20 @@ class MeanMaxPowerChartApp extends App.AppBase
 		}
 
 
-		Label_Value[0] = getProperty("Field_Time_Label");
-		Duration_Value[0] = getProperty("Field_Time_Duration");
+		Label_Value[0] = Application.Properties.getValue("Field_Time_Label");
+		Duration_Value[0] = readPropertyKeyInt("Field_Time_Duration",2);
 
-		Label_Value[1] = getProperty("Field_Timer_Label");
-		Duration_Value[1] = getProperty("Field_Timer_Duration");
+		Label_Value[1] = Application.Properties.getValue("Field_Timer_Label");
+		Duration_Value[1] = readPropertyKeyInt("Field_Timer_Duration",2);
 
-		Label_Value[2] = getProperty("Field_Distance_Label");
-		Duration_Value[2] = getProperty("Field_Distance_Duration");
+		Label_Value[2] = Application.Properties.getValue("Field_Distance_Label");
+		Duration_Value[2] = readPropertyKeyInt("Field_Distance_Duration",2);
 
-		Label_Value[3] = getProperty("Field_TimeOfDay_Label");
-		Duration_Value[3] = getProperty("Field_TimeOfDay_Duration");
+		Label_Value[3] = Application.Properties.getValue("Field_TimeOfDay_Label");
+		Duration_Value[3] = readPropertyKeyInt("Field_TimeOfDay_Duration",2);
 
-		Label_Value[4] = getProperty("Field_TSS_Label");
-		Duration_Value[4] = getProperty("Field_TSS_Duration");
+		Label_Value[4] = Application.Properties.getValue("Field_TSS_Label");
+		Duration_Value[4] = readPropertyKeyInt("Field_TSS_Duration",2);
 
 		var Max_Power = 1999;
 
@@ -132,9 +132,10 @@ class MeanMaxPowerChartApp extends App.AppBase
 				System.println("Zone " + j + " : " + Zone_L[j] + " - " + Zone_H[j]);
 			}
 			*/
-			if ((Z_H[i] == 0) and (!Last_Zone))
+			/*if ((Z_H[i] == 0) and (!Last_Zone))*/
+			if ((Z_H[i] == 0))
 			{
-				Zone_H.add(Max_HR);
+				Zone_H.add(Max_Power);
 			}
 			else
 			{
@@ -153,15 +154,15 @@ class MeanMaxPowerChartApp extends App.AppBase
 		var Args = new [11];
 		
 		Args[0]  = readPropertyKeyInt("AVG_Power_Duration",3);
-		Args[1] = getProperty("Reset_RecordValues");
+		Args[1] = Application.Properties.getValue("Reset_RecordValues");
 		Args[2] = Label_Value;
 		Args[3] = Duration_Value;
 		Args[4] = Zone_L;
 		Args[5] = Zone_H;
 		Args[6] = readPropertyKeyInt("Zone_Display_Timer",2);
 		Args[7] = readPropertyKeyInt("FTP",250);
-		Args[8] = getProperty("Display_Lap_Data");
-		Args[9] = getProperty("Display_CP_Values");
+		Args[8] = Application.Properties.getValue("Display_Lap_Data");
+		Args[9] = Application.Properties.getValue("Display_CP_Values");
 		Args[10] = readPropertyKeyInt("Remove_Power_Spikes_Higher_than",1200);
 
 		if (Args[1])
@@ -197,7 +198,8 @@ class MeanMaxPowerChartApp extends App.AppBase
 
 	function readPropertyKeyInt(key,thisDefault)
 	{
-		var value = getProperty(key);
+		//var value = getProperty(key);
+		var value = Application.Properties.getValue(key);
         if(value == null || !(value instanceof Number))
         {
         	if(value != null)

@@ -1,6 +1,5 @@
 <resources>
 	<properties>
-    	<property id="DF_Title" type="string">Mean Max Power Chart</property>
 	    <property id="AVG_Power_Duration" type="number">3</property>
 	    <property id="Reset_RecordValues" type="boolean">false</property>
 	    <property id="Field_Time_Label" type="string">Time</property>	    
@@ -53,7 +52,6 @@
 	</properties>
 
 	<strings>
-    	<string id="DF_Title_Title">Data Field Title</string>
 	    <string id="AVG_Power_Duration_Title">AVG Power Duration</string>
 	    <string id="Reset_RecordValues_Title">Reset Power Values Records</string>
 	    <string id="Field_Time_Label_Title">Time</string>
@@ -106,9 +104,6 @@
 	</strings>
 	
 	<settings>
-	    <setting propertyKey="@Properties.DF_Title" title="@Strings.DF_Title_Title">
-	        <settingConfig type="alphaNumeric" readonly="true" />
-	    </setting>
 		<setting propertyKey="@Properties.AVG_Power_Duration" title="@Strings.AVG_Power_Duration_Title">
 	        <settingConfig type="list">
 				<listEntry value="1">@Strings.Sec_1</listEntry>
