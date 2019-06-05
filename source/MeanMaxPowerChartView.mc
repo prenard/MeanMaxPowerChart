@@ -268,6 +268,130 @@ class MeanMaxPowerChartView extends Ui.DataField
 		PowerValuesHistoryAvgPeriod[1] = 5; 
 		PowerValuesHistory[1] = new [2160];
 
+		if (app.Device_Type.equals("edge_520_plus"))
+		{
+			PWR_Label_x = 1;
+			PWR_Label_y = 1;
+			PWR_Label_font = Gfx.FONT_XTINY;
+
+			PWR_Value_x = 100;
+			PWR_Value_y = 1;
+			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			CAD_Label_x = 105;
+			CAD_Label_font = Gfx.FONT_XTINY;
+
+			CAD_Value_x = 199;
+			CAD_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			HR_Label_y = 41;
+			HR_Label_font = Gfx.FONT_XTINY;
+
+			HR_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			LapDuration_Label_y = 80;
+			LapDuration_Value_y = 100;
+			LapDuration_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			LapAvgPower_Label_y = 130;
+			LapAvgPower_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			RollingValue_y = 237;
+			RollingValue_font = Gfx.FONT_NUMBER_MILD;
+			
+			RollingValue_Unit_y = 226;
+			RollingValue_Unit_font = Gfx.FONT_XTINY;
+
+			RollingValue_Label_x = 175;
+			RollingValue_Label_font = Gfx.FONT_XTINY;
+
+			ZoneRollingValue = "";
+			ZoneRollingValue_x = 0;
+			ZoneRollingValue_font = Gfx.FONT_NUMBER_MILD;
+
+			ZoneRollingValue_Label = "";
+			ZoneRollingValue_Label_x = 0;
+			ZoneRollingValue_Label_font = Gfx.FONT_XTINY;
+
+			zone_bar_width = 10;
+			
+			X_bar_x_left = 38;
+			X_bar_x_right = 190;
+			X_bar_y = 207;
+			X_bar_font = Gfx.FONT_SMALL;
+			
+			Y_bar_y_top = 50;
+			Y_bar_font = Gfx.FONT_SMALL;
+
+			BatteryLevelBitmap_x = 155;
+			BatteryLevelBitmap_y = 85;
+
+			//CP_Value_font = Gfx.FONT_SMALL;
+			CP_Value_font = Gfx.FONT_LARGE;
+		}
+		else
+		if (app.Device_Type.equals("edge_530") or app.Device_Type.equals("edge_830")) 
+		{
+			PWR_Label_x = 1;
+			PWR_Label_y = 1;
+			PWR_Label_font = Gfx.FONT_XTINY;
+
+			PWR_Value_x = 100;
+			PWR_Value_y = 1;
+			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			CAD_Label_x = 150;
+			CAD_Label_font = Gfx.FONT_XTINY;
+
+			CAD_Value_x = 245;
+			CAD_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			HR_Label_y = 41;
+			HR_Label_font = Gfx.FONT_XTINY;
+
+			HR_Value_font = Gfx.FONT_NUMBER_HOT;
+
+			LapDuration_Label_y = 80;
+			LapDuration_Value_y = 100;
+			LapDuration_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			LapAvgPower_Label_y = 130;
+			LapAvgPower_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			RollingValue_y = 287;
+			RollingValue_font = Gfx.FONT_NUMBER_MILD;
+			
+			RollingValue_Unit_y = 276;
+			RollingValue_Unit_font = Gfx.FONT_XTINY;
+
+			RollingValue_Label_x = 175;
+			RollingValue_Label_font = Gfx.FONT_XTINY;
+
+			ZoneRollingValue = "";
+			ZoneRollingValue_x = 0;
+			ZoneRollingValue_font = Gfx.FONT_NUMBER_MILD;
+
+			ZoneRollingValue_Label = "";
+			ZoneRollingValue_Label_x = 0;
+			ZoneRollingValue_Label_font = Gfx.FONT_XTINY;
+
+			zone_bar_width = 10;
+			
+			X_bar_x_left = 38;
+			X_bar_x_right = 236;
+			X_bar_y = 257;
+			X_bar_font = Gfx.FONT_SMALL;
+			
+			Y_bar_y_top = 50;
+			Y_bar_font = Gfx.FONT_SMALL;
+
+			BatteryLevelBitmap_x = 200;
+			BatteryLevelBitmap_y = 85;
+
+			//CP_Value_font = Gfx.FONT_SMALL;
+			CP_Value_font = Gfx.FONT_LARGE;
+		}
+		else
 		if (app.Device_Type.equals("edge_820"))
 		{
 			PWR_Label_x = 1;
