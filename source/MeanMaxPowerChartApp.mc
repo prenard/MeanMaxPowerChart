@@ -64,7 +64,7 @@ class MeanMaxPowerChartApp extends App.AppBase
         System.println("Device - Screen Height = " + DeviceSettings.screenHeight);
         System.println("Device - Screen Width = " + DeviceSettings.screenWidth);
         System.println("Device - Is Touchscreen = " + DeviceSettings.isTouchScreen);
-
+		System.println("Total Memory = " + System.getSystemStats().totalMemory);
     }
 
     // onStart() is called on application start up

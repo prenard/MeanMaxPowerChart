@@ -31,6 +31,8 @@ You can specify which "rolling" data field you want to display (Time, Timer, Dis
 
 Release History:
 
+- V1.19 - 2019-06-10
+* Add Edge 1030 Bontrager support
 - V1.18 - 2019-06-05
 * Add Edge 520 Plus support
 * Add Edge 530 support

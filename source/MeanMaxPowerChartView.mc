@@ -195,9 +195,6 @@ class MeanMaxPowerChartView extends Ui.DataField
 
         app = App.getApp();
 
-	    //Device_Type = Ui.loadResource(Rez.Strings.Device);
-		System.println("Device_Type = " + app.Device_Type);
-
 		AVG_Power_Duration		= Args[0];
 		System.println("AVG_Power_Duration = " + AVG_Power_Duration);
 
@@ -516,7 +513,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			CP_Value_font = Gfx.FONT_LARGE;
 		}
 		else
-		if (app.Device_Type.equals("edge_1030"))
+		if (app.Device_Type.equals("edge_1030") or app.Device_Type.equals("edge_1030_bontrager"))
 		{
 			PWR_Label_x = 1;
 			PWR_Label_y = 1;

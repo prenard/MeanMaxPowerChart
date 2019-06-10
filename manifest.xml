@@ -2,6 +2,7 @@
     <iq:application entry="MeanMaxPowerChartApp" id="b5b612c9139a4cf5ac8a9974ea783b38" launcherIcon="@Drawables.LauncherIcon" name="@Strings.AppName" type="datafield" version="1.11.0">
         <iq:products>
             <iq:product id="edge1030"/>
+            <iq:product id="edge1030bontrager"/>
             <iq:product id="edge520plus"/>
             <iq:product id="edge530"/>
             <iq:product id="edge820"/>
