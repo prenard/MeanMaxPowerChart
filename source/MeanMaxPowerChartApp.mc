@@ -92,24 +92,31 @@ class MeanMaxPowerChartApp extends App.AppBase
        	   Duration_Value[i] = 0;
 		}
 
-
+/*
 		Label_Value[0] = Application.Properties.getValue("Field_Time_Label");
-		Duration_Value[0] = readPropertyKeyInt("Field_Time_Duration",2);
-
 		Label_Value[1] = Application.Properties.getValue("Field_Timer_Label");
-		Duration_Value[1] = readPropertyKeyInt("Field_Timer_Duration",2);
-
 		Label_Value[2] = Application.Properties.getValue("Field_Distance_Label");
-		Duration_Value[2] = readPropertyKeyInt("Field_Distance_Duration",2);
-
 		Label_Value[3] = Application.Properties.getValue("Field_TimeOfDay_Label");
-		Duration_Value[3] = readPropertyKeyInt("Field_TimeOfDay_Duration",2);
-
 		Label_Value[4] = Application.Properties.getValue("Field_TSS_Label");
+*/
+		//Label_Value[0] = "Time";
+		Label_Value[0] = Ui.loadResource(Rez.Strings.Field_Time_Label);
+		Label_Value[1] = Ui.loadResource(Rez.Strings.Field_Timer_Label);
+		Label_Value[2] = Ui.loadResource(Rez.Strings.Field_Distance_Label);
+		Label_Value[3] = Ui.loadResource(Rez.Strings.Field_TimeOfDay_Label);
+		Label_Value[4] = Ui.loadResource(Rez.Strings.Field_TSS_Label);
+
+
+
+		Duration_Value[0] = readPropertyKeyInt("Field_Time_Duration",2);
+		Duration_Value[1] = readPropertyKeyInt("Field_Timer_Duration",2);
+		Duration_Value[2] = readPropertyKeyInt("Field_Distance_Duration",2);
+		Duration_Value[3] = readPropertyKeyInt("Field_TimeOfDay_Duration",2);
 		Duration_Value[4] = readPropertyKeyInt("Field_TSS_Duration",2);
 
-		var Max_Power = 1999;
 
+
+		var Max_Power = 1999;
 
 		var Z_H = new [Max_Zones_Number - 1];
 		var Zone_L = new [0];
@@ -167,20 +174,20 @@ class MeanMaxPowerChartApp extends App.AppBase
 
 		if (Args[1])
 		{
-			//System.println("Going to reset Power Values Record...");
+			System.println("Going to reset Power Values Record...");
 			ReadPowerFromProperty();
-			//System.println("Saving new RecordPowerValues to storage... RecordPowerValues = " + RecordPowerValues);
+			System.println("Saving new RecordPowerValues to storage... RecordPowerValues = " + RecordPowerValues);
 			Storage.setValue("RecordPowerValues", RecordPowerValues);
 		}
 
 		if (Storage.getValue("RecordPowerValues") != null)
 		{
-			//System.println("Loading RecordPowerValues from storage...");
+			System.println("Loading RecordPowerValues from storage...");
 			RecordPowerValues = Storage.getValue("RecordPowerValues");
 		}
 		else
 		{
-			//System.println("Going to initialize Power Values Record...");
+			System.println("Going to initialize Power Values Record...");
 			ReadPowerFromProperty();
 		}
 

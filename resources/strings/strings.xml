@@ -1,8 +1,13 @@
 <strings>
-    <string id="AppName">MeanMaxPowerChart</string>
-    <string id="Sec_1">1 Sec</string>
-    <string id="Sec_2">2 Sec</string>
-    <string id="Sec_3">3 Sec</string>
-    <string id="Sec_5">5 Sec</string>
-    <string id="Sec_10">10 Sec</string>
+	<string id="AppName">MeanMaxPowerChart</string>
+   	<string id="Sec_1">1 Sec</string>
+   	<string id="Sec_2">2 Sec</string>
+   	<string id="Sec_3">3 Sec</string>
+   	<string id="Sec_5">5 Sec</string>
+   	<string id="Sec_10">10 Sec</string>
+	<string id="Field_Time_Label">Time</string>
+	<string id="Field_Timer_Label">Timer</string>
+	<string id="Field_Distance_Label">Distance</string>
+    <string id="Field_TimeOfDay_Label">Time of Day</string>
+	<string id="Field_TSS_Label">TSS</string>
 </strings>

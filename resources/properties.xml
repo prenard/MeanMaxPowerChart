@@ -2,15 +2,10 @@
 	<properties>
 	    <property id="AVG_Power_Duration" type="number">3</property>
 	    <property id="Reset_RecordValues" type="boolean">false</property>
-	    <property id="Field_Time_Label" type="string">Time</property>	    
 	    <property id="Field_Time_Duration" type="number">2</property>
-	    <property id="Field_Timer_Label" type="string">Timer</property>	    
 	    <property id="Field_Timer_Duration" type="number">2</property>
-	    <property id="Field_Distance_Label" type="string">Distance</property>
 	    <property id="Field_Distance_Duration" type="number">2</property>
-	    <property id="Field_TimeOfDay_Label" type="string">Time of Day</property>
 	    <property id="Field_TimeOfDay_Duration" type="number">2</property>
-	    <property id="Field_TSS_Label" type="string">TSS</property>
 	    <property id="Field_TSS_Duration" type="number">2</property>
 	    <property id="Field_PP_00001s" type="number">812</property>
 	    <property id="Field_PP_00002s" type="number">806</property>
@@ -54,15 +49,10 @@
 	<strings>
 	    <string id="AVG_Power_Duration_Title">AVG Power Duration</string>
 	    <string id="Reset_RecordValues_Title">Reset Power Values Records</string>
-	    <string id="Field_Time_Label_Title">Time</string>
 	    <string id="Field_Time_Duration_Title">Time field duration</string>
-	    <string id="Field_Timer_Label_Title">Timer</string>
 	    <string id="Field_Timer_Duration_Title">Timer field duration</string>
-	    <string id="Field_Distance_Label_Title">Distance</string>
 	    <string id="Field_Distance_Duration_Title">Distance field duration</string>
-	    <string id="Field_TimeOfDay_Label_Title">Time of Day</string>
 	    <string id="Field_TimeOfDay_Duration_Title">Time of Day duration</string>
-	    <string id="Field_TSS_Label_Title">TSS</string>
 	    <string id="Field_TSS_Duration_Title">TSS duration</string>
 	    <string id="Field_PP_00001s_Title">Peak Power 00001 Sec</string>
 	    <string id="Field_PP_00002s_Title">Peak Power 00002 Sec</string>
@@ -116,32 +106,17 @@
 	    <setting propertyKey="@Properties.Reset_RecordValues" title="@Strings.Reset_RecordValues_Title">
 	        <settingConfig type="boolean"/>
 	    </setting>
-	    <setting propertyKey="@Properties.Field_Time_Label" title="@Strings.Field_Time_Label_Title">
-	        <settingConfig type="alphaNumeric" readonly="true" />
-	    </setting>
 	    <setting propertyKey="@Properties.Field_Time_Duration" title="@Strings.Field_Time_Duration_Title">
 	        <settingConfig type="numeric" min="0" max="10" />
-	    </setting>
-	    <setting propertyKey="@Properties.Field_Timer_Label" title="@Strings.Field_Timer_Label_Title">
-	        <settingConfig type="alphaNumeric" readonly="true" />
 	    </setting>
 	    <setting propertyKey="@Properties.Field_Timer_Duration" title="@Strings.Field_Timer_Duration_Title">
 	        <settingConfig type="numeric" min="0" max="10" />
 	    </setting>
-	    <setting propertyKey="@Properties.Field_Distance_Label" title="@Strings.Field_Distance_Label_Title">
-	        <settingConfig type="alphaNumeric" readonly="true" />
-	    </setting>
 	    <setting propertyKey="@Properties.Field_Distance_Duration" title="@Strings.Field_Distance_Duration_Title">
 	        <settingConfig type="numeric" min="0" max="10" />
 	    </setting>
-	    <setting propertyKey="@Properties.Field_TimeOfDay_Label" title="@Strings.Field_TimeOfDay_Label_Title">
-	        <settingConfig type="alphaNumeric" readonly="true" />
-	    </setting>
 	    <setting propertyKey="@Properties.Field_TimeOfDay_Duration" title="@Strings.Field_TimeOfDay_Duration_Title">
 	        <settingConfig type="numeric" min="0" max="10" />
-	    </setting>
-	    <setting propertyKey="@Properties.Field_TSS_Label" title="@Strings.Field_TSS_Label_Title">
-	        <settingConfig type="alphaNumeric" readonly="true" />
 	    </setting>
 	    <setting propertyKey="@Properties.Field_TSS_Duration" title="@Strings.Field_TSS_Duration_Title">
 	        <settingConfig type="numeric" min="0" max="10" />

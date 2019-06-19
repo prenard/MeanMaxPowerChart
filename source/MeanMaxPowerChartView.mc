@@ -900,21 +900,21 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 		RollingValue_Label = Field;
 
-		if (Field.equals(Ui.loadResource(Rez.Strings.Field_Time_Label_Title)))
+		if (Field.equals(Ui.loadResource(Rez.Strings.Field_Time_Label)))
 		//if (Field.equals("Time"))
 		{
             Value_Picked = Time_Value.toString();
 			Value_Unit_Picked = "";
 		}
 		else
-		if (Field.equals(Ui.loadResource(Rez.Strings.Field_Timer_Label_Title)))
+		if (Field.equals(Ui.loadResource(Rez.Strings.Field_Timer_Label)))
 		//if (Field.equals("Timer"))
 		{
             Value_Picked = Timer_Value.toString();
 			Value_Unit_Picked = "";
 		}
 		else
-		if (Field.equals(Ui.loadResource(Rez.Strings.Field_Distance_Label_Title)))
+		if (Field.equals(Ui.loadResource(Rez.Strings.Field_Distance_Label)))
 		//if (Field.equals("Distance")) 
 		{
 
@@ -932,13 +932,13 @@ class MeanMaxPowerChartView extends Ui.DataField
             Value_Picked = Distance_Value.format("%.1f").toString();
 		}
 		else
-		if (Field.equals(Ui.loadResource(Rez.Strings.Field_TimeOfDay_Label_Title)))
+		if (Field.equals(Ui.loadResource(Rez.Strings.Field_TimeOfDay_Label)))
 		{
             Value_Picked = TimeOfDay_Value.toString();
             Value_Unit_Picked = TimeOfDay_Meridiem_Value.toString();
 		}
 		else
-		if (Field.equals(Ui.loadResource(Rez.Strings.Field_TSS_Label_Title)))
+		if (Field.equals(Ui.loadResource(Rez.Strings.Field_TSS_Label)))
 		{
             Value_Picked = TSS_Value.format("%.1f").toString();
             Value_Unit_Picked = "";
