@@ -31,6 +31,12 @@ You can specify which "rolling" data field you want to display (Time, Timer, Dis
 
 Release History:
 
+- V1.24 - 2020-03-17
+* Add gear display support on Edge 830 & 1030 - Dynamic DI2 & ETAP detection
+- V1.23 - 2020-03-17
+* Add gear display support on Edge 830 & 1030
+- V1.22 - 2020-03-17
+* Test gear display on Edge 830
 - V1.21 - 2019-06-19
 * Update properties management
 - V1.20 - 2019-06-17

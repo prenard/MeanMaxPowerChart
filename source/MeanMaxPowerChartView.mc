@@ -52,6 +52,24 @@ class MeanMaxPowerChartView extends Ui.DataField
 	var PWR_Value_y = 0;
 	var PWR_Value_font = Gfx.FONT_XTINY;
 
+	var Device_Support_Display_Gear_Data_Flag = false;
+	var Display_Gear_Data_Flag = false;
+
+	var Gear_Label = "Gear";
+	var Gear_Label_x = 0;
+	var Gear_Label_y = 0;
+	var Gear_Label_font = Gfx.FONT_XTINY;
+
+    var Gear_F_Value = 0;
+	var Gear_F_Value_x = 0;
+	var Gear_F_Value_y = 0;
+	var Gear_F_Value_font = Gfx.FONT_XTINY;
+
+    var Gear_R_Value = 0;
+	var Gear_R_Value_x = 0;
+	var Gear_R_Value_y = 0;
+	var Gear_R_Value_font = Gfx.FONT_XTINY;
+
 	var CAD_Label = "Cad";
 	var CAD_Label_x = 0;
 	var CAD_Label_y = 0;
@@ -333,11 +351,24 @@ class MeanMaxPowerChartView extends Ui.DataField
 			PWR_Label_y = 1;
 			PWR_Label_font = Gfx.FONT_XTINY;
 
-			PWR_Value_x = 100;
+			PWR_Value_x = 105;
 			PWR_Value_y = 1;
 			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			CAD_Label_x = 150;
+			Device_Support_Display_Gear_Data_Flag = true;
+			Gear_Label_x = 105;
+			Gear_Label_y = 1;
+			Gear_Label_font = Gfx.FONT_XTINY;
+
+			Gear_F_Value_x = 145;
+			Gear_F_Value_y = 1;
+			Gear_F_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			Gear_R_Value_x = 145;
+			Gear_R_Value_y = 30;
+			Gear_R_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			CAD_Label_x = 148;
 			CAD_Label_font = Gfx.FONT_XTINY;
 
 			CAD_Value_x = 245;
@@ -348,11 +379,14 @@ class MeanMaxPowerChartView extends Ui.DataField
 
 			HR_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			LapDuration_Label_y = 80;
-			LapDuration_Value_y = 100;
+			BatteryLevelBitmap_x = 200;
+			BatteryLevelBitmap_y = 88;
+
+			LapDuration_Label_y = 88;
+			LapDuration_Value_y = 105;
 			LapDuration_Value_font = Gfx.FONT_NUMBER_MILD;
 
-			LapAvgPower_Label_y = 130;
+			LapAvgPower_Label_y = 135;
 			LapAvgPower_Value_font = Gfx.FONT_NUMBER_MILD;
 
 			RollingValue_y = 287;
@@ -382,8 +416,6 @@ class MeanMaxPowerChartView extends Ui.DataField
 			Y_bar_y_top = 50;
 			Y_bar_font = Gfx.FONT_SMALL;
 
-			BatteryLevelBitmap_x = 200;
-			BatteryLevelBitmap_y = 85;
 
 			//CP_Value_font = Gfx.FONT_SMALL;
 			CP_Value_font = Gfx.FONT_LARGE;
@@ -457,7 +489,7 @@ class MeanMaxPowerChartView extends Ui.DataField
 			PWR_Label_y = 1;
 			PWR_Label_font = Gfx.FONT_XTINY;
 
-			PWR_Value_x = 130;
+			PWR_Value_x = 120;
 			PWR_Value_y = 1;
 			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
 
@@ -519,11 +551,24 @@ class MeanMaxPowerChartView extends Ui.DataField
 			PWR_Label_y = 1;
 			PWR_Label_font = Gfx.FONT_XTINY;
 
-			PWR_Value_x = 145;
+			PWR_Value_x = 120;
 			PWR_Value_y = 1;
 			PWR_Value_font = Gfx.FONT_NUMBER_HOT;
 
-			CAD_Label_x = 150;
+			Device_Support_Display_Gear_Data_Flag = true;
+			Gear_Label_x = 120;
+			Gear_Label_y = 1;
+			Gear_Label_font = Gfx.FONT_XTINY;
+
+			Gear_F_Value_x = 165;
+			Gear_F_Value_y = 1;
+			Gear_F_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			Gear_R_Value_x = 165;
+			Gear_R_Value_y = 35;
+			Gear_R_Value_font = Gfx.FONT_NUMBER_MILD;
+
+			CAD_Label_x = 165;
 			CAD_Label_font = Gfx.FONT_XTINY;
 
 			CAD_Value_x = 281;
@@ -655,6 +700,18 @@ class MeanMaxPowerChartView extends Ui.DataField
     // guarantee that compute() will be called before onUpdate().
     function compute(info)
     {
+		// Manage Gear data
+		
+		Display_Gear_Data_Flag = false;
+		/* Display_Gear_Data_Flag = true; */
+		
+        if( (info.frontDerailleurIndex != null) and (info.rearDerailleurIndex != null))
+        {
+			Display_Gear_Data_Flag = true;
+			Gear_F_Value = info.frontDerailleurIndex;
+			Gear_R_Value = info.rearDerailleurIndex;
+		}
+
 		// Manage Lap data
 
 		if (Display_Lap_Data_Flag)
@@ -1175,6 +1232,14 @@ class MeanMaxPowerChartView extends Ui.DataField
 		textL(dc, PWR_Label_x, PWR_Label_y, PWR_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, PWR_Label);
 		textL(dc, PWR_Label_x, PWR_Label_y + 10, PWR_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, AVG_Power_Duration.toString() + " s");
 		textR(dc, PWR_Value_x, PWR_Value_y, PWR_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, PWR_Value.toString());
+		// Manage Lap Data
+
+		if (Device_Support_Display_Gear_Data_Flag and Display_Gear_Data_Flag)
+		{
+			textL(dc, Gear_Label_x, Gear_Label_y, Gear_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, Gear_Label);
+			textR(dc, Gear_F_Value_x, Gear_F_Value_y, Gear_F_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, Gear_F_Value.toString());
+			textR(dc, Gear_R_Value_x, Gear_R_Value_y, Gear_R_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, Gear_R_Value.toString());
+		}
 
 		textL(dc, CAD_Label_x, CAD_Label_y, CAD_Label_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, CAD_Label);
 		textR(dc, CAD_Value_x, CAD_Value_y, CAD_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, CAD_Value.toString());
