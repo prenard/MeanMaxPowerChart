@@ -1201,15 +1201,16 @@ class MeanMaxPowerChartView extends Ui.DataField
 			var MaxCPValueY = X_bar_y - 20;
 			for (var i = app.TimeValues.size() - 1; i >= 0; --i)
 			{
-				if (app.TimeValuesCP[i] == 1 and app.RidePowerValues[i] > 0)
+
+				if (app.TimeValuesCP[i] == 1)
 				{
 					var CP_Value = 0;
-					if (app.Display_CP_Values_Type == 0)
+					if (app.Display_CP_Values_Type == 0 and app.RidePowerValues[i] > 0)
 					{
 						CP_Value = app.CurrentPowerValues[i];
 					}
 					else
-					if (app.Display_CP_Values_Type == 1)
+					if (app.Display_CP_Values_Type == 1 and app.RidePowerValues[i] > 0)
 					{
 						CP_Value = app.RidePowerValues[i];
 					}
@@ -1219,10 +1220,13 @@ class MeanMaxPowerChartView extends Ui.DataField
 						CP_Value = app.RecordPowerValues[i];
 					}
 
-					var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * CP_Value / PowerMax - 20;
-					y1 = min(y1, MaxCPValueY);
-					textL(dc, app.TimeValues_x[i] + 1, y1, CP_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, CP_Value.toString());
-					MaxCPValueY = y1 - (Gfx.getFontHeight(CP_Value_font) - 10);
+					if ((app.Display_CP_Values_Type == 2) or (app.Display_CP_Values_Type < 2 and app.RidePowerValues[i] > 0))
+					{
+						var y1 = Y_bar_y_bottom - (Y_bar_y_bottom - Y_bar_y_top + 1) * CP_Value / PowerMax - 20;
+						y1 = min(y1, MaxCPValueY);
+						textL(dc, app.TimeValues_x[i] + 1, y1, CP_Value_font, FontDisplayColor, Gfx.COLOR_TRANSPARENT, CP_Value.toString());
+						MaxCPValueY = y1 - (Gfx.getFontHeight(CP_Value_font) - 10);
+					}
 				}
 			}
 		}

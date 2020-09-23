@@ -31,6 +31,8 @@ You can specify which "rolling" data field you want to display (Time, Timer, Dis
 
 Release History:
 
+- V1.25 - 2020-09-23
+* Update CP display to always show all record values 
 - V1.24 - 2020-03-17
 * Add gear display support on Edge 830 & 1030 - Dynamic DI2 & ETAP detection
 - V1.23 - 2020-03-17

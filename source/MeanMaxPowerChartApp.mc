@@ -191,6 +191,8 @@ class MeanMaxPowerChartApp extends App.AppBase
 			ReadPowerFromProperty();
 		}
 
+		System.println("RecordPowerValues = " + RecordPowerValues);
+
 		for (var i = 0; i < TimeValues.size(); ++i)
 		{
 			PreviousRecordPowerValues[i] = RecordPowerValues[i];
